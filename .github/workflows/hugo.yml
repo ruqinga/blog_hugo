@@ -37,7 +37,7 @@ jobs:
         run: npm install -g postcss-cli autoprefixer tailwindcss
 
       - name: Install Node.js dependencies (local tailwindcss)
-        run: npm install tailwindcss
+        run: npm install @tailwindcss/postcss-plugin
 
       # 4. 保证 postcss.config.js 配置文件存在（大部分 Hugo 主题默认需要此文件）
       #    这里简单创建一个包含 autoprefixer 的配置
