@@ -24,8 +24,8 @@ jobs:
       - name: Install Dart Sass
         run: sudo snap install dart-sass
 
-      - name: install postcss
-        run: npm install postcss-cli
+      - name: install postcss tailwindcss
+        run: npm install postcss-cli tailwindcss
 
       - name: Build with Hugo
         run: hugo --minify
