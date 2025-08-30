@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  dir="ltr"
+  
+><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>Ruqing a</title>
+
+<meta name="generator" content="Hugo Eureka 0.9.3" />
+<link rel="stylesheet" href="https://ruqinga.github.io/css/eureka.min.9cec6350e37e534b0338fa9a085bf06855de3b0f2dcf857e792e5e97b07ea905d4d5513db554cbc26a9c3da622bae92d.css">
+<script defer src="https://ruqinga.github.io/js/eureka.min.fa9a6bf6d7a50bb635b4cca7d2ba5cf3dfb095ae3798773f1328f7950028b48c17d06276594e1b5f244a25a6c969a705.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload"
+  href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&amp;family=Noto&#43;Serif&#43;SC:wght@400;600;700&amp;display=swap"
+  as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/styles/base16/solarized-light.min.css"
+   media="print"
+  onload="this.media='all';this.onload=null" crossorigin>
+<script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/highlight.min.js"
+   crossorigin></script>
+  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/languages/dart.min.js"
+     crossorigin></script>
+<link rel="stylesheet" href="https://ruqinga.github.io/css/highlightjs.min.2958991528e43eb6fc9b8c4f2b8e052f79c4010718e1d1e888a777620e9ee63021c2c57ec7417a3108019bb8c41943e6.css" media="print" onload="this.media='all';this.onload=null">
+
+
+<script defer type="text/javascript" src="https://ruqinga.github.io/js/fontawesome.min.f14def4f6943de5b19b19c02e239b98c8cc6a8fe66b6828a21da7c0e9d405df8364cab68aa637c3bbe735eb7c325aa3c.js"></script>
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css"
+   integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ"  media="print"
+  onload="this.media='all';this.onload=null" crossorigin>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js" 
+  integrity="sha384-VQ8d8WVFw0yHhCk5E8I86oOhv48xLpnDZx5T9GogA/Y84DcCKWXDmSDfn13bzFZY"  crossorigin></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js"
+   integrity="sha384-&#43;XBljXPPiv&#43;OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR"  crossorigin></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false },
+        { left: "\\(", right: "\\)", display: false },
+        { left: "\\[", right: "\\]", display: true }
+      ],
+    });
+  });
+</script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@8.14.0/dist/mermaid.min.js" 
+  integrity="sha384-atOyb0FxAgN9LyAc6PEf9BjgwLISyansgdH8/VXQH8p2o5vfrRgmGIJ2Sg22L0A0"  crossorigin></script>
+
+
+<link rel="icon" type="image/png" sizes="32x32" href="https://ruqinga.github.io/images/icon_huba2c3f04abefa322225c7a4a6a5120c0_16720_32x32_fill_box_center_3.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ruqinga.github.io/images/icon_huba2c3f04abefa322225c7a4a6a5120c0_16720_180x180_fill_box_center_3.png">
+
+<meta name="description"
+  content="分享；生信；学习.">
+
+
+
+<meta property="og:title" content="Ruqing a" />
+<meta property="og:type" content="website" />
+
+
+<meta property="og:image" content="https://ruqinga.github.io/images/icon.png">
+
+
+<meta property="og:url" content="https://ruqinga.github.io/" />
+
+
+
+
+
+<meta property="og:description" content="分享；生信；学习." />
+
+
+
+
+
+<meta property="og:locale" content="en" />
+
+
+
+
+<meta property="og:site_name" content="Ruqing a" />
+
+
+
+
+
+
+<meta property="og:updated_time" content="2023-09-27T00:00:00&#43;00:00" />
+
+
+
+<meta property="article:section" content="" />
+
+
+<link rel="alternate" type="application/rss+xml" href="https://ruqinga.github.io/index.xml" title="Ruqing a" />
+
+
+  <body class="flex min-h-screen flex-col">
+    <header
+      class="min-h-16 pl-scrollbar bg-secondary-bg fixed z-50 flex w-full items-center shadow-sm"
+    >
+      <div class="mx-auto w-full max-w-screen-xl"><script>
+    let storageColorScheme = localStorage.getItem("lightDarkMode")
+    if (((storageColorScheme == 'Auto' || storageColorScheme == null) && window.matchMedia("(prefers-color-scheme: dark)").matches) || storageColorScheme == "Dark") {
+        document.getElementsByTagName('html')[0].classList.add('dark')
+    }
+</script>
+<nav class="flex items-center justify-between flex-wrap px-4 py-4 md:py-0">
+    <a href="/" class="me-6 text-primary-text text-xl font-bold">Ruqing a</a>
+    <button id="navbar-btn" class="md:hidden flex items-center px-3 py-2" aria-label="Open Navbar">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <div id="target"
+        class="hidden block md:flex md:grow md:justify-between md:items-center w-full md:w-auto text-primary-text z-20">
+        <div class="md:flex md:h-16 text-sm md:grow pb-4 md:pb-0 border-b md:border-b-0">
+            <a href="/#about" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">About</a>
+            <a href="/posts/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">Posts</a>
+            <a href="/docs/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">Docs</a>
+        </div>
+
+        <div class="flex">
+            <div class="relative pt-4 md:pt-0">
+                <div class="cursor-pointer hover:text-eureka" id="lightDarkMode">
+                    <i class="fas fa-adjust"></i>
+                </div>
+                <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-30" id="is-open">
+                </div>
+                <div class="absolute flex flex-col start-0 md:start-auto end-auto md:end-0 hidden bg-secondary-bg w-48 rounded py-2 border border-tertiary-bg cursor-pointer z-40"
+                    id='lightDarkOptions'>
+                    <span class="px-4 py-1 hover:text-eureka" name="Light">Light</span>
+                    <span class="px-4 py-1 hover:text-eureka" name="Dark">Dark</span>
+                    <span class="px-4 py-1 hover:text-eureka" name="Auto">Auto</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-0" id="is-open-mobile">
+    </div>
+
+</nav>
+<script>
+    
+    let element = document.getElementById('lightDarkMode')
+    if (storageColorScheme == null || storageColorScheme == 'Auto') {
+        document.addEventListener('DOMContentLoaded', () => {
+            window.matchMedia("(prefers-color-scheme: dark)").addEventListener('change', switchDarkMode)
+        })
+    } else if (storageColorScheme == "Light") {
+        element.firstElementChild.classList.remove('fa-adjust')
+        element.firstElementChild.setAttribute("data-icon", 'sun')
+        element.firstElementChild.classList.add('fa-sun')
+    } else if (storageColorScheme == "Dark") {
+        element.firstElementChild.classList.remove('fa-adjust')
+        element.firstElementChild.setAttribute("data-icon", 'moon')
+        element.firstElementChild.classList.add('fa-moon')
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        getcolorscheme();
+        switchBurger();
+    });
+</script>
+</div>
+    </header>
+    <main class="grow pt-16">
+  
+  
+  
+    
+      
+  
+
+  
+
+  
+  
+  
+
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+  
+
+  
+  
+
+  
+    
+    
+    
+    
+      
+      
+    
+
+    
+    
+    
+    
+    
+  
+
+
+  <div
+    class="pl-scrollbar bg-secondary-bg"
+    
+  >
+    <div class="mx-auto max-w-screen-xl">
+      <div
+        id="about"
+        class="lg:w-3/4 mx-auto px-6 md:px-8 xl:px-12 py-12"
+      >
+        
+  
+
+  
+    
+      
+      <div class="mb-12 flex flex-col items-center justify-center md:flex-row">
+  
+  
+    <div class="md:ms-0 md:me-8 md:pe-8 md:border-e mx-auto w-48 flex-none">
+      <img src="https://ruqinga.github.io/images/icon.png" class="rounded-full" alt="Avatar" />
+    </div>
+  
+  <div class="mt-4 w-full grow md:mt-0">
+    <h1 class="py-4 text-3xl">如卿</h1>
+    <div class="w-3/12 border-b xl:w-2/12"></div>
+
+    <div class="flex items-center pt-4">
+      
+        <i class="fas fa-user"></i>
+      
+      <div class="flex flex-wrap">
+        
+          <span class="ps-4">研1</span>
+        
+
+        
+          <a href="https://www.shanghaitech.edu.cn/" class="ps-4">上海科技大学</a>
+        
+      </div>
+    </div>
+
+    
+      <div class="py-8 text-lg leading-normal">
+        人人似我，人人非我
+      </div>
+    
+  </div>
+  <div class="md:ms-8 flex items-end justify-center md:flex-col">
+    
+    
+      
+      
+      
+      
+      
+      <div class="mx-2 mb-2 mt-4 md:mx-0 md:mt-2">
+        <a href="mailto:example@example.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    
+      
+      
+      
+      
+      
+      <div class="mx-2 mb-2 mt-4 md:mx-0 md:mt-2">
+        <a href="https://example.com/"><i class="fab fa-twitter"></i></a>
+      </div>
+    
+      
+      
+      
+      
+      
+      <div class="mx-2 mb-2 mt-4 md:mx-0 md:mt-2">
+        <a href="https://example.com/"><i class="fab fa-github"></i></a>
+      </div>
+    
+  </div>
+</div>
+<div class="prose">
+  <p>定位：学术博客（暂）</p>
+<p>感兴趣方向：①生信：有一种永远都学不完的快乐。 ②多组学|学科交叉：可以获得更宏观的视角 ③人类：所有的研究最终指向人类自身</p>
+<p>习惯偏好：①我会更喜欢手上有2-3个项目并行，换一下脑子 ②自己主导项目，可以自己安排时间 ③早睡早起，爱护身体</p>
+<p>相逢既是友，彼此学习，彼此监督呀</p>
+
+</div>
+
+      
+    
+  
+
+      </div>
+    </div>
+  </div>
+
+    
+
+    
+  
+    
+      
+  
+
+  
+
+  
+  
+  
+
+  
+    
+    
+    
+    
+      
+      
+    
+  
+
+  
+  
+
+  
+    
+    
+    
+    
+      
+      
+    
+
+    
+    
+    
+    
+    
+  
+
+
+  <div
+    class="pl-scrollbar bg-primary-bg"
+    
+  >
+    <div class="mx-auto max-w-screen-xl">
+      <div
+        id="pages"
+        class="lg:w-3/4 mx-auto px-6 md:px-8 xl:px-12 py-12"
+      >
+        
+  
+
+  
+    
+      
+      
+  <h2 class=" font-bold text-3xl my-4">Pages</h2>
+
+
+  
+  
+  <div class="overflow-hidden divide-y">
+  
+  <div class="py-6">
+    <div class="flex flex-col-reverse lg:flex-row justify-between">
+  
+  <div class="w-full ">
+    <div class="prose">
+  <a href="https://ruqinga.github.io/posts/%E5%AE%9E%E9%AA%8C%E7%AC%94%E8%AE%B0%E8%B4%A8%E7%B2%92%E7%9A%84%E6%9E%84%E5%BB%BA%E4%B8%8E%E8%A1%A8%E8%BE%BE%E9%89%B4%E5%AE%9A/" class="no-underline">
+    <h3 class="mt-0">实验笔记：质粒的构建与表达鉴定</h3>
+  </a>
+  
+    最近开始接触一些质粒构建和表达的分子实验，于是把本科时候做的相关实验再整理一下。
+题目是：绿色荧光蛋白GFP的构建与鉴定
+图1 绿色荧光蛋白的构建与鉴定实验流程。
+  
+
+  
+    <div
+  class="text-tertiary-text not-prose mt-2 flex flex-row flex-wrap items-center"
+>
+  <div class="me-6 my-2">
+    <i class="fas fa-calendar me-1"></i>
+    <span
+      >2023-09-27</span
+    >
+  </div>
+  <div class="me-6 my-2">
+    <i class="fas fa-clock me-1"></i>
+    <span>2 min read</span>
+  </div>
+
+  
+    <div class="me-6 my-2">
+      <i class="fas fa-folder me-1"></i>
+      
+        <a href="https://ruqinga.github.io/categories/%E5%AE%9E%E9%AA%8C%E7%AC%94%E8%AE%B0/" class="hover:text-eureka"
+          >实验笔记</a
+        >
+      
+    </div>
+  
+
+  
+</div>
+
+  
+</div>
+
+  </div>
+
+  
+</div>
+  </div>
+  
+  <div class="py-6">
+    <div class="flex flex-col-reverse lg:flex-row justify-between">
+  
+  <div class="w-full ">
+    <div class="prose">
+  <a href="https://ruqinga.github.io/posts/3-linux%E8%BF%9B%E9%98%B6-vim%E7%BC%96%E8%BE%91%E5%99%A8%E5%92%8Cconda%E7%8E%AF%E5%A2%83/" class="no-underline">
+    <h3 class="mt-0">Linux进阶-Vim编辑器和Conda环境</h3>
+  </a>
+  
+    使用Linux必备的编辑器和软件安装工具conda
+
+  
+
+  
+    <div
+  class="text-tertiary-text not-prose mt-2 flex flex-row flex-wrap items-center"
+>
+  <div class="me-6 my-2">
+    <i class="fas fa-calendar me-1"></i>
+    <span
+      >2022-06-26</span
+    >
+  </div>
+  <div class="me-6 my-2">
+    <i class="fas fa-clock me-1"></i>
+    <span>1 min read</span>
+  </div>
+
+  
+    <div class="me-6 my-2">
+      <i class="fas fa-folder me-1"></i>
+      
+        <a href="https://ruqinga.github.io/categories/linux/" class="hover:text-eureka"
+          >Linux</a
+        >
+      
+    </div>
+  
+
+  
+</div>
+
+  
+</div>
+
+  </div>
+
+  
+</div>
+  </div>
+  
+  <div class="py-6">
+    <div class="flex flex-col-reverse lg:flex-row justify-between">
+  
+  <div class="w-full ">
+    <div class="prose">
+  <a href="https://ruqinga.github.io/posts/%E5%BE%AE%E7%94%9F%E7%89%A9%E7%BB%84/" class="no-underline">
+    <h3 class="mt-0">微生物组学分析全流程（理论）</h3>
+  </a>
+  
+    微生物组学分析的两个大类：扩增子和宏基因组，涉及概念、流程进行区别和简单介绍。
+
+  
+
+  
+    <div
+  class="text-tertiary-text not-prose mt-2 flex flex-row flex-wrap items-center"
+>
+  <div class="me-6 my-2">
+    <i class="fas fa-calendar me-1"></i>
+    <span
+      >2022-05-24</span
+    >
+  </div>
+  <div class="me-6 my-2">
+    <i class="fas fa-clock me-1"></i>
+    <span>3 min read</span>
+  </div>
+
+  
+    <div class="me-6 my-2">
+      <i class="fas fa-folder me-1"></i>
+      
+        <a href="https://ruqinga.github.io/categories/%E5%BE%AE%E7%94%9F%E7%89%A9%E7%BB%84/" class="hover:text-eureka"
+          >微生物组</a
+        >
+      
+    </div>
+  
+
+  
+</div>
+
+  
+</div>
+
+  </div>
+
+  
+</div>
+  </div>
+  
+  <div class="py-6">
+    <div class="flex flex-col-reverse lg:flex-row justify-between">
+  
+  <div class="w-full ">
+    <div class="prose">
+  <a href="https://ruqinga.github.io/posts/rna-seq-%E5%AE%9E%E6%88%98/" class="no-underline">
+    <h3 class="mt-0">rna-seq上下游分析实战</h3>
+  </a>
+  
+    从零开始系列。网上的流程都太散乱了，无法连接起来，本文一套数据跑完流程，包括转录组基本介绍、上游数据处理和下游功能分析
+
+  
+
+  
+    <div
+  class="text-tertiary-text not-prose mt-2 flex flex-row flex-wrap items-center"
+>
+  <div class="me-6 my-2">
+    <i class="fas fa-calendar me-1"></i>
+    <span
+      >2022-05-01</span
+    >
+  </div>
+  <div class="me-6 my-2">
+    <i class="fas fa-clock me-1"></i>
+    <span>9 min read</span>
+  </div>
+
+  
+    <div class="me-6 my-2">
+      <i class="fas fa-folder me-1"></i>
+      
+        <a href="https://ruqinga.github.io/categories/rna-seq/" class="hover:text-eureka"
+          >rna-seq</a
+        >
+      
+    </div>
+  
+
+  
+</div>
+
+  
+</div>
+
+  </div>
+
+  
+</div>
+  </div>
+  
+  <div class="py-6">
+    <div class="flex flex-col-reverse lg:flex-row justify-between">
+  
+  <div class="w-full ">
+    <div class="prose">
+  <a href="https://ruqinga.github.io/posts/%E5%9F%BA%E5%9B%A0%E5%AE%B6%E6%97%8F%E5%88%86%E6%9E%90/" class="no-underline">
+    <h3 class="mt-0">基因家族分析从零到有（研究对象确定&#43;基因家族鉴定&#43;基本信息网站&#43;结构分析&#43;共线性分析&#43;实验验证简述）</h3>
+  </a>
+  
+    基因家族分析从零到有，本文将详细介绍每一步该做的准备。
+
+  
+
+  
+    <div
+  class="text-tertiary-text not-prose mt-2 flex flex-row flex-wrap items-center"
+>
+  <div class="me-6 my-2">
+    <i class="fas fa-calendar me-1"></i>
+    <span
+      >2022-04-18</span
+    >
+  </div>
+  <div class="me-6 my-2">
+    <i class="fas fa-clock me-1"></i>
+    <span>6 min read</span>
+  </div>
+
+  
+    <div class="me-6 my-2">
+      <i class="fas fa-folder me-1"></i>
+      
+        <a href="https://ruqinga.github.io/categories/rna-seq/" class="hover:text-eureka"
+          >rna-seq</a
+        >
+      
+    </div>
+  
+
+  
+</div>
+
+  
+</div>
+
+  </div>
+
+  
+</div>
+  </div>
+  
+</div>
+
+
+  <div class="pt-2 hover:text-eureka">
+    
+  <a href="https://ruqinga.github.io/posts/" class="font-semibold">Read More</a>
+  <i class='fas fa-caret-right ms-1'></i>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+      
+    
+  
+
+      </div>
+    </div>
+  </div>
+
+    
+
+    
+  
+    
+      
+  
+
+  
+
+  
+  
+  
+
+  
+    
+    
+    
+    
+      
+      
+    
+  
+
+  
+  
+
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+
+    
+    
+    
+    
+    
+  
+
+
+  <div
+    class="pl-scrollbar bg-primary-bg"
+    
+  >
+    <div class="mx-auto max-w-screen-xl">
+      <div
+        id="experience"
+        class="lg:w-4/5 mx-auto px-6 md:px-8 xl:px-12 py-12"
+      >
+        
+  
+
+  
+
+    
+    
+    
+    
+    
+      
+    
+    <div
+      class="lg:flex-row flex flex-col"
+    >
+      <div
+        class="lg:w-1/4 lg:me-4 flex-none"
+      >
+        <h2 class="my-4 text-3xl font-bold">Experience</h2>
+      </div>
+      <div
+        class="lg:ms-4 grow"
+      >
+        
+          
+          
+  <div class="mb-6">
+    <div
+      class="bg-secondary-bg prose dark:border-tertiary-bg rounded border p-6 transition duration-200 ease-in-out hover:shadow-lg"
+    >
+      <h3 class="">本科生毕业论文</h3>
+      <div class="flex flex-col md:flex-row md:justify-between">
+        <div>
+          
+            <span>中国白酒四大基本香型酿造过程微生物群落比较研究</span>
+          
+
+          
+
+
+          <span> </span>
+        </div>
+        <div class="shrink-0">2022-2023</div>
+      </div>
+
+      <div class="mt-5"><ul>
+<li>通过高通量比较四大基本香型白酒酿造过程微生物群落组成情况，以确定影响白酒香型的核心微生物</li>
+<li>包括：Alpha\Beta多样性，物种组成分析，韦恩图，LEfSe，相关性网络</li>
+</ul>
+</div>
+    </div>
+  </div>
+
+  <div class="mb-6">
+    <div
+      class="bg-secondary-bg prose dark:border-tertiary-bg rounded border p-6 transition duration-200 ease-in-out hover:shadow-lg"
+    >
+      <h3 class=""></h3>
+      <div class="flex flex-col md:flex-row md:justify-between">
+        <div>
+          
+            <a href="https://doi.org/10.3389/fmicb.2021.673670" class="no-underline">
+              Characteristics of the Microbial Community in the Production of Chinese Rice-Flavor Baijiu and Comparisons With the Microflora of Other Flavors of Baijiu
+            </a>
+          
+
+          
+            <span class="ms-2 me-2">·</span>
+          
+
+
+          <span>学生一作 </span>
+        </div>
+        <div class="shrink-0">2021.4</div>
+      </div>
+
+      <div class="mt-5"><ul>
+<li>采用高通量测序技术分析米香味白酒的发酵剂和生产过程中的微生物群落，以确定核心微生物群，并结合风味成分等物理化学因素的变化，研究其对微生物群落的影响；</li>
+<li>比较米香型、淡香型和浓香型白酒酿造的微生物群落组成，为深入研究白酒风味形成的性质和微生物之间的联系奠定了基础。</li>
+</ul>
+</div>
+    </div>
+  </div>
+
+
+          
+        
+
+      </div>
+    </div>
+  
+
+      </div>
+    </div>
+  </div>
+
+    
+
+    
+  
+    </main>
+    <footer class="pl-scrollbar">
+      <div class="mx-auto w-full max-w-screen-xl"><div class="text-center p-6 pin-b">
+    <p class="text-sm text-tertiary-text">&copy; 2021 <a href="https://www.wangchucheng.com/">WANG Chucheng</a> and <a href="https://www.ruiqima.com/">MA Ruiqi</a>
+ &middot;  Powered by the <a href="https://github.com/wangchucheng/hugo-eureka" class="hover:text-eureka">Eureka</a> theme for <a href="https://gohugo.io" class="hover:text-eureka">Hugo</a></p>
+</div></div>
+    </footer>
+  </body>
+</html>

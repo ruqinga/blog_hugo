@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on Ruqing a</title>
+    <link>https://ruqinga.github.io/categories/linux/</link>
+    <description>Recent content in Linux on Ruqing a</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&amp;copy; 2021 &lt;a href=&#34;https://www.wangchucheng.com/&#34;&gt;WANG Chucheng&lt;/a&gt; and &lt;a href=&#34;https://www.ruiqima.com/&#34;&gt;MA Ruiqi&lt;/a&gt;
+</copyright>
+    <lastBuildDate>Sun, 26 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ruqinga.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux进阶-Vim编辑器和Conda环境</title>
+      <link>https://ruqinga.github.io/posts/3-linux%E8%BF%9B%E9%98%B6-vim%E7%BC%96%E8%BE%91%E5%99%A8%E5%92%8Cconda%E7%8E%AF%E5%A2%83/</link>
+      <pubDate>Sun, 26 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ruqinga.github.io/posts/3-linux%E8%BF%9B%E9%98%B6-vim%E7%BC%96%E8%BE%91%E5%99%A8%E5%92%8Cconda%E7%8E%AF%E5%A2%83/</guid>
+      <description>&lt;p&gt;使用Linux必备的编辑器和软件安装工具conda&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Linux基础</title>
+      <link>https://ruqinga.github.io/posts/2-linux%E5%9F%BA%E7%A1%80-%E9%85%8D%E8%89%B2%E5%92%8C%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ruqinga.github.io/posts/2-linux%E5%9F%BA%E7%A1%80-%E9%85%8D%E8%89%B2%E5%92%8C%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4/</guid>
+      <description>以下内容为基础的linux操作，希望大家熟练掌握
+命令行配色方案 这个看个人审美，你们也可以自己配置
+echo &#39;export PS1=&amp;quot;\[\033]2;\h:\u \w\007\033[33;1m\]\u \033[35;1m\t\033[0m \[\033[36;1m\]\w\[\033[0m\]\n\[\e[32;1m\]$ \[\e[0m\]&amp;quot;&#39; &amp;gt;&amp;gt; ~/.bashrc source ~/.bashrc 常见命令 更多见：Linux命令大全
+查看帮助文档 man 命令，help 命令，或者某个命令的 &amp;ndash;help 参数
+man ls	## 用 man 命令查看 ls 命令的帮助文档 help ls	## 用 help 命令查看 ls 命令的帮助文档	ls --help	## 用 --help 参数查看 ls 命令的帮助文档 常用快捷键 Tab: 补全 Ctrl+U: 剪切光标位置到行首的字符 Ctrl+C: 终止任务 Ctrl+Z: 暂停任务 Ctrl+L: 清屏 Ctrl+E: 回到行尾 Ctrl+A: 回到行首 组合技一：查看目录和文件 cd 进入目录 pwd 显示当前所在位置 ls 查看当前目录下文件 tree -L 1 将当前目录下文件以树形展示 补充：
+常用符号
+. 表示此层目录 .</description>
+    </item>
+    
+  </channel>
+</rss>

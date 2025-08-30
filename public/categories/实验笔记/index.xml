@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>实验笔记 on Ruqing a</title>
+    <link>https://ruqinga.github.io/categories/%E5%AE%9E%E9%AA%8C%E7%AC%94%E8%AE%B0/</link>
+    <description>Recent content in 实验笔记 on Ruqing a</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&amp;copy; 2021 &lt;a href=&#34;https://www.wangchucheng.com/&#34;&gt;WANG Chucheng&lt;/a&gt; and &lt;a href=&#34;https://www.ruiqima.com/&#34;&gt;MA Ruiqi&lt;/a&gt;
+</copyright>
+    <lastBuildDate>Wed, 27 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ruqinga.github.io/categories/%E5%AE%9E%E9%AA%8C%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>实验笔记：质粒的构建与表达鉴定</title>
+      <link>https://ruqinga.github.io/posts/%E5%AE%9E%E9%AA%8C%E7%AC%94%E8%AE%B0%E8%B4%A8%E7%B2%92%E7%9A%84%E6%9E%84%E5%BB%BA%E4%B8%8E%E8%A1%A8%E8%BE%BE%E9%89%B4%E5%AE%9A/</link>
+      <pubDate>Wed, 27 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ruqinga.github.io/posts/%E5%AE%9E%E9%AA%8C%E7%AC%94%E8%AE%B0%E8%B4%A8%E7%B2%92%E7%9A%84%E6%9E%84%E5%BB%BA%E4%B8%8E%E8%A1%A8%E8%BE%BE%E9%89%B4%E5%AE%9A/</guid>
+      <description>&lt;p&gt;最近开始接触一些质粒构建和表达的分子实验，于是把本科时候做的相关实验再整理一下。&lt;/p&gt;
+&lt;p&gt;题目是：绿色荧光蛋白GFP的构建与鉴定&lt;/p&gt;
+&lt;figure&gt;
+    &lt;img src=&#34;https://raw.githubusercontent.com/ruqinga/picture/main/2023/02/202309270941089.png&#34; alt=&#34;绿色荧光蛋白的构建与鉴定&#34;&gt;
+    &lt;figcaption style=&#34;text-align: center; color: grey;&#34;&gt;图1 绿色荧光蛋白的构建与鉴定实验流程。&lt;/figcaption&gt;
+&lt;/figure&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

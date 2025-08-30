@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  dir="ltr"
+  
+><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>Linux进阶-Vim编辑器和Conda环境 | Ruqing a</title>
+
+<meta name="generator" content="Hugo Eureka 0.9.3" />
+<link rel="stylesheet" href="https://ruqinga.github.io/css/eureka.min.9cec6350e37e534b0338fa9a085bf06855de3b0f2dcf857e792e5e97b07ea905d4d5513db554cbc26a9c3da622bae92d.css">
+<script defer src="https://ruqinga.github.io/js/eureka.min.fa9a6bf6d7a50bb635b4cca7d2ba5cf3dfb095ae3798773f1328f7950028b48c17d06276594e1b5f244a25a6c969a705.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload"
+  href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&amp;family=Noto&#43;Serif&#43;SC:wght@400;600;700&amp;display=swap"
+  as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/styles/base16/solarized-light.min.css"
+   media="print"
+  onload="this.media='all';this.onload=null" crossorigin>
+<script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/highlight.min.js"
+   crossorigin></script>
+  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/languages/dart.min.js"
+     crossorigin></script>
+<link rel="stylesheet" href="https://ruqinga.github.io/css/highlightjs.min.2958991528e43eb6fc9b8c4f2b8e052f79c4010718e1d1e888a777620e9ee63021c2c57ec7417a3108019bb8c41943e6.css" media="print" onload="this.media='all';this.onload=null">
+
+
+<script defer type="text/javascript" src="https://ruqinga.github.io/js/fontawesome.min.f14def4f6943de5b19b19c02e239b98c8cc6a8fe66b6828a21da7c0e9d405df8364cab68aa637c3bbe735eb7c325aa3c.js"></script>
+    
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css"
+   integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ"  media="print"
+  onload="this.media='all';this.onload=null" crossorigin>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js" 
+  integrity="sha384-VQ8d8WVFw0yHhCk5E8I86oOhv48xLpnDZx5T9GogA/Y84DcCKWXDmSDfn13bzFZY"  crossorigin></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js"
+   integrity="sha384-&#43;XBljXPPiv&#43;OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR"  crossorigin></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false },
+        { left: "\\(", right: "\\)", display: false },
+        { left: "\\[", right: "\\]", display: true }
+      ],
+    });
+  });
+</script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@8.14.0/dist/mermaid.min.js" 
+  integrity="sha384-atOyb0FxAgN9LyAc6PEf9BjgwLISyansgdH8/VXQH8p2o5vfrRgmGIJ2Sg22L0A0"  crossorigin></script>
+
+
+<link rel="icon" type="image/png" sizes="32x32" href="https://ruqinga.github.io/images/icon_huba2c3f04abefa322225c7a4a6a5120c0_16720_32x32_fill_box_center_3.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ruqinga.github.io/images/icon_huba2c3f04abefa322225c7a4a6a5120c0_16720_180x180_fill_box_center_3.png">
+
+<meta name="description"
+  content="使用Linux必备的编辑器和软件安装工具conda">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1 ,
+      "name":"Posts",
+      "item":"https://ruqinga.github.io/posts/"},{
+      "@type": "ListItem",
+      "position": 2 ,
+      "name":"Linux进阶-Vim编辑器和Conda环境",
+      "item":"https://ruqinga.github.io/posts/3-linux%E8%BF%9B%E9%98%B6-vim%E7%BC%96%E8%BE%91%E5%99%A8%E5%92%8Cconda%E7%8E%AF%E5%A2%83/"}]
+}
+</script>
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ruqinga.github.io/posts/3-linux%E8%BF%9B%E9%98%B6-vim%E7%BC%96%E8%BE%91%E5%99%A8%E5%92%8Cconda%E7%8E%AF%E5%A2%83/"
+    },
+    "headline": "Linux进阶-Vim编辑器和Conda环境 | Ruqing a","datePublished": "2022-06-26T00:00:00+00:00",
+    "dateModified": "2022-06-26T00:00:00+00:00",
+    "wordCount":  212 ,
+    "publisher": {
+        "@type": "Person",
+        "name": "Ruqing",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://ruqinga.github.io/images/icon.png"
+        }
+        },
+    "description": "\u003cp\u003e使用Linux必备的编辑器和软件安装工具conda\u003c\/p\u003e"
+}
+</script><meta property="og:title" content="Linux进阶-Vim编辑器和Conda环境 | Ruqing a" />
+<meta property="og:type" content="article" />
+
+
+<meta property="og:image" content="https://ruqinga.github.io/images/icon.png">
+
+
+<meta property="og:url" content="https://ruqinga.github.io/posts/3-linux%E8%BF%9B%E9%98%B6-vim%E7%BC%96%E8%BE%91%E5%99%A8%E5%92%8Cconda%E7%8E%AF%E5%A2%83/" />
+
+
+
+
+<meta property="og:description" content="使用Linux必备的编辑器和软件安装工具conda" />
+
+
+
+
+<meta property="og:locale" content="en" />
+
+
+
+
+<meta property="og:site_name" content="Ruqing a" />
+
+
+
+
+
+
+<meta property="article:published_time" content="2022-06-26T00:00:00&#43;00:00" />
+
+
+<meta property="article:modified_time" content="2022-06-26T00:00:00&#43;00:00" />
+
+
+
+<meta property="article:section" content="posts" />
+
+
+<meta property="article:tag" content="进度/4-已完成" />
+
+
+
+
+
+<meta property="og:see_also" content="https://ruqinga.github.io/posts/2-linux%E5%9F%BA%E7%A1%80-%E9%85%8D%E8%89%B2%E5%92%8C%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4/" />
+
+<meta property="og:see_also" content="https://ruqinga.github.io/posts/qiimme2/" />
+
+
+
+
+  <body class="flex min-h-screen flex-col">
+    <header
+      class="min-h-16 pl-scrollbar bg-secondary-bg fixed z-50 flex w-full items-center shadow-sm"
+    >
+      <div class="mx-auto w-full max-w-screen-xl"><script>
+    let storageColorScheme = localStorage.getItem("lightDarkMode")
+    if (((storageColorScheme == 'Auto' || storageColorScheme == null) && window.matchMedia("(prefers-color-scheme: dark)").matches) || storageColorScheme == "Dark") {
+        document.getElementsByTagName('html')[0].classList.add('dark')
+    }
+</script>
+<nav class="flex items-center justify-between flex-wrap px-4 py-4 md:py-0">
+    <a href="/" class="me-6 text-primary-text text-xl font-bold">Ruqing a</a>
+    <button id="navbar-btn" class="md:hidden flex items-center px-3 py-2" aria-label="Open Navbar">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <div id="target"
+        class="hidden block md:flex md:grow md:justify-between md:items-center w-full md:w-auto text-primary-text z-20">
+        <div class="md:flex md:h-16 text-sm md:grow pb-4 md:pb-0 border-b md:border-b-0">
+            <a href="/#about" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">About</a>
+            <a href="/posts/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  selected-menu-item  me-4">Posts</a>
+            <a href="/docs/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">Docs</a>
+        </div>
+
+        <div class="flex">
+            <div class="relative pt-4 md:pt-0">
+                <div class="cursor-pointer hover:text-eureka" id="lightDarkMode">
+                    <i class="fas fa-adjust"></i>
+                </div>
+                <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-30" id="is-open">
+                </div>
+                <div class="absolute flex flex-col start-0 md:start-auto end-auto md:end-0 hidden bg-secondary-bg w-48 rounded py-2 border border-tertiary-bg cursor-pointer z-40"
+                    id='lightDarkOptions'>
+                    <span class="px-4 py-1 hover:text-eureka" name="Light">Light</span>
+                    <span class="px-4 py-1 hover:text-eureka" name="Dark">Dark</span>
+                    <span class="px-4 py-1 hover:text-eureka" name="Auto">Auto</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-0" id="is-open-mobile">
+    </div>
+
+</nav>
+<script>
+    
+    let element = document.getElementById('lightDarkMode')
+    if (storageColorScheme == null || storageColorScheme == 'Auto') {
+        document.addEventListener('DOMContentLoaded', () => {
+            window.matchMedia("(prefers-color-scheme: dark)").addEventListener('change', switchDarkMode)
+        })
+    } else if (storageColorScheme == "Light") {
+        element.firstElementChild.classList.remove('fa-adjust')
+        element.firstElementChild.setAttribute("data-icon", 'sun')
+        element.firstElementChild.classList.add('fa-sun')
+    } else if (storageColorScheme == "Dark") {
+        element.firstElementChild.classList.remove('fa-adjust')
+        element.firstElementChild.setAttribute("data-icon", 'moon')
+        element.firstElementChild.classList.add('fa-moon')
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        getcolorscheme();
+        switchBurger();
+    });
+</script>
+</div>
+    </header>
+    <main class="grow pt-16">
+        <div class="pl-scrollbar">
+          <div class="mx-auto w-full max-w-screen-xl lg:px-4 xl:px-8">
+  
+  
+  <div class="grid grid-cols-2 gap-4 lg:grid-cols-8 lg:pt-12">
+    <div
+      class=" bg-secondary-bg col-span-2 rounded px-6 py-8 lg:col-span-6"
+    >
+      <article class="prose">
+  <h1 class="mb-4">Linux进阶-Vim编辑器和Conda环境</h1>
+
+  <div
+  class="text-tertiary-text not-prose mt-2 flex flex-row flex-wrap items-center"
+>
+  <div class="me-6 my-2">
+    <i class="fas fa-calendar me-1"></i>
+    <span
+      >2022-06-26</span
+    >
+  </div>
+  <div class="me-6 my-2">
+    <i class="fas fa-clock me-1"></i>
+    <span>1 min read</span>
+  </div>
+
+  
+    <div class="me-6 my-2">
+      <i class="fas fa-folder me-1"></i>
+      
+        <a href="https://ruqinga.github.io/categories/linux/" class="hover:text-eureka"
+          >Linux</a
+        >
+      
+    </div>
+  
+
+  
+</div>
+
+
+  
+  
+
+  <p>使用Linux必备的编辑器和软件安装工具conda</p>
+<h2 id="vim-文本编辑器">Vim 文本编辑器</h2>
+<p>三种模式</p>
+<pre><code class="language-mermaid">	graph TD
+    打开文件--&gt;命令模式
+    命令模式--:--&gt; 末行模式
+    末行模式--Esc--&gt; 命令模式
+    末行模式--wq--&gt;关闭文件
+    命令模式--i--&gt;编辑模式
+    编辑模式--Esc--&gt; 命令模式
+</code></pre>
+<p>Ctrl+r  取消撤销</p>
+<h3 id="命令模式">命令模式</h3>
+<p>命令模式是使用vim打开文件时的默认模式，无论在哪种模式下，按下Esc键就会进入正常模式。在这个模式下，可以移动光标，删除某个字符，删除某行，复制多行，粘贴多行。</p>
+<table>
+<thead>
+<tr>
+<th>操作</th>
+<th>命令</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>移动光标</td>
+<td>方向键或者hjkl ^和$：快速到所在行的开头和末尾（用0也可以到开头） </p>  30j：向下移动30行（数字+方向进行快速移动）</p> ctrl+f或b:上下翻页（forward/back）</p>gg：快速回到文档的第一行的第一个字符</p>G:快速到文件底部</td>
+</tr>
+<tr>
+<td>剪切、复制与粘贴</td>
+<td>x：剪切一个字符  </p> 10x：连续剪切10个字符（numberx）  </p> dd：剪切所在行 </p> 10dd：剪切所在行及向下共10行 </p> yy：复制光标所在行 </p> 10yy：复制所在行及下面10行 </p> p或P：在当前行的下面/上面进行粘贴</td>
+</tr>
+<tr>
+<td>撤销动作</td>
+<td>u：撤销 </p> ctrl+r：取消撤销</td>
+</tr>
+</tbody>
+</table>
+<h3 id="编辑模式">编辑模式</h3>
+<p>在命令模式下按下i键，进入编辑，插入模式里可以进行文字的输入，在该模式下按Esc键切换到普通模式。</p>
+<h3 id="末行模式">末行模式</h3>
+<p>在正常模式下输入“:”或“/”进入命令行模式，在该模式下可以进行设置、查询、替换、保存并退出等。</p>
+<h2 id="conda">Conda</h2>
+<h3 id="conda是什么">Conda是什么？</h3>
+<ul>
+<li>conda是所有语言的包、依赖和环境管理器。</li>
+<li>适用平台: Windows, macOS and Linux.</li>
+<li>一般建议安装<strong>miniconda</strong>就可以了</li>
+</ul>
+<h3 id="conda的下载">Conda的下载</h3>
+<p>① 如果服务器在国内就搜索conda 北外，使用镜像下载；如果服务器在国外搜错conda选择官网。进入后找到miniconda3-latest，右键复制链接地址
+② 使用wget -c下载。例如在Linux输入命令</p>
+<pre><code class="language-ssh">#查看linux版本
+cat /proc/version
+#下载
+wget -c https://mirrors.bfsu.edu.cn/anaconda/miniconda/Miniconda3-latest-Linux-x86_64.sh 
+#`-c`参数可以实现文件下载的断点续传。
+</code></pre>
+<p>③ 运行安装脚本</p>
+<pre><code class="language-ssh">#安装
+bash Miniconda3-latest-Linux-x86_64.sh
+#注意bash后要替换成自己下载的安装包的名称
+</code></pre>
+<p>④ 同意license
+按<code>q</code>键退出，输入yes同意
+⑤ 选择安装位置
+<strong>安装在默认位置</strong>：直接回车
+<strong>自定义安装位置</strong>：在下方输入
+<strong>输错了怎么删</strong>：ctrl+Backspace
+⑥ 同意conda初始化
+⑦ 重新加载.bashrc文件</p>
+<pre><code>source ~/.bashrc
+#能够用conda -h输出conda的帮助文档就说明安装成功啦
+</code></pre>
+<p>⑧ 设置默认激活base</p>
+<pre><code>conda config --set auto_activate_base false
+#设置与否基本没有差别 根据个人喜好设置即可
+</code></pre>
+<h3 id="13-conda的使用">1.3 Conda的使用</h3>
+<h3 id="配置频道">配置频道</h3>
+<p>使用<code>conda config --add channels &lt;URL&gt;</code>添加频道</p>
+<p>后添加的频道优先级会更高，重复添加可以提升频道优先级</p>
+<p><code>conda config --show channels</code> 查看已添加频道</p>
+<p>北外镜像频道： <strong>（镜像经常变化，大家最好自己找找）</strong></p>
+<pre><code class="language-conda">conda config --add channelshttps://mirrors.bfsu.edu.cn/anaconda/pkgs/main/
+conda config --add channels https://mirrors.bfsu.edu.cn/anaconda/cloud/conda-forge/
+conda config --add channels https://mirrors.bfsu.edu.cn/anaconda/cloud/bioconda/
+conda config --set show_channel_urls yes 
+</code></pre>
+<h3 id="管理小环境">管理小环境</h3>
+<pre><code>创建环境：conda create -n rna #-n指定环境名称
+删除环境：conda remove -n rna -a
+启动环境：conda activate rna
+退出环境：conda deactivate
+列出已存在的小环境：conda env list
+
+##重命名小环境
+conda create -n Python2 
+conda create -n py2 --clone Python2
+conda remove -n Python2 --all
+</code></pre>
+<h3 id="安装软件">安装软件</h3>
+<p>安装使用<code>conda install &lt;SOFTWARE&gt;</code>注意，安装前要先打开想要安装到的小环境
+升级使用<code>conda update &lt;SOFTWARE&gt;</code>
+删除使用<code>conda remove &lt;SOFTWARE&gt;</code>
+<strong>示例</strong></p>
+<pre><code>conda install fastqc
+conda install -y miltiqc fastp #安装多个，-y参数可以跳过询问环节
+conda remove -n rna fastqc #指定-n参数可以不进入环境进行删除
+</code></pre>
+<p><strong>注意</strong></p>
+<p>下载软件之前，先在官网上搜一下名字是否正确，也可以搜到安装方法：https://anaconda.org/main/repo</p>
+<h3 id="14-mamba">1.4 mamba</h3>
+<p>改进conda安装软件存在的一些速度慢、处理环境失败等问题</p>
+<h3 id="安装">安装</h3>
+<pre><code>#切换到base环境（确保安装在base）
+conda activate base
+#在base环境下安装mamba
+conda install mamba
+</code></pre>
+<h3 id="使用">使用</h3>
+<p>除启动环境外（conda activate rna），所有conda的命令都可以用mamba来代替</p>
+</article>
+
+
+      
+        <div class="my-4">
+    
+    <a href="https://ruqinga.github.io/tags/%E8%BF%9B%E5%BA%A6/4-%E5%B7%B2%E5%AE%8C%E6%88%90/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 me-2 hover:text-eureka">#进度/4-已完成</a>
+    
+</div>
+      
+
+      
+
+
+
+      
+
+      
+  <div
+    class="-mx-2 mt-4 flex flex-col border-t px-2 pt-4 md:flex-row md:justify-between"
+  >
+    <div>
+      
+        <span class="text-primary-text block font-bold"
+          >Previous</span
+        >
+        <a href="https://ruqinga.github.io/posts/%E5%AE%9E%E9%AA%8C%E7%AC%94%E8%AE%B0%E8%B4%A8%E7%B2%92%E7%9A%84%E6%9E%84%E5%BB%BA%E4%B8%8E%E8%A1%A8%E8%BE%BE%E9%89%B4%E5%AE%9A/" class="block">实验笔记：质粒的构建与表达鉴定</a>
+      
+    </div>
+    <div class="mt-4 md:mt-0 md:text-right">
+      
+        <span class="text-primary-text block font-bold">Next</span>
+        <a href="https://ruqinga.github.io/posts/%E5%BE%AE%E7%94%9F%E7%89%A9%E7%BB%84/" class="block">微生物组学分析全流程（理论）</a>
+      
+    </div>
+  </div>
+
+
+      
+
+
+
+    </div>
+    
+      <div class="col-span-2">
+        
+        
+          <div
+  class="
+    bg-primary-bg
+   prose sticky top-16 z-10 hidden px-6 py-4 lg:block"
+>
+  <h3>On This Page</h3>
+</div>
+<div
+  class="sticky-toc  hidden px-6 pb-6 lg:block"
+>
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#vim-文本编辑器">Vim 文本编辑器</a>
+      <ul>
+        <li><a href="#命令模式">命令模式</a></li>
+        <li><a href="#编辑模式">编辑模式</a></li>
+        <li><a href="#末行模式">末行模式</a></li>
+      </ul>
+    </li>
+    <li><a href="#conda">Conda</a>
+      <ul>
+        <li><a href="#conda是什么">Conda是什么？</a></li>
+        <li><a href="#conda的下载">Conda的下载</a></li>
+        <li><a href="#13-conda的使用">1.3 Conda的使用</a></li>
+        <li><a href="#配置频道">配置频道</a></li>
+        <li><a href="#管理小环境">管理小环境</a></li>
+        <li><a href="#安装软件">安装软件</a></li>
+        <li><a href="#14-mamba">1.4 mamba</a></li>
+        <li><a href="#安装">安装</a></li>
+        <li><a href="#使用">使用</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</div>
+<script>
+  window.addEventListener("DOMContentLoaded", () => {
+    enableStickyToc();
+  });
+</script>
+
+        
+      </div>
+    
+
+    
+    
+      <div
+        class=" bg-secondary-bg prose col-span-2 rounded p-6 lg:col-span-6"
+      >
+        <h3>See Also</h3>
+        
+          <a href="https://ruqinga.github.io/posts/2-linux%E5%9F%BA%E7%A1%80-%E9%85%8D%E8%89%B2%E5%92%8C%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4/" class="no-underline">Linux基础</a>
+          <br />
+        
+          <a href="https://ruqinga.github.io/posts/qiimme2/" class="no-underline">微生物组qimme2分析</a>
+          <br />
+        
+      </div>
+    
+  </div>
+
+  
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        hljs.highlightAll();
+      });
+    </script>
+
+          </div>
+        </div>
+      
+    </main>
+    <footer class="pl-scrollbar">
+      <div class="mx-auto w-full max-w-screen-xl"><div class="text-center p-6 pin-b">
+    <p class="text-sm text-tertiary-text">&copy; 2021 <a href="https://www.wangchucheng.com/">WANG Chucheng</a> and <a href="https://www.ruiqima.com/">MA Ruiqi</a>
+ &middot;  Powered by the <a href="https://github.com/wangchucheng/hugo-eureka" class="hover:text-eureka">Eureka</a> theme for <a href="https://gohugo.io" class="hover:text-eureka">Hugo</a></p>
+</div></div>
+    </footer>
+  </body>
+</html>

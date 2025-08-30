@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  dir="ltr"
+  
+><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>Linux基础 | Ruqing a</title>
+
+<meta name="generator" content="Hugo Eureka 0.9.3" />
+<link rel="stylesheet" href="https://ruqinga.github.io/css/eureka.min.9cec6350e37e534b0338fa9a085bf06855de3b0f2dcf857e792e5e97b07ea905d4d5513db554cbc26a9c3da622bae92d.css">
+<script defer src="https://ruqinga.github.io/js/eureka.min.fa9a6bf6d7a50bb635b4cca7d2ba5cf3dfb095ae3798773f1328f7950028b48c17d06276594e1b5f244a25a6c969a705.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload"
+  href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&amp;family=Noto&#43;Serif&#43;SC:wght@400;600;700&amp;display=swap"
+  as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/styles/base16/solarized-light.min.css"
+   media="print"
+  onload="this.media='all';this.onload=null" crossorigin>
+<script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/highlight.min.js"
+   crossorigin></script>
+  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/languages/dart.min.js"
+     crossorigin></script>
+<link rel="stylesheet" href="https://ruqinga.github.io/css/highlightjs.min.2958991528e43eb6fc9b8c4f2b8e052f79c4010718e1d1e888a777620e9ee63021c2c57ec7417a3108019bb8c41943e6.css" media="print" onload="this.media='all';this.onload=null">
+
+
+<script defer type="text/javascript" src="https://ruqinga.github.io/js/fontawesome.min.f14def4f6943de5b19b19c02e239b98c8cc6a8fe66b6828a21da7c0e9d405df8364cab68aa637c3bbe735eb7c325aa3c.js"></script>
+    
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css"
+   integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ"  media="print"
+  onload="this.media='all';this.onload=null" crossorigin>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js" 
+  integrity="sha384-VQ8d8WVFw0yHhCk5E8I86oOhv48xLpnDZx5T9GogA/Y84DcCKWXDmSDfn13bzFZY"  crossorigin></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js"
+   integrity="sha384-&#43;XBljXPPiv&#43;OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR"  crossorigin></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false },
+        { left: "\\(", right: "\\)", display: false },
+        { left: "\\[", right: "\\]", display: true }
+      ],
+    });
+  });
+</script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@8.14.0/dist/mermaid.min.js" 
+  integrity="sha384-atOyb0FxAgN9LyAc6PEf9BjgwLISyansgdH8/VXQH8p2o5vfrRgmGIJ2Sg22L0A0"  crossorigin></script>
+
+
+<link rel="icon" type="image/png" sizes="32x32" href="https://ruqinga.github.io/images/icon_huba2c3f04abefa322225c7a4a6a5120c0_16720_32x32_fill_box_center_3.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ruqinga.github.io/images/icon_huba2c3f04abefa322225c7a4a6a5120c0_16720_180x180_fill_box_center_3.png">
+
+<meta name="description"
+  content="以下内容为基础的linux操作，希望大家熟练掌握
+命令行配色方案 这个看个人审美，你们也可以自己配置
+echo &#39;export PS1=&quot;\[\033]2;\h:\u \w\007\033[33;1m\]\u \033[35;1m\t\033[0m \[\033[36;1m\]\w\[\033[0m\]\n\[\e[32;1m\]$ \[\e[0m\]&quot;&#39; &gt;&gt; ~/.bashrc source ~/.bashrc 常见命令 更多见：Linux命令大全
+查看帮助文档 man 命令，help 命令，或者某个命令的 &ndash;help 参数
+man ls	## 用 man 命令查看 ls 命令的帮助文档 help ls	## 用 help 命令查看 ls 命令的帮助文档	ls --help	## 用 --help 参数查看 ls 命令的帮助文档 常用快捷键 Tab: 补全 Ctrl&#43;U: 剪切光标位置到行首的字符 Ctrl&#43;C: 终止任务 Ctrl&#43;Z: 暂停任务 Ctrl&#43;L: 清屏 Ctrl&#43;E: 回到行尾 Ctrl&#43;A: 回到行首 组合技一：查看目录和文件 cd 进入目录 pwd 显示当前所在位置 ls 查看当前目录下文件 tree -L 1 将当前目录下文件以树形展示 补充：
+常用符号
+. 表示此层目录 .">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1 ,
+      "name":"Posts",
+      "item":"https://ruqinga.github.io/posts/"},{
+      "@type": "ListItem",
+      "position": 2 ,
+      "name":"Linux基础",
+      "item":"https://ruqinga.github.io/posts/2-linux%E5%9F%BA%E7%A1%80-%E9%85%8D%E8%89%B2%E5%92%8C%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4/"}]
+}
+</script>
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ruqinga.github.io/posts/2-linux%E5%9F%BA%E7%A1%80-%E9%85%8D%E8%89%B2%E5%92%8C%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4/"
+    },
+    "headline": "Linux基础 | Ruqing a","wordCount":  256 ,
+    "publisher": {
+        "@type": "Person",
+        "name": "Ruqing",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://ruqinga.github.io/images/icon.png"
+        }
+        },
+    "description": "以下内容为基础的linux操作，希望大家熟练掌握\n命令行配色方案 这个看个人审美，你们也可以自己配置\necho \u0027export PS1=\u0026quot;\\[\\033]2;\\h:\\u \\w\\007\\033[33;1m\\]\\u \\033[35;1m\\t\\033[0m \\[\\033[36;1m\\]\\w\\[\\033[0m\\]\\n\\[\\e[32;1m\\]$ \\[\\e[0m\\]\u0026quot;\u0027 \u0026gt;\u0026gt; ~\/.bashrc source ~\/.bashrc 常见命令 更多见：Linux命令大全\n查看帮助文档 man 命令，help 命令，或者某个命令的 \u0026ndash;help 参数\nman ls\t## 用 man 命令查看 ls 命令的帮助文档 help ls\t## 用 help 命令查看 ls 命令的帮助文档\tls --help\t## 用 --help 参数查看 ls 命令的帮助文档 常用快捷键 Tab: 补全 Ctrl\u002bU: 剪切光标位置到行首的字符 Ctrl\u002bC: 终止任务 Ctrl\u002bZ: 暂停任务 Ctrl\u002bL: 清屏 Ctrl\u002bE: 回到行尾 Ctrl\u002bA: 回到行首 组合技一：查看目录和文件 cd 进入目录 pwd 显示当前所在位置 ls 查看当前目录下文件 tree -L 1 将当前目录下文件以树形展示 补充：\n常用符号\n. 表示此层目录 ."
+}
+</script><meta property="og:title" content="Linux基础 | Ruqing a" />
+<meta property="og:type" content="article" />
+
+
+<meta property="og:image" content="https://ruqinga.github.io/images/icon.png">
+
+
+<meta property="og:url" content="https://ruqinga.github.io/posts/2-linux%E5%9F%BA%E7%A1%80-%E9%85%8D%E8%89%B2%E5%92%8C%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4/" />
+
+
+
+
+<meta property="og:description" content="以下内容为基础的linux操作，希望大家熟练掌握
+命令行配色方案 这个看个人审美，你们也可以自己配置
+echo &#39;export PS1=&quot;\[\033]2;\h:\u \w\007\033[33;1m\]\u \033[35;1m\t\033[0m \[\033[36;1m\]\w\[\033[0m\]\n\[\e[32;1m\]$ \[\e[0m\]&quot;&#39; &gt;&gt; ~/.bashrc source ~/.bashrc 常见命令 更多见：Linux命令大全
+查看帮助文档 man 命令，help 命令，或者某个命令的 &ndash;help 参数
+man ls	## 用 man 命令查看 ls 命令的帮助文档 help ls	## 用 help 命令查看 ls 命令的帮助文档	ls --help	## 用 --help 参数查看 ls 命令的帮助文档 常用快捷键 Tab: 补全 Ctrl&#43;U: 剪切光标位置到行首的字符 Ctrl&#43;C: 终止任务 Ctrl&#43;Z: 暂停任务 Ctrl&#43;L: 清屏 Ctrl&#43;E: 回到行尾 Ctrl&#43;A: 回到行首 组合技一：查看目录和文件 cd 进入目录 pwd 显示当前所在位置 ls 查看当前目录下文件 tree -L 1 将当前目录下文件以树形展示 补充：
+常用符号
+. 表示此层目录 ." />
+
+
+
+
+<meta property="og:locale" content="en" />
+
+
+
+
+<meta property="og:site_name" content="Ruqing a" />
+
+
+
+
+
+
+
+
+
+<meta property="article:section" content="posts" />
+
+
+<meta property="article:tag" content="进度/4-已完成" />
+
+
+
+
+
+<meta property="og:see_also" content="https://ruqinga.github.io/posts/3-linux%E8%BF%9B%E9%98%B6-vim%E7%BC%96%E8%BE%91%E5%99%A8%E5%92%8Cconda%E7%8E%AF%E5%A2%83/" />
+
+<meta property="og:see_also" content="https://ruqinga.github.io/posts/qiimme2/" />
+
+
+
+
+  <body class="flex min-h-screen flex-col">
+    <header
+      class="min-h-16 pl-scrollbar bg-secondary-bg fixed z-50 flex w-full items-center shadow-sm"
+    >
+      <div class="mx-auto w-full max-w-screen-xl"><script>
+    let storageColorScheme = localStorage.getItem("lightDarkMode")
+    if (((storageColorScheme == 'Auto' || storageColorScheme == null) && window.matchMedia("(prefers-color-scheme: dark)").matches) || storageColorScheme == "Dark") {
+        document.getElementsByTagName('html')[0].classList.add('dark')
+    }
+</script>
+<nav class="flex items-center justify-between flex-wrap px-4 py-4 md:py-0">
+    <a href="/" class="me-6 text-primary-text text-xl font-bold">Ruqing a</a>
+    <button id="navbar-btn" class="md:hidden flex items-center px-3 py-2" aria-label="Open Navbar">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <div id="target"
+        class="hidden block md:flex md:grow md:justify-between md:items-center w-full md:w-auto text-primary-text z-20">
+        <div class="md:flex md:h-16 text-sm md:grow pb-4 md:pb-0 border-b md:border-b-0">
+            <a href="/#about" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">About</a>
+            <a href="/posts/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  selected-menu-item  me-4">Posts</a>
+            <a href="/docs/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">Docs</a>
+        </div>
+
+        <div class="flex">
+            <div class="relative pt-4 md:pt-0">
+                <div class="cursor-pointer hover:text-eureka" id="lightDarkMode">
+                    <i class="fas fa-adjust"></i>
+                </div>
+                <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-30" id="is-open">
+                </div>
+                <div class="absolute flex flex-col start-0 md:start-auto end-auto md:end-0 hidden bg-secondary-bg w-48 rounded py-2 border border-tertiary-bg cursor-pointer z-40"
+                    id='lightDarkOptions'>
+                    <span class="px-4 py-1 hover:text-eureka" name="Light">Light</span>
+                    <span class="px-4 py-1 hover:text-eureka" name="Dark">Dark</span>
+                    <span class="px-4 py-1 hover:text-eureka" name="Auto">Auto</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-0" id="is-open-mobile">
+    </div>
+
+</nav>
+<script>
+    
+    let element = document.getElementById('lightDarkMode')
+    if (storageColorScheme == null || storageColorScheme == 'Auto') {
+        document.addEventListener('DOMContentLoaded', () => {
+            window.matchMedia("(prefers-color-scheme: dark)").addEventListener('change', switchDarkMode)
+        })
+    } else if (storageColorScheme == "Light") {
+        element.firstElementChild.classList.remove('fa-adjust')
+        element.firstElementChild.setAttribute("data-icon", 'sun')
+        element.firstElementChild.classList.add('fa-sun')
+    } else if (storageColorScheme == "Dark") {
+        element.firstElementChild.classList.remove('fa-adjust')
+        element.firstElementChild.setAttribute("data-icon", 'moon')
+        element.firstElementChild.classList.add('fa-moon')
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        getcolorscheme();
+        switchBurger();
+    });
+</script>
+</div>
+    </header>
+    <main class="grow pt-16">
+        <div class="pl-scrollbar">
+          <div class="mx-auto w-full max-w-screen-xl lg:px-4 xl:px-8">
+  
+  
+  <div class="grid grid-cols-2 gap-4 lg:grid-cols-8 lg:pt-12">
+    <div
+      class=" bg-secondary-bg col-span-2 rounded px-6 py-8 lg:col-span-6"
+    >
+      <article class="prose">
+  <h1 class="mb-4">Linux基础</h1>
+
+  <div
+  class="text-tertiary-text not-prose mt-2 flex flex-row flex-wrap items-center"
+>
+  <div class="me-6 my-2">
+    <i class="fas fa-calendar me-1"></i>
+    <span
+      >0001-01-01</span
+    >
+  </div>
+  <div class="me-6 my-2">
+    <i class="fas fa-clock me-1"></i>
+    <span>2 min read</span>
+  </div>
+
+  
+    <div class="me-6 my-2">
+      <i class="fas fa-folder me-1"></i>
+      
+        <a href="https://ruqinga.github.io/categories/linux/" class="hover:text-eureka"
+          >Linux</a
+        >
+      
+    </div>
+  
+
+  
+</div>
+
+
+  
+  
+
+  <p>以下内容为基础的linux操作，希望大家熟练掌握</p>
+<h3 id="命令行配色方案">命令行配色方案</h3>
+<p>这个看个人审美，你们也可以自己配置</p>
+<pre><code>echo  'export PS1=&quot;\[\033]2;\h:\u \w\007\033[33;1m\]\u \033[35;1m\t\033[0m \[\033[36;1m\]\w\[\033[0m\]\n\[\e[32;1m\]$ \[\e[0m\]&quot;' &gt;&gt; ~/.bashrc
+source  ~/.bashrc
+</code></pre>
+<h2 id="常见命令">常见命令</h2>
+<p>更多见：<a href="http://man.linuxde.net/">Linux命令大全</a></p>
+<h3 id="查看帮助文档">查看帮助文档</h3>
+<p>man 命令，help 命令，或者某个命令的  &ndash;help  参数</p>
+<pre><code class="language-sh">man  ls		## 用 man 命令查看 ls 命令的帮助文档
+help  ls	## 用 help 命令查看 ls 命令的帮助文档	
+ls  --help	## 用 --help 参数查看 ls 命令的帮助文档
+</code></pre>
+<h3 id="常用快捷键">常用快捷键</h3>
+<pre><code>Tab:    补全
+Ctrl+U: 剪切光标位置到行首的字符
+Ctrl+C: 终止任务
+Ctrl+Z: 暂停任务
+Ctrl+L: 清屏
+Ctrl+E: 回到行尾
+Ctrl+A: 回到行首
+</code></pre>
+<h3 id="组合技一查看目录和文件">组合技一：查看目录和文件</h3>
+<pre><code>cd     进入目录
+pwd    显示当前所在位置
+ls     查看当前目录下文件
+tree -L 1  将当前目录下文件以树形展示
+</code></pre>
+<p><strong>补充：</strong></p>
+<p>常用符号</p>
+<pre><code>.  表示此层目录
+.. 表示上一层目录
+-  表示前一个工作目录
+~  表示当前用户身份所在（家）
+</code></pre>
+<p>ls相关参数</p>
+<pre><code>ls -F     给每个目录后加上/，在可执行文件后加*，在链接文件后加上@。
+ls -a     显示隐藏文件
+ls -l     显示文件各种属性（权限）
+ls -h     目录容量转换为GB\KB单位
+ls -S     以文件大小排序
+ls -t     以时间排序
+</code></pre>
+<h3 id="组合技二操作目录和文件">组合技二：操作目录和文件</h3>
+<pre><code>#创建目录（文件夹）
+mkdir test1 test2         新建目录
+mkdir -p /test3/test4     新建嵌套目录
+#创建文件
+touch file                
+#移动（or重命名）
+mv test5 test/            将test5移动到test目录下
+#删除
+rm -i             交互式删除
+rm -f             删除且不警告
+rm -r             删除整个目录
+#rm –rf /*        删库
+#复制
+cp -i            交互式移动
+cp -b            给原存在文件名后面加上[~]
+cp -r            子目录连同文件一起复制
+#创建链接
+ln -s     创建软链接(依附)
+ln        创建硬链接（独立）
+</code></pre>
+<p><strong>注意</strong>：<code>mv</code>、<code>cp</code>等命令使用时若存在同名文件会替换掉之前的，即之前的被删掉，并且不会给出警告。可以通过使用<code>mv -i</code>来显示提醒；或<code>mv -b</code> 给原先存在的文件名后面加上[~]，从而避免这个文件被覆盖。</p>
+<h3 id="组合技三压缩文件">组合技三：压缩文件</h3>
+<p>-x ： 从已有tar归档文件中提取文件（解压缩）
+-c ： 创建一个新的tar归档文件（创建压缩文件）
+-f ： 输出结果到文件或设备
+-v ： 在处理文件时显示文件（显示处理进度）
+-z ： 将输出重定向给gzip命令</p>
+<p><strong>解压</strong></p>
+<pre><code>tar  -zxvf Data.tar.gz
+</code></pre>
+<p><strong>压缩</strong></p>
+<pre><code>tar  -zcvf Data.tar.gz    Data  …
+</code></pre>
+<h3 id="组合技四文本查看">组合技四：文本查看</h3>
+<pre><code>cat -A 列出所有内容，包括特殊字符
+cat -n 打印出所有行号，-b参数仅打印非空白行行号
+cat &gt; file 重定向
+zcat 查看压缩文件
+head example | head -n 6  显示前六行
+tail -n 6 显示后六行
+less -SN example.gtf #单行显示，显示行号
+wc  统计文本
+wc -l 统计行数 
+
+</code></pre>
+<p>注：less命令进入新的页面，通过上下左右键查看文本内容，Enter键向下移动一行，空格键翻页，<strong>q键退出</strong></p>
+<h3 id="组合技五文本编辑">组合技五：文本编辑</h3>
+<pre><code>##去重
+Sort     排序
+uniq     去除相邻的重复行
+    uniq -c：统计每个字符串连续出现的行数
+    sort -n：按照数值从小到大进行排序
+    sort -V：字符串中含有数值时，按照数值从小到大排序
+    sort -r：逆向排序
+    sort -k：指定区域
+    sort -t：指定分隔符,默认\t
+##文本合并
+cat test1 test2 &gt; test3 竖向合并
+paste -d '-' test1 test2：横向合并（通过连接符-横向合并test1和test2）
+seq 20 | paste - -  按两列排列
+tr     字符替换
+    tr -d：删除指定字符
+    tr -s：缩减连续重复字符
+</code></pre>
+
+</article>
+
+
+      
+        <div class="my-4">
+    
+    <a href="https://ruqinga.github.io/tags/%E8%BF%9B%E5%BA%A6/4-%E5%B7%B2%E5%AE%8C%E6%88%90/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 me-2 hover:text-eureka">#进度/4-已完成</a>
+    
+</div>
+      
+
+      
+
+
+
+      
+
+      
+  <div
+    class="-mx-2 mt-4 flex flex-col border-t px-2 pt-4 md:flex-row md:justify-between"
+  >
+    <div>
+      
+        <span class="text-primary-text block font-bold"
+          >Previous</span
+        >
+        <a href="https://ruqinga.github.io/posts/%E5%9F%BA%E5%9B%A0%E5%AE%B6%E6%97%8F%E5%88%86%E6%9E%90/" class="block">基因家族分析从零到有（研究对象确定&#43;基因家族鉴定&#43;基本信息网站&#43;结构分析&#43;共线性分析&#43;实验验证简述）</a>
+      
+    </div>
+    <div class="mt-4 md:mt-0 md:text-right">
+      
+        <span class="text-primary-text block font-bold">Next</span>
+        <a href="https://ruqinga.github.io/posts/qiimme2/" class="block">微生物组qimme2分析</a>
+      
+    </div>
+  </div>
+
+
+      
+
+
+
+    </div>
+    
+      <div class="col-span-2">
+        
+        
+          <div
+  class="
+    bg-primary-bg
+   prose sticky top-16 z-10 hidden px-6 py-4 lg:block"
+>
+  <h3>On This Page</h3>
+</div>
+<div
+  class="sticky-toc  hidden px-6 pb-6 lg:block"
+>
+  <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#命令行配色方案">命令行配色方案</a></li>
+      </ul>
+    </li>
+    <li><a href="#常见命令">常见命令</a>
+      <ul>
+        <li><a href="#查看帮助文档">查看帮助文档</a></li>
+        <li><a href="#常用快捷键">常用快捷键</a></li>
+        <li><a href="#组合技一查看目录和文件">组合技一：查看目录和文件</a></li>
+        <li><a href="#组合技二操作目录和文件">组合技二：操作目录和文件</a></li>
+        <li><a href="#组合技三压缩文件">组合技三：压缩文件</a></li>
+        <li><a href="#组合技四文本查看">组合技四：文本查看</a></li>
+        <li><a href="#组合技五文本编辑">组合技五：文本编辑</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</div>
+<script>
+  window.addEventListener("DOMContentLoaded", () => {
+    enableStickyToc();
+  });
+</script>
+
+        
+      </div>
+    
+
+    
+    
+      <div
+        class=" bg-secondary-bg prose col-span-2 rounded p-6 lg:col-span-6"
+      >
+        <h3>See Also</h3>
+        
+          <a href="https://ruqinga.github.io/posts/3-linux%E8%BF%9B%E9%98%B6-vim%E7%BC%96%E8%BE%91%E5%99%A8%E5%92%8Cconda%E7%8E%AF%E5%A2%83/" class="no-underline">Linux进阶-Vim编辑器和Conda环境</a>
+          <br />
+        
+          <a href="https://ruqinga.github.io/posts/qiimme2/" class="no-underline">微生物组qimme2分析</a>
+          <br />
+        
+      </div>
+    
+  </div>
+
+  
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        hljs.highlightAll();
+      });
+    </script>
+
+          </div>
+        </div>
+      
+    </main>
+    <footer class="pl-scrollbar">
+      <div class="mx-auto w-full max-w-screen-xl"><div class="text-center p-6 pin-b">
+    <p class="text-sm text-tertiary-text">&copy; 2021 <a href="https://www.wangchucheng.com/">WANG Chucheng</a> and <a href="https://www.ruiqima.com/">MA Ruiqi</a>
+ &middot;  Powered by the <a href="https://github.com/wangchucheng/hugo-eureka" class="hover:text-eureka">Eureka</a> theme for <a href="https://gohugo.io" class="hover:text-eureka">Hugo</a></p>
+</div></div>
+    </footer>
+  </body>
+</html>
