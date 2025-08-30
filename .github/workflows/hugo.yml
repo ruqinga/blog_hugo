@@ -1,70 +1,36 @@
 name: Build and Deploy Hugo to ruqinga.github.io
 
-# 触发条件：main 分支 push 或手动运行
 on:
   push:
     branches: ["main"]
   workflow_dispatch:
 
-# 推荐：声明权限（部分 action 需要）
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.128.0   # 指定 Hugo 版本
-
+      HUGO_VERSION: 0.122.0
     steps:
-      # 1. 拉取源码（包含子模块，常用于主题）
       - name: Checkout source
         uses: actions/checkout@v4
         with:
           submodules: recursive
 
-      # 2. 安装 Node.js（PostCSS、autoprefixer 需要 Node 环境）
-      - name: Install Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
-      # 3. 全局安装 PostCSS CLI 和 autoprefixer
-      #    解决 Hugo 构建时 PostCSS 报错（如 "POSTCSS: failed to transform"）
-      - name: Install PostCSS and autoprefixer, and tailwindcss
-        run: npm install -g postcss-cli autoprefixer tailwindcss
-
-      - name: Install Node.js dependencies (local tailwindcss)
-        run: npm install @tailwindcss/postcss-plugin
-
-      # 4. 保证 postcss.config.js 配置文件存在（大部分 Hugo 主题默认需要此文件）
-      #    这里简单创建一个包含 autoprefixer 的配置
-      - name: Ensure postcss.config.js exists
-        run: |
-          echo "module.exports = { plugins: { autoprefixer: {} } }" > postcss.config.js
-
-      # 5. 安装 Hugo（使用指定版本，extended 版支持 SASS/SCSS 及 PostCSS）
       - name: Install Hugo
         run: |
-          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb
-          sudo dpkg -i ${{ runner.temp }}/hugo.deb
+          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
+          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
 
-      # 6. 安装 Dart Sass（部分主题可能依赖 Hugo Pipes 的 SASS/SCSS）
       - name: Install Dart Sass
         run: sudo snap install dart-sass
 
-      # 7. Hugo 构建网站（常见参数 --minify 可选，减少静态文件体积）
       - name: Build with Hugo
         run: hugo --minify
 
-      # 8. 部署到 ruqinga.github.io 仓库
-      #    需要提前在当前仓库设置 secrets：PERSONAL_TOKEN（需 repo 权限）
       - name: Deploy to ruqinga.github.io
         uses: peaceiris/actions-gh-pages@v4
         with:
-          external_repository: ruqinga/ruqinga.github.io   # 目标仓库
-          publish_branch: main                            # 目标分支（通常为 main 或 gh-pages）
-          publish_dir: ./public                           # Hugo 默认输出目录
-          personal_token: ${{ secrets.PERSONAL_TOKEN }}   # 用于推送权限（需要设置 secret）
+          external_repository: ruqinga/ruqinga.github.io
+          publish_branch: main   # 或者 gh-pages
+          publish_dir: ./public
+          personal_token: ${{ secrets.PERSONAL_TOKEN }}
