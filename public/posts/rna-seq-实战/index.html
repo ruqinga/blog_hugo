@@ -10,7 +10,7 @@
 <title>rna-seq上下游分析实战 | Ruqing a</title>
 
 <meta name="generator" content="Hugo Eureka 0.9.3" />
-<link rel="stylesheet" href="https://ruqinga.github.io/css/eureka.min.9cec6350e37e534b0338fa9a085bf06855de3b0f2dcf857e792e5e97b07ea905d4d5513db554cbc26a9c3da622bae92d.css">
+<link rel="stylesheet" href="https://ruqinga.github.io/css/eureka.min.c000e20ee83e983a6da50f36cc965ffaab7a5112d85459aae8096796b03fa59f32bc75c8322942369757c3c770561bfb.css">
 <script defer src="https://ruqinga.github.io/js/eureka.min.fa9a6bf6d7a50bb635b4cca7d2ba5cf3dfb095ae3798773f1328f7950028b48c17d06276594e1b5f244a25a6c969a705.js"></script>
 
 
@@ -43,7 +43,7 @@
 <link rel="stylesheet" href="https://ruqinga.github.io/css/highlightjs.min.2958991528e43eb6fc9b8c4f2b8e052f79c4010718e1d1e888a777620e9ee63021c2c57ec7417a3108019bb8c41943e6.css" media="print" onload="this.media='all';this.onload=null">
 
 
-<script defer type="text/javascript" src="https://ruqinga.github.io/js/fontawesome.min.f14def4f6943de5b19b19c02e239b98c8cc6a8fe66b6828a21da7c0e9d405df8364cab68aa637c3bbe735eb7c325aa3c.js"></script>
+<script defer type="text/javascript" src="https://ruqinga.github.io/js/fontawesome.min.8f55fc818d6fce0446d0f57d11099812f13adb5a0b8eba42ebb0eb390415a166430395f8b6fa40eb7af6a7ec5a0bd89a.js"></script>
     
 
 
@@ -72,8 +72,8 @@
   integrity="sha384-atOyb0FxAgN9LyAc6PEf9BjgwLISyansgdH8/VXQH8p2o5vfrRgmGIJ2Sg22L0A0"  crossorigin></script>
 
 
-<link rel="icon" type="image/png" sizes="32x32" href="https://ruqinga.github.io/images/icon_huba2c3f04abefa322225c7a4a6a5120c0_16720_32x32_fill_box_center_3.png">
-<link rel="apple-touch-icon" sizes="180x180" href="https://ruqinga.github.io/images/icon_huba2c3f04abefa322225c7a4a6a5120c0_16720_180x180_fill_box_center_3.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ruqinga.github.io/images/icon_hu7508083143451182185.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ruqinga.github.io/images/icon_hu1727792108807623462.png">
 
 <meta name="description"
   content="从零开始系列。网上的流程都太散乱了，无法连接起来，本文一套数据跑完流程，包括转录组基本介绍、上游数据处理和下游功能分析">
@@ -258,7 +258,7 @@
       <i class="fas fa-folder me-1"></i>
       
         <a href="https://ruqinga.github.io/categories/rna-seq/" class="hover:text-eureka"
-          >rna-seq</a
+          >Rna-Seq</a
         >
       
     </div>
@@ -339,18 +339,18 @@
 <li>文库构建分为链特异性文库和非链特异性文库。链特异性文库可以区分转录本的方向信息以区分转录本来源，避免互补链干扰</li>
 <li>测序策略包括单端和双端测序。单端测序只在cDNA一侧末端加上接头，引物序列连接到另一端，扩增并测序。而双端序列会在cDNA片段两端都加上接头和引物，进行两轮合成测序。</li>
 </ol>
-<p><img src="https://raw.githubusercontent.com/ruqinga/picture/main/2023/02/202309020853139.png" alt="image-20220502170603474"></p>
+<p><img alt="image-20220502170603474" src="https://raw.githubusercontent.com/ruqinga/picture/main/2023/02/202309020853139.png"></p>
 <h4 id="转录组文库制备">转录组文库制备</h4>
 <p><strong>Total RNA</strong></p>
 <p>一般生物体中的的 RNA中，rRNA占绝大多数，含量超过 90%，而mRNA的含量在 1-2% 左右，转录组测序文库是以样本的Total  RNA为基础，从中提取mRNA构建测序文库，因此文库构建包括mRNA富集和碎片化、mRNA反转录、接头添加和PCR富集等过程</p>
 <blockquote>
 <p>RNA是单链，DNA是双链，能够进行碱基互补配对，从而测序</p>
 </blockquote>
-<p><img src="https://pic2.zhimg.com/v2-67e4bd59999f26a36f40c3b862c30f71_r.jpg" alt="preview"></p>
+<p><img alt="preview" src="https://pic2.zhimg.com/v2-67e4bd59999f26a36f40c3b862c30f71_r.jpg"></p>
 <p><strong>mRNA富集</strong></p>
 <p>在生物的Total RNA中，mRNA所占比例很低，绝大部份时核糖体RNA (rRNA)，因此如果直接使用Total RNA进行测序，得到的结果必然是不准确的，因此需要先将Total RNA中的mRNA分类纯化出来。需要注意的是mRNA极易被RNA酶降解，故在提取时要注意防止样品引入RNA酶污染。</p>
 <p>转录组测序的文库根据待测样品的物种分为真核转录组和原核转录组。由于真核生物和原核生物mRNA结构不同，因此在mRNA富集时所采用的方法也并不相同。</p>
-<p><img src="https://pic2.zhimg.com/v2-f3f7de7cba8645992902c81f43693d05_r.jpg" alt="preview"></p>
+<p><img alt="preview" src="https://pic2.zhimg.com/v2-f3f7de7cba8645992902c81f43693d05_r.jpg"></p>
 <p>真核生物mRNA中含有polyA尾结构，因此可以使用oligoT与其特异性的匹配，从而在Total RNA中特异性的富集mRNA。</p>
 <p>然而，原核生物并不像真核生物mRNA具有polyA的结构，因此，无法直接利用oligoT将mRNA纯化出来，目前，提高原核生物中mRNA的量，最主要的方式是去除Total RNA中rRNA。</p>
 <p><strong>链特异性文库</strong></p>
@@ -364,19 +364,19 @@
 </ol>
 <h3 id="测序技术">测序技术</h3>
 <p>测序基本流程</p>
-<p><img src="https://raw.githubusercontent.com/ruqinga/picture/main/2023/02/202309020853140.png" alt="测序基本流程"></p>
+<p><img alt="测序基本流程" src="https://raw.githubusercontent.com/ruqinga/picture/main/2023/02/202309020853140.png"></p>
 <h4 id="第一代测序技术">第一代测序技术</h4>
 <p><strong>双脱氧末端终止法（Sanger法）</strong></p>
 <p>原理：ddNTP 的２′和３′没有羟基。在DNA合成的过程中，需要３′和５′端进行羧化反应形成磷酸二酯键，从而形成 ＤＮＡ 链，由于ddNTP的插入，没有３′羟基的存在，阻碍 ＤＮＡ 的进一步生成。从而形成一系列长度不等的核酸片段（长度相邻者仅差一个核苷酸）。</p>
 <p>具体操作：将４种不同碱基（Ａ、Ｔ、Ｃ、Ｇ）用４ 种不同的放射性同位素进行标记，在一定比例４种DNA 聚合酶的作用下进行反应，之后进行凝胶电泳，再通过放射自显影技术判断合成片段的长短以及碱基类型，依次可以得出DNA片段碱基序列。</p>
-<p><img src="https://raw.githubusercontent.com/ruqinga/picture/main/2023/02/202309020853141.png" alt="image-20220423203449731"></p>
+<p><img alt="image-20220423203449731" src="https://raw.githubusercontent.com/ruqinga/picture/main/2023/02/202309020853141.png"></p>
 <p>更多介绍可以看这篇：<a href="https://zhuanlan.zhihu.com/p/333867817">DNA测序——双脱氧末端终止法（Sanger法）</a></p>
 <h4 id="第二代测序技术">第二代测序技术</h4>
 <p><strong>高通量测序（High-throughput sequencing）</strong></p>
 <p>是基于PCR和基因芯片发展而来的DNA测序技术。我们都知道一代测序为合成终止测序，而二代测序开创性的引入了<strong>可逆终止末端</strong>，从而实现边合成边测序（Sequencing by Synthesis）。二代测序在DNA复制过程中通过捕捉新添加的碱基所携带的特殊标记（一般为荧光分子标记）来确定DNA的序列。核心技术是DNA合成的可逆性末端循环，即3&rsquo;-OH可逆性的修饰和去修饰。将dNTP的3&rsquo;-OH以叠氮集团<strong>RTG</strong>(Reversible Terminating Group,可逆末端基团)进行修饰；将4种碱基分别与不同的<strong>荧光分子</strong>连接；DNA合成时，RTG能起到类似于ddNTP的作用终止反应；每次合成反应终止并读取信号之后，洗脱RTG和荧光分子，进行下一轮循环。</p>
 <p>平台：主要包括Roche的454 FLX、Illumina的Miseq/Hiseq等。</p>
 <p>缺点：在二代测序中，单个DNA分子必须扩增成由相同DNA组成的基因簇，然后进行同步复制，来增强荧光信号强度从而读出DNA序列；而随着读长增长，基因簇复制的协同性降低，导致碱基测序质量下降，这严格限制了二代测序的读长（不超过500bp），因此，二代测序具有通量高、读长短的特点。二代测序适合扩增子测序（例如16S、18S、ITS的可变区），而基因组、宏基因组DNA则需要使用鸟枪法（Shotgun method）打断成小片段，测序完毕后再使用生物信息学方法进行拼接。</p>
-<p>视频： <a href="https://www.bilibili.com/video/BV1ht411q7Wh?from=search&amp;seid=11792585750418613370&amp;spm_id_from=333.337.0.0">illumina经典的边合成边测序</a></p>
+<p>视频： <a href="https://www.bilibili.com/video/BV1ht411q7Wh?from=search&seid=11792585750418613370&spm_id_from=333.337.0.0">illumina经典的边合成边测序</a></p>
 <p>文字： <a href="https://zhuanlan.zhihu.com/p/91913739">第二代测序原理的详细解析</a></p>
 <h4 id="第三代测序技术">第三代测序技术</h4>
 <p><strong>单分子测序技术</strong></p>
@@ -404,7 +404,7 @@
 <p>Nanopore测序读长长、通量高、准确度低，不可通过测序深度弥补，但可通过Illumina read 纠错。</p>
 </li>
 </ul>
-<p>随着测序技术的发展和成熟，逐渐形成基因测序产业链<img src="https://upload-images.jianshu.io/upload_images/20593032-b312f4e2773acaa1?imageMogr2/auto-orient/strip%7CimageView2/2/w/1080/format/webp" alt="img"></p>
+<p>随着测序技术的发展和成熟，逐渐形成基因测序产业链<img alt="img" src="https://upload-images.jianshu.io/upload_images/20593032-b312f4e2773acaa1?imageMogr2/auto-orient/strip|imageView2/2/w/1080/format/webp"></p>
 <p>如果你想了解更多企业的话：<a href="http://bis.zju.edu.cn/DaTo2">全球生物数据库与生物软件地图册</a></p>
 <h3 id="常用格式介绍">常用格式介绍</h3>
 <h4 id="srancbi-sra数据库存放格式">SRA：NCBI SRA数据库存放格式</h4>
@@ -412,15 +412,15 @@
 一般使用fastq-dump或fasterq-dump来将其转换为fastq格式的数据，才能做后续分析。</p>
 <h4 id="fastq高通量数据存储格式">FASTQ：高通量数据存储格式</h4>
 <p>在illumina的测序文件中，采用双端测序（paired-end），一个样本得到的是<code>seq_1.fastq.gz</code>和<code>seq_2.fastq.gz</code>两个文件，每个文件存放一段测序文件。在illumina的测序的cDNA短链被修饰为以下形式（图源见水印）：</p>
-<p><img src="https://pic4.zhimg.com/v2-b5c27b832c7619f98ded7797734edd87_r.jpg" alt="preview"></p>
+<p><img alt="preview" src="https://pic4.zhimg.com/v2-b5c27b832c7619f98ded7797734edd87_r.jpg"></p>
 <p>两端的序列是保护碱基（terminal  sequence）、接头序列（adapter）、索引序列（index）、引物结合位点（Primer Binding Site）：其中  adapter是和flowcell上的接头互补配对结合的；index是一段特异序列，加入index是为了提高illumina测序仪的使用率，因为同一个泳道可能会测序多个样品，样品间的区分就是通过index区分。参考：<a href="https://blog.csdn.net/hanli1992/article/details/82980042">illumina 双端测序（pair end）</a>、<a href="https://link.zhihu.com/?target=https%3A//www.jianshu.com/p/b18ee79a0285">双端测序中read1和read2的关系</a>。</p>
 <p>在illumina公司测得的序列文件经过处理以fastq文件协议存储为*.fastq格式文件。测序得到的段片段称为read，在fastq文件中每4行存储一个read。</p>
 <p><strong>第一行</strong>：以@开头接ReadID和其他信息 <strong>第二行</strong>：read测序信息 <strong>第三行</strong>：规定必须以“+”开头，后面跟着可选的ID标识符和可选的描述内容，如果“+”后面有内容，该内容必须与第一行“@”后的内容相同 <strong>第四行</strong>：每个碱基的质量得分，与第二行的序列相对应。记分方法是利用ERROR P经过对数和运算分为40个级别分别与ASCII码的第33号<code>!</code>和第73号<code>I</code>对应。用ASCII码表示碱基质量是为了减少文件空间占据和防止移码导致的数据损失。</p>
-<p><img src="https://raw.githubusercontent.com/ruqinga/picture/main/2023/02/202309020853142.png" alt="image-20220506182550568"></p>
+<p><img alt="image-20220506182550568" src="https://raw.githubusercontent.com/ruqinga/picture/main/2023/02/202309020853142.png"></p>
 <p>更多可见：<a href="https://zhuanlan.zhihu.com/p/190778779">我要自学生信之生信基础：FASTA 与 FASTQ</a></p>
 <h4 id="sambam高通量数据比对存放格式">SAM/BAM：高通量数据比对存放格式</h4>
 <p>SAM文件是由比对产生的以tab建分割的文件格式，BAM是SAM文件的二进制压缩版本。使用<code>samtools view -S -b -o my.bam my.sam</code>可以将SAM文件转换为BAM文件。</p>
-<p><img src="https://img-blog.csdnimg.cn/20200828124126615.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNzk0NzQz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200828124126615.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNzk0NzQz,size_16,color_FFFFFF,t_70#pic_center"></p>
 <h4 id="bed基因组浏览器常用格式">BED：基因组浏览器常用格式</h4>
 <p>BED 文件格式提供了一种灵活的方式来定义的数据行，以用来描述注释信息。BED行有3个必须的列和9个额外可选的列。每行的数据格式要求一致。</p>
 <p><strong>必须包含的3列：</strong></p>
@@ -439,12 +439,12 @@
 (12). blockStarts - 用逗号分割的列表, 所有外显子的起始位置，数目也与blockCount数目对应。</p>
 <h4 id="gffgtf">GFF/GTF</h4>
 <p>GFF(General Feature Format)是基于Sanger GFF2的一种格式。GFF有9个必需字段，这些字段必须用制表符分隔。如果字段用空格而不是制表符分隔，则将不能正确显示。GTF (Gene Transfer Format, GTF2.2)是GFF的一种扩展格式。</p>
-<p><img src="https://img-blog.csdnimg.cn/20200828125946945.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNzk0NzQz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
-<p><img src="https://img-blog.csdnimg.cn/20200828125958639.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNzk0NzQz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200828125946945.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNzk0NzQz,size_16,color_FFFFFF,t_70#pic_center"></p>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200828125958639.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNzk0NzQz,size_16,color_FFFFFF,t_70#pic_center"></p>
 <h2 id="转录组分析">转录组分析</h2>
 <h3 id="分析流程">分析流程</h3>
 <p>转录组学分析，是基于RNA反转录形成cDNA文库，有两个重要的内容， 即为对转录本表达的丰度和新的转录本的检测。根据有无参考基因可以分为有参转录组分析和无参转录组分析。</p>
-<p><img src="https://raw.githubusercontent.com/ruqinga/picture/main/2023/02/202309020853143.png" alt="image-20220502184822844"></p>
+<p><img alt="image-20220502184822844" src="https://raw.githubusercontent.com/ruqinga/picture/main/2023/02/202309020853143.png"></p>
 <p><strong>(a)有参，需要分析新转录本</strong>
 在可以获得物种参考基因组的情况下，如果需要研究可变剪切事件和识别新转录本，则应将reads比对到参考基因组上。</p>
 <p>这也是有参物种做转录组最常用的分析模式，其分析步骤如下：</p>
@@ -513,7 +513,7 @@ kallisto同样不需要比对，速度比sailfish还要提高5倍！！！</li>
 <p>Ensembl基因组的不同版本详见<a href="https://link.zhihu.com/?target=ftp%3A//ftp.ensembl.org/pub/release-95/fasta/homo_sapiens/dna/README">README</a>和高通量测序数据处理学习记录（零）：<a href="https://www.jianshu.com/p/58decf8fb6d6">NGS分析如何选择合适的参考基因组和注释文件</a></p>
 </blockquote>
 <p>这里是老师直接给的</p>
-<p><img src="https://raw.githubusercontent.com/ruqinga/picture/main/2023/02/202309020853144.png" alt="image-20220505204204023"></p>
+<p><img alt="image-20220505204204023" src="https://raw.githubusercontent.com/ruqinga/picture/main/2023/02/202309020853144.png"></p>
 <p>② 表达数据</p>
 <blockquote>
 <ul>
@@ -692,7 +692,7 @@ multiqc ${inputdir}/qc/qc_trim -o ${inputdir}/qc -n multiqc_trimdata.html #合�
 <ul>
 <li>
 <p>TopHat：工作原理如下</p>
-<p><img src="https://raw.githubusercontent.com/ruqinga/picture/main/2023/02/202309020853146.png" alt="image-20220502171747902"></p>
+<p><img alt="image-20220502171747902" src="https://raw.githubusercontent.com/ruqinga/picture/main/2023/02/202309020853146.png"></p>
 <p>当一个read的几个segmens可以map到基因组时,Tophat推断这个read跨越了剪接位点同时推测剪接位点的位置。通过处理每个‘initially unmappable’  read，Tophat在没有剪接位点注释的信息下能够在转录组上建立起一个剪接位点的索引。</p>
 <blockquote>
 <p>如何推测剪接位点可以参考<a href="https://zhuanlan.zhihu.com/p/122187002">这篇</a></p>
@@ -725,7 +725,7 @@ multiqc ${inputdir}/qc/qc_trim -o ${inputdir}/qc -n multiqc_trimdata.html #合�
 </ul>
 <p>1）建立索引</p>
 <p>常见物种可以直接在官网<a href="http://daehwankimlab.github.io/hisat2/download/">下载索引</a>，截止2022年5月6号，已有的索引如下：</p>
-<p><img src="https://raw.githubusercontent.com/ruqinga/picture/main/2023/02/202309020853147.png" alt="image-20220506102902802"></p>
+<p><img alt="image-20220506102902802" src="https://raw.githubusercontent.com/ruqinga/picture/main/2023/02/202309020853147.png"></p>
 <p>这里没有大肠杆菌的，所以我们自己建立</p>
 <pre><code class="language-shell"># 建立基因组索引 0m2.248s
 mkdir hisat2
@@ -857,7 +857,7 @@ nohup tophat2 -p 6 -G ${dir}/data/genome.gtf -o ${dir}/tophat/${base} -p 6 ${dir
 <li>-o 输出文件夹</li>
 <li>coli_index ：bowtie2建立的索引</li>
 </ul>
-<p>比对结果：<img src="https://raw.githubusercontent.com/ruqinga/picture/main/2023/02/202309020853149.png" alt="image-20220524180514326"></p>
+<p>比对结果：<img alt="image-20220524180514326" src="https://raw.githubusercontent.com/ruqinga/picture/main/2023/02/202309020853149.png"></p>
 </blockquote>
 <h3 id="拼接">拼接</h3>
 <p>如果仅仅关注已知基因表达情况，不需要鉴定新转录本可以跳过此步骤</p>
@@ -935,12 +935,12 @@ algorithm。这样能明显提高转录子丰度计算的精确性。</li>
 <p>更多见：<a href="https://blog.csdn.net/g863402758/article/details/52965752">Cufflinks参数说明</a></p>
 </blockquote>
 <p>Cufflinks输出结果</p>
-<p><img src="https://raw.githubusercontent.com/ruqinga/picture/main/2023/02/202309020853150.png" alt="image-20220524185002068"></p>
+<p><img alt="image-20220524185002068" src="https://raw.githubusercontent.com/ruqinga/picture/main/2023/02/202309020853150.png"></p>
 <ol>
 <li>transcripts.gtf</li>
 </ol>
 <p>该文件包含Cufflinks的组装结果isoforms。前7列为标准的GTF格式，最后一列为attributes。其每一列的意义：</p>
-<p><img src="https://raw.githubusercontent.com/ruqinga/picture/main/2023/02/202309020853151.png" alt="image-20220506162905713"></p>
+<p><img alt="image-20220506162905713" src="https://raw.githubusercontent.com/ruqinga/picture/main/2023/02/202309020853151.png"></p>
 <ol start="2">
 <li>
 <p>ispforms.fpkm_tracking</p>
@@ -952,11 +952,11 @@ algorithm。这样能明显提高转录子丰度计算的精确性。</li>
 </li>
 </ol>
 <p>cuffdiff输出结果：</p>
-<p><img src="https://raw.githubusercontent.com/ruqinga/picture/main/2023/02/202309020853152.png" alt="image-20220524185134758"></p>
+<p><img alt="image-20220524185134758" src="https://raw.githubusercontent.com/ruqinga/picture/main/2023/02/202309020853152.png"></p>
 <p>genes_exp.diff文件后续分析</p>
 <h4 id="trinity">Trinity</h4>
 <p>运行该软件时，主要分三部分运行，依次为Inchworm、Chrysalis和Butterfly</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/14371593-52496a87fe6c49a0.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/469/format/webp" alt="img"></p>
+<p><img alt="img" src="https://upload-images.jianshu.io/upload_images/14371593-52496a87fe6c49a0.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/469/format/webp"></p>
 <p>运行Inchworm时，其目的是将每条短读长的reads打断成固定长度的Kmer（默认为25 bp）形成一个Kmer库，再将所有Kmer按其出现的次数进行排序，选择出现次数最高的Kmer进行3端延伸一个碱基（A、T、G、C），延伸后统计靠近3端25bp的Kmer在库中出现的次数，选择次数最高的那条路径（如有多条路径出现的次数一样，则几条路径保留），继续向3端延伸至不能延伸为止。同理进行5端延伸，最终形成一定长度的Contigs。</p>
 <p>每形成一个Contigs时，将形成该Contigs的kmer从Kmer库中去除掉，继续选择次数最高的Kmer进行延伸。最终用完Kmer库中的Kmer，将Contigs放在一起形成一个contigs库。运行Chrysalis时，对Contigs库中的Contigs按照一定条件进行聚类，之后对每类Contigs构建de bruijin graphs。</p>
 <p>最后运行Butterfly，解析上一步构建的de bruijin graphs，形成转录本。将所有转录本输出到一个文件，便是最Trinity终组装的文件。</p>
@@ -1307,7 +1307,7 @@ graph2ppt(venn,file=&quot;venn.ppt&quot;, width=10, aspectr=1)
         <span class="text-primary-text block font-bold"
           >Previous</span
         >
-        <a href="https://ruqinga.github.io/posts/%E5%BE%AE%E7%94%9F%E7%89%A9%E7%BB%84/" class="block">微生物组学分析全流程（理论）</a>
+        <a href="https://ruqinga.github.io/posts/qiimme2/" class="block">微生物组qimme2分析</a>
       
     </div>
     <div class="mt-4 md:mt-0 md:text-right">

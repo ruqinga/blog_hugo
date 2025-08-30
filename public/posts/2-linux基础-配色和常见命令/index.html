@@ -10,7 +10,7 @@
 <title>Linux基础 | Ruqing a</title>
 
 <meta name="generator" content="Hugo Eureka 0.9.3" />
-<link rel="stylesheet" href="https://ruqinga.github.io/css/eureka.min.9cec6350e37e534b0338fa9a085bf06855de3b0f2dcf857e792e5e97b07ea905d4d5513db554cbc26a9c3da622bae92d.css">
+<link rel="stylesheet" href="https://ruqinga.github.io/css/eureka.min.c000e20ee83e983a6da50f36cc965ffaab7a5112d85459aae8096796b03fa59f32bc75c8322942369757c3c770561bfb.css">
 <script defer src="https://ruqinga.github.io/js/eureka.min.fa9a6bf6d7a50bb635b4cca7d2ba5cf3dfb095ae3798773f1328f7950028b48c17d06276594e1b5f244a25a6c969a705.js"></script>
 
 
@@ -43,7 +43,7 @@
 <link rel="stylesheet" href="https://ruqinga.github.io/css/highlightjs.min.2958991528e43eb6fc9b8c4f2b8e052f79c4010718e1d1e888a777620e9ee63021c2c57ec7417a3108019bb8c41943e6.css" media="print" onload="this.media='all';this.onload=null">
 
 
-<script defer type="text/javascript" src="https://ruqinga.github.io/js/fontawesome.min.f14def4f6943de5b19b19c02e239b98c8cc6a8fe66b6828a21da7c0e9d405df8364cab68aa637c3bbe735eb7c325aa3c.js"></script>
+<script defer type="text/javascript" src="https://ruqinga.github.io/js/fontawesome.min.8f55fc818d6fce0446d0f57d11099812f13adb5a0b8eba42ebb0eb390415a166430395f8b6fa40eb7af6a7ec5a0bd89a.js"></script>
     
 
 
@@ -72,17 +72,40 @@
   integrity="sha384-atOyb0FxAgN9LyAc6PEf9BjgwLISyansgdH8/VXQH8p2o5vfrRgmGIJ2Sg22L0A0"  crossorigin></script>
 
 
-<link rel="icon" type="image/png" sizes="32x32" href="https://ruqinga.github.io/images/icon_huba2c3f04abefa322225c7a4a6a5120c0_16720_32x32_fill_box_center_3.png">
-<link rel="apple-touch-icon" sizes="180x180" href="https://ruqinga.github.io/images/icon_huba2c3f04abefa322225c7a4a6a5120c0_16720_180x180_fill_box_center_3.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ruqinga.github.io/images/icon_hu7508083143451182185.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ruqinga.github.io/images/icon_hu1727792108807623462.png">
 
 <meta name="description"
   content="以下内容为基础的linux操作，希望大家熟练掌握
-命令行配色方案 这个看个人审美，你们也可以自己配置
-echo &#39;export PS1=&quot;\[\033]2;\h:\u \w\007\033[33;1m\]\u \033[35;1m\t\033[0m \[\033[36;1m\]\w\[\033[0m\]\n\[\e[32;1m\]$ \[\e[0m\]&quot;&#39; &gt;&gt; ~/.bashrc source ~/.bashrc 常见命令 更多见：Linux命令大全
-查看帮助文档 man 命令，help 命令，或者某个命令的 &ndash;help 参数
-man ls	## 用 man 命令查看 ls 命令的帮助文档 help ls	## 用 help 命令查看 ls 命令的帮助文档	ls --help	## 用 --help 参数查看 ls 命令的帮助文档 常用快捷键 Tab: 补全 Ctrl&#43;U: 剪切光标位置到行首的字符 Ctrl&#43;C: 终止任务 Ctrl&#43;Z: 暂停任务 Ctrl&#43;L: 清屏 Ctrl&#43;E: 回到行尾 Ctrl&#43;A: 回到行首 组合技一：查看目录和文件 cd 进入目录 pwd 显示当前所在位置 ls 查看当前目录下文件 tree -L 1 将当前目录下文件以树形展示 补充：
-常用符号
-. 表示此层目录 .">
+命令行配色方案
+这个看个人审美，你们也可以自己配置
+echo  &#39;export PS1=&quot;\[\033]2;\h:\u \w\007\033[33;1m\]\u \033[35;1m\t\033[0m \[\033[36;1m\]\w\[\033[0m\]\n\[\e[32;1m\]$ \[\e[0m\]&quot;&#39; &gt;&gt; ~/.bashrc
+source  ~/.bashrc
+
+常见命令
+更多见：Linux命令大全
+查看帮助文档
+man 命令，help 命令，或者某个命令的  &ndash;help  参数
+man  ls		## 用 man 命令查看 ls 命令的帮助文档
+help  ls	## 用 help 命令查看 ls 命令的帮助文档	
+ls  --help	## 用 --help 参数查看 ls 命令的帮助文档
+
+常用快捷键
+Tab:    补全
+Ctrl&#43;U: 剪切光标位置到行首的字符
+Ctrl&#43;C: 终止任务
+Ctrl&#43;Z: 暂停任务
+Ctrl&#43;L: 清屏
+Ctrl&#43;E: 回到行尾
+Ctrl&#43;A: 回到行首
+
+组合技一：查看目录和文件
+cd     进入目录
+pwd    显示当前所在位置
+ls     查看当前目录下文件
+tree -L 1  将当前目录下文件以树形展示
+
+补充：">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -118,7 +141,7 @@ man ls	## 用 man 命令查看 ls 命令的帮助文档 help ls	## 用 help 命�
             "url": "https://ruqinga.github.io/images/icon.png"
         }
         },
-    "description": "以下内容为基础的linux操作，希望大家熟练掌握\n命令行配色方案 这个看个人审美，你们也可以自己配置\necho \u0027export PS1=\u0026quot;\\[\\033]2;\\h:\\u \\w\\007\\033[33;1m\\]\\u \\033[35;1m\\t\\033[0m \\[\\033[36;1m\\]\\w\\[\\033[0m\\]\\n\\[\\e[32;1m\\]$ \\[\\e[0m\\]\u0026quot;\u0027 \u0026gt;\u0026gt; ~\/.bashrc source ~\/.bashrc 常见命令 更多见：Linux命令大全\n查看帮助文档 man 命令，help 命令，或者某个命令的 \u0026ndash;help 参数\nman ls\t## 用 man 命令查看 ls 命令的帮助文档 help ls\t## 用 help 命令查看 ls 命令的帮助文档\tls --help\t## 用 --help 参数查看 ls 命令的帮助文档 常用快捷键 Tab: 补全 Ctrl\u002bU: 剪切光标位置到行首的字符 Ctrl\u002bC: 终止任务 Ctrl\u002bZ: 暂停任务 Ctrl\u002bL: 清屏 Ctrl\u002bE: 回到行尾 Ctrl\u002bA: 回到行首 组合技一：查看目录和文件 cd 进入目录 pwd 显示当前所在位置 ls 查看当前目录下文件 tree -L 1 将当前目录下文件以树形展示 补充：\n常用符号\n. 表示此层目录 ."
+    "description": "\u003cp\u003e以下内容为基础的linux操作，希望大家熟练掌握\u003c\/p\u003e\n\u003ch3 id=\u0022命令行配色方案\u0022\u003e命令行配色方案\u003c\/h3\u003e\n\u003cp\u003e这个看个人审美，你们也可以自己配置\u003c\/p\u003e\n\u003cpre\u003e\u003ccode\u003eecho  \u0027export PS1=\u0026quot;\\[\\033]2;\\h:\\u \\w\\007\\033[33;1m\\]\\u \\033[35;1m\\t\\033[0m \\[\\033[36;1m\\]\\w\\[\\033[0m\\]\\n\\[\\e[32;1m\\]$ \\[\\e[0m\\]\u0026quot;\u0027 \u0026gt;\u0026gt; ~\/.bashrc\nsource  ~\/.bashrc\n\u003c\/code\u003e\u003c\/pre\u003e\n\u003ch2 id=\u0022常见命令\u0022\u003e常见命令\u003c\/h2\u003e\n\u003cp\u003e更多见：\u003ca href=\u0022http:\/\/man.linuxde.net\/\u0022\u003eLinux命令大全\u003c\/a\u003e\u003c\/p\u003e\n\u003ch3 id=\u0022查看帮助文档\u0022\u003e查看帮助文档\u003c\/h3\u003e\n\u003cp\u003eman 命令，help 命令，或者某个命令的  \u0026ndash;help  参数\u003c\/p\u003e\n\u003cpre\u003e\u003ccode class=\u0022language-sh\u0022\u003eman  ls\t\t## 用 man 命令查看 ls 命令的帮助文档\nhelp  ls\t## 用 help 命令查看 ls 命令的帮助文档\t\nls  --help\t## 用 --help 参数查看 ls 命令的帮助文档\n\u003c\/code\u003e\u003c\/pre\u003e\n\u003ch3 id=\u0022常用快捷键\u0022\u003e常用快捷键\u003c\/h3\u003e\n\u003cpre\u003e\u003ccode\u003eTab:    补全\nCtrl\u002bU: 剪切光标位置到行首的字符\nCtrl\u002bC: 终止任务\nCtrl\u002bZ: 暂停任务\nCtrl\u002bL: 清屏\nCtrl\u002bE: 回到行尾\nCtrl\u002bA: 回到行首\n\u003c\/code\u003e\u003c\/pre\u003e\n\u003ch3 id=\u0022组合技一查看目录和文件\u0022\u003e组合技一：查看目录和文件\u003c\/h3\u003e\n\u003cpre\u003e\u003ccode\u003ecd     进入目录\npwd    显示当前所在位置\nls     查看当前目录下文件\ntree -L 1  将当前目录下文件以树形展示\n\u003c\/code\u003e\u003c\/pre\u003e\n\u003cp\u003e\u003cstrong\u003e补充：\u003c\/strong\u003e\u003c\/p\u003e"
 }
 </script><meta property="og:title" content="Linux基础 | Ruqing a" />
 <meta property="og:type" content="article" />
@@ -133,12 +156,35 @@ man ls	## 用 man 命令查看 ls 命令的帮助文档 help ls	## 用 help 命�
 
 
 <meta property="og:description" content="以下内容为基础的linux操作，希望大家熟练掌握
-命令行配色方案 这个看个人审美，你们也可以自己配置
-echo &#39;export PS1=&quot;\[\033]2;\h:\u \w\007\033[33;1m\]\u \033[35;1m\t\033[0m \[\033[36;1m\]\w\[\033[0m\]\n\[\e[32;1m\]$ \[\e[0m\]&quot;&#39; &gt;&gt; ~/.bashrc source ~/.bashrc 常见命令 更多见：Linux命令大全
-查看帮助文档 man 命令，help 命令，或者某个命令的 &ndash;help 参数
-man ls	## 用 man 命令查看 ls 命令的帮助文档 help ls	## 用 help 命令查看 ls 命令的帮助文档	ls --help	## 用 --help 参数查看 ls 命令的帮助文档 常用快捷键 Tab: 补全 Ctrl&#43;U: 剪切光标位置到行首的字符 Ctrl&#43;C: 终止任务 Ctrl&#43;Z: 暂停任务 Ctrl&#43;L: 清屏 Ctrl&#43;E: 回到行尾 Ctrl&#43;A: 回到行首 组合技一：查看目录和文件 cd 进入目录 pwd 显示当前所在位置 ls 查看当前目录下文件 tree -L 1 将当前目录下文件以树形展示 补充：
-常用符号
-. 表示此层目录 ." />
+命令行配色方案
+这个看个人审美，你们也可以自己配置
+echo  &#39;export PS1=&quot;\[\033]2;\h:\u \w\007\033[33;1m\]\u \033[35;1m\t\033[0m \[\033[36;1m\]\w\[\033[0m\]\n\[\e[32;1m\]$ \[\e[0m\]&quot;&#39; &gt;&gt; ~/.bashrc
+source  ~/.bashrc
+
+常见命令
+更多见：Linux命令大全
+查看帮助文档
+man 命令，help 命令，或者某个命令的  &ndash;help  参数
+man  ls		## 用 man 命令查看 ls 命令的帮助文档
+help  ls	## 用 help 命令查看 ls 命令的帮助文档	
+ls  --help	## 用 --help 参数查看 ls 命令的帮助文档
+
+常用快捷键
+Tab:    补全
+Ctrl&#43;U: 剪切光标位置到行首的字符
+Ctrl&#43;C: 终止任务
+Ctrl&#43;Z: 暂停任务
+Ctrl&#43;L: 清屏
+Ctrl&#43;E: 回到行尾
+Ctrl&#43;A: 回到行首
+
+组合技一：查看目录和文件
+cd     进入目录
+pwd    显示当前所在位置
+ls     查看当前目录下文件
+tree -L 1  将当前目录下文件以树形展示
+
+补充：" />
 
 
 
@@ -427,9 +473,6 @@ tr     字符替换
       
     </div>
     <div class="mt-4 md:mt-0 md:text-right">
-      
-        <span class="text-primary-text block font-bold">Next</span>
-        <a href="https://ruqinga.github.io/posts/qiimme2/" class="block">微生物组qimme2分析</a>
       
     </div>
   </div>

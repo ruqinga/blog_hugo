@@ -2,4 +2,4 @@ module test
 
 go 1.18
 
-require wangchucheng.com/hugo-eureka v0.9.3 // indirect
+// Hugo modules not needed when using local theme

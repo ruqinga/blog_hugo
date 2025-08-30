@@ -10,7 +10,7 @@
 <title>微生物组qimme2分析 | Ruqing a</title>
 
 <meta name="generator" content="Hugo Eureka 0.9.3" />
-<link rel="stylesheet" href="https://ruqinga.github.io/css/eureka.min.9cec6350e37e534b0338fa9a085bf06855de3b0f2dcf857e792e5e97b07ea905d4d5513db554cbc26a9c3da622bae92d.css">
+<link rel="stylesheet" href="https://ruqinga.github.io/css/eureka.min.c000e20ee83e983a6da50f36cc965ffaab7a5112d85459aae8096796b03fa59f32bc75c8322942369757c3c770561bfb.css">
 <script defer src="https://ruqinga.github.io/js/eureka.min.fa9a6bf6d7a50bb635b4cca7d2ba5cf3dfb095ae3798773f1328f7950028b48c17d06276594e1b5f244a25a6c969a705.js"></script>
 
 
@@ -43,7 +43,7 @@
 <link rel="stylesheet" href="https://ruqinga.github.io/css/highlightjs.min.2958991528e43eb6fc9b8c4f2b8e052f79c4010718e1d1e888a777620e9ee63021c2c57ec7417a3108019bb8c41943e6.css" media="print" onload="this.media='all';this.onload=null">
 
 
-<script defer type="text/javascript" src="https://ruqinga.github.io/js/fontawesome.min.f14def4f6943de5b19b19c02e239b98c8cc6a8fe66b6828a21da7c0e9d405df8364cab68aa637c3bbe735eb7c325aa3c.js"></script>
+<script defer type="text/javascript" src="https://ruqinga.github.io/js/fontawesome.min.8f55fc818d6fce0446d0f57d11099812f13adb5a0b8eba42ebb0eb390415a166430395f8b6fa40eb7af6a7ec5a0bd89a.js"></script>
 
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css"
@@ -71,23 +71,73 @@
   integrity="sha384-atOyb0FxAgN9LyAc6PEf9BjgwLISyansgdH8/VXQH8p2o5vfrRgmGIJ2Sg22L0A0"  crossorigin></script>
 
 
-<link rel="icon" type="image/png" sizes="32x32" href="https://ruqinga.github.io/images/icon_huba2c3f04abefa322225c7a4a6a5120c0_16720_32x32_fill_box_center_3.png">
-<link rel="apple-touch-icon" sizes="180x180" href="https://ruqinga.github.io/images/icon_huba2c3f04abefa322225c7a4a6a5120c0_16720_180x180_fill_box_center_3.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ruqinga.github.io/images/icon_hu7508083143451182185.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ruqinga.github.io/images/icon_hu1727792108807623462.png">
 
 <meta name="description"
-  content="导论 开始前，你需要了解QIIME 2的以下信息
+  content="导论
+开始前，你需要了解QIIME 2的以下信息
 必看：
+
+
 QIIME 2 官方论坛（非常有用哦）
+
+
 使用该页面查看 QIIME 2 的 qzv 后缀可视化文件
-QIIME 2 官方文档： 【中文参考】| 【中文参考2】 【英文原版】 https://docs.qiime2.org 官方文档会隔几个月更新一次，每个版本的更新内容在官方论坛里可以找到。
-推荐一看的参考教程（中文版）： 单端数据：https://github.com/YongxinLiu/QIIME2ChineseManual
+
+
+QIIME 2 官方文档：
+【中文参考】| 【中文参考2】
+【英文原版】 https://docs.qiime2.org
+官方文档会隔几个月更新一次，每个版本的更新内容在官方论坛里可以找到。
+
+
+推荐一看的参考教程（中文版）：
+单端数据：https://github.com/YongxinLiu/QIIME2ChineseManual
 双端数据：https://mp.weixin.qq.com/s/p2Snx0v8Fh_BOY-z2vVUCg
+
+
 QIIME 2 安装教程：https://docs.qiime2.org/2022.2/install/
+
+
 qiime2安装
-# 更新conda减少问题 conda update conda # 下载wget conda install wget # 下载安装qiime2需要的安装包的目录（.yml格式） wget https://data.qiime2.org/distro/core/qiime2-2022.2-py38-linux-conda.yml #根据官网下载最新 # 创建conda环境并安装 conda env create -n qiime2-2022.2 --file qiime2-2022.2-py38-linux-conda.yml # 激活环境 conda activate qiime2-2022.2 # 查看是否安装成功 qiime --help 1 前处理 1.拆分样品：为了降低成本，往往将多个样本混合后再一起测序，其中为了区别不同样本会在 DNA 分子中用实验方法嵌入一段人工合成的编码序列（barcode）。在拿到数据后首先需要将不同组的样品区分开。具体操作见其它中的[拆分样品](# 拆分样品)
+# 更新conda减少问题
+conda update conda 
+# 下载wget
+conda install wget
+# 下载安装qiime2需要的安装包的目录（.yml格式）
+wget https://data.qiime2.org/distro/core/qiime2-2022.2-py38-linux-conda.yml #根据官网下载最新
+# 创建conda环境并安装
+conda env create -n qiime2-2022.2 --file qiime2-2022.2-py38-linux-conda.yml
+# 激活环境
+conda activate qiime2-2022.2
+# 查看是否安装成功
+qiime --help
+
+1 前处理
+1.拆分样品：为了降低成本，往往将多个样本混合后再一起测序，其中为了区别不同样本会在 DNA 分子中用实验方法嵌入一段人工合成的编码序列（barcode）。在拿到数据后首先需要将不同组的样品区分开。具体操作见其它中的[拆分样品](# 拆分样品)
 2.质检与引物切除：送公司测序返还的数据一般都是拆分过并去除了引物的，可以自己再做一下质检，后续使用dada2分析时也会有碱基质量分布图，所以这步可以不做，自己质检（fastqc）的信息会比较全面。
 3.数据导入：在QIIME2中进行分析，需要将数据转化为QIIME2对象（artifacts）。更多可参考：QIIME 2 参数
-1）质检 # 公司的给的测序数据一般都是拆分过的，可将单端数据全部合并做质检，也可单独质检 # cat命令合并压缩过的文件会出错，合并之前需要先解压。 gunzip *.">
+1）质检
+# 公司的给的测序数据一般都是拆分过的，可将单端数据全部合并做质检，也可单独质检
+# cat命令合并压缩过的文件会出错，合并之前需要先解压。
+gunzip *.gz # 解压
+# 第一种方法：合并后质检。
+cat *R1* &gt; R1.fastq #合并上游序列,并指定输出文件名为R1.fastq
+cat *R2* &gt; R2.fastq #合并下游序列,并指定输出文件名为R2.fastq
+# 质检
+mkdir qc #创建一个文件夹用于存放质检文件
+fastqc -t 2 R1.fastq R2.fastq -o qc # -t --threads，一般有多少个样本用多少线程。-o 指定输出文件存放目录。
+
+# 第二种方法：单独质检后将质检报告合并
+mkdir qct #创建一个文件夹用于存放质检文件
+fastqc *fastq -t 10 -o qct
+pip install multiqc #安装multiqc
+multiqc qct/*  # 合并报告
+
+
+2）切除引物
+质检结果中，最后一项Adapter Content正常情况是趋于0的直线，也就是说序列两端Adapter已经去除干净；如果有Adapter，需要先用cutadapt去接头">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -114,7 +164,9 @@ qiime2安装
         "@type": "WebPage",
         "@id": "https://ruqinga.github.io/posts/qiimme2/"
     },
-    "headline": "微生物组qimme2分析 | Ruqing a","wordCount":  1495 ,
+    "headline": "微生物组qimme2分析 | Ruqing a","datePublished": "2022-05-03T00:00:00+00:00",
+    "dateModified": "2022-05-03T00:00:00+00:00",
+    "wordCount":  1495 ,
     "publisher": {
         "@type": "Person",
         "name": "Ruqing",
@@ -123,7 +175,7 @@ qiime2安装
             "url": "https://ruqinga.github.io/images/icon.png"
         }
         },
-    "description": "导论 开始前，你需要了解QIIME 2的以下信息\n必看：\nQIIME 2 官方论坛（非常有用哦）\n使用该页面查看 QIIME 2 的 qzv 后缀可视化文件\nQIIME 2 官方文档： 【中文参考】| 【中文参考2】 【英文原版】 https:\/\/docs.qiime2.org 官方文档会隔几个月更新一次，每个版本的更新内容在官方论坛里可以找到。\n推荐一看的参考教程（中文版）： 单端数据：https:\/\/github.com\/YongxinLiu\/QIIME2ChineseManual\n双端数据：https:\/\/mp.weixin.qq.com\/s\/p2Snx0v8Fh_BOY-z2vVUCg\nQIIME 2 安装教程：https:\/\/docs.qiime2.org\/2022.2\/install\/\nqiime2安装\n# 更新conda减少问题 conda update conda # 下载wget conda install wget # 下载安装qiime2需要的安装包的目录（.yml格式） wget https:\/\/data.qiime2.org\/distro\/core\/qiime2-2022.2-py38-linux-conda.yml #根据官网下载最新 # 创建conda环境并安装 conda env create -n qiime2-2022.2 --file qiime2-2022.2-py38-linux-conda.yml # 激活环境 conda activate qiime2-2022.2 # 查看是否安装成功 qiime --help 1 前处理 1.拆分样品：为了降低成本，往往将多个样本混合后再一起测序，其中为了区别不同样本会在 DNA 分子中用实验方法嵌入一段人工合成的编码序列（barcode）。在拿到数据后首先需要将不同组的样品区分开。具体操作见其它中的[拆分样品](# 拆分样品)\n2.质检与引物切除：送公司测序返还的数据一般都是拆分过并去除了引物的，可以自己再做一下质检，后续使用dada2分析时也会有碱基质量分布图，所以这步可以不做，自己质检（fastqc）的信息会比较全面。\n3.数据导入：在QIIME2中进行分析，需要将数据转化为QIIME2对象（artifacts）。更多可参考：QIIME 2 参数\n1）质检 # 公司的给的测序数据一般都是拆分过的，可将单端数据全部合并做质检，也可单独质检 # cat命令合并压缩过的文件会出错，合并之前需要先解压。 gunzip *."
+    "description": "\u003ch1 id=\u0022导论\u0022\u003e导论\u003c\/h1\u003e\n\u003cp\u003e开始前，你需要了解QIIME 2的以下信息\u003c\/p\u003e\n\u003cp\u003e必看：\u003c\/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e\u003ca href=\u0022https:\/\/forum.qiime2.org\/\u0022\u003eQIIME 2 官方论坛\u003c\/a\u003e（非常有用哦）\u003c\/p\u003e\n\u003c\/li\u003e\n\u003cli\u003e\n\u003cp\u003e使用\u003ca href=\u0022https:\/\/view.qiime2.org\/\u0022\u003e该页面\u003c\/a\u003e查看 QIIME 2 的 qzv 后缀可视化文件\u003c\/p\u003e\n\u003c\/li\u003e\n\u003cli\u003e\n\u003cp\u003eQIIME 2 官方文档：\n【\u003ca href=\u0022https:\/\/mp.weixin.qq.com\/s?__biz=MzUzMjA4Njc1MA==\u0026mid=2247487350\u0026idx=1\u0026sn=aa945aca002ce1ebf3bfcdc50aadf63b\u0026scene=21#wechat_redirect\u0022\u003e中文参考\u003c\/a\u003e】| \u003ca href=\u0022https:\/\/microbiomecat.gitee.io\/20201005\/QIIME2-based-amplicon-analysis-tutorial(Basic)\/\u0022\u003e【中文参考2】\u003c\/a\u003e\n【英文原版】 \u003ca href=\u0022https:\/\/docs.qiime2.org\u0022\u003ehttps:\/\/docs.qiime2.org\u003c\/a\u003e\n官方文档会隔几个月更新一次，每个版本的更新内容在官方论坛里可以找到。\u003c\/p\u003e\n\u003c\/li\u003e\n\u003cli\u003e\n\u003cp\u003e推荐一看的参考教程（中文版）：\n单端数据：https:\/\/github.com\/YongxinLiu\/QIIME2ChineseManual\u003c\/p\u003e\n\u003cp\u003e双端数据：https:\/\/mp.weixin.qq.com\/s\/p2Snx0v8Fh_BOY-z2vVUCg\u003c\/p\u003e\n\u003c\/li\u003e\n\u003cli\u003e\n\u003cp\u003eQIIME 2 安装教程：https:\/\/docs.qiime2.org\/2022.2\/install\/\u003c\/p\u003e\n\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003cp\u003eqiime2安装\u003c\/p\u003e\n\u003cpre\u003e\u003ccode class=\u0022language-sh\u0022\u003e# 更新conda减少问题\nconda update conda \n# 下载wget\nconda install wget\n# 下载安装qiime2需要的安装包的目录（.yml格式）\nwget https:\/\/data.qiime2.org\/distro\/core\/qiime2-2022.2-py38-linux-conda.yml #根据官网下载最新\n# 创建conda环境并安装\nconda env create -n qiime2-2022.2 --file qiime2-2022.2-py38-linux-conda.yml\n# 激活环境\nconda activate qiime2-2022.2\n# 查看是否安装成功\nqiime --help\n\u003c\/code\u003e\u003c\/pre\u003e\n\u003ch1 id=\u00221-前处理\u0022\u003e1 前处理\u003c\/h1\u003e\n\u003cp\u003e1.拆分样品：为了降低成本，往往将多个样本混合后再一起测序，其中为了区别不同样本会在 DNA 分子中用实验方法嵌入一段人工合成的编码序列（barcode）。在拿到数据后首先需要将不同组的样品区分开。具体操作见其它中的[拆分样品](# 拆分样品)\u003c\/p\u003e\n\u003cp\u003e2.质检与引物切除：送公司测序返还的数据一般都是拆分过并去除了引物的，可以自己再做一下质检，后续使用dada2分析时也会有碱基质量分布图，所以这步可以不做，自己质检（fastqc）的信息会比较全面。\u003c\/p\u003e\n\u003cp\u003e3.数据导入：在QIIME2中进行分析，需要将数据转化为QIIME2对象（artifacts）。更多可参考：\u003ca href=\u0022https:\/\/zhuanlan.zhihu.com\/p\/406701848\u0022\u003eQIIME 2 参数\u003c\/a\u003e\u003c\/p\u003e\n\u003ch2 id=\u00221质检\u0022\u003e1）质检\u003c\/h2\u003e\n\u003cpre\u003e\u003ccode class=\u0022language-sh\u0022\u003e# 公司的给的测序数据一般都是拆分过的，可将单端数据全部合并做质检，也可单独质检\n# cat命令合并压缩过的文件会出错，合并之前需要先解压。\ngunzip *.gz # 解压\n# 第一种方法：合并后质检。\ncat *R1* \u0026gt; R1.fastq #合并上游序列,并指定输出文件名为R1.fastq\ncat *R2* \u0026gt; R2.fastq #合并下游序列,并指定输出文件名为R2.fastq\n# 质检\nmkdir qc #创建一个文件夹用于存放质检文件\nfastqc -t 2 R1.fastq R2.fastq -o qc # -t --threads，一般有多少个样本用多少线程。-o 指定输出文件存放目录。\n\n# 第二种方法：单独质检后将质检报告合并\nmkdir qct #创建一个文件夹用于存放质检文件\nfastqc *fastq -t 10 -o qct\npip install multiqc #安装multiqc\nmultiqc qct\/*  # 合并报告\n\n\u003c\/code\u003e\u003c\/pre\u003e\n\u003ch2 id=\u00222切除引物\u0022\u003e2）切除引物\u003c\/h2\u003e\n\u003cp\u003e质检结果中，最后一项Adapter Content正常情况是趋于0的直线，也就是说序列两端Adapter已经去除干净；如果有Adapter，需要先用cutadapt去接头\u003c\/p\u003e"
 }
 </script><meta property="og:title" content="微生物组qimme2分析 | Ruqing a" />
 <meta property="og:type" content="article" />
@@ -137,19 +189,69 @@ qiime2安装
 
 
 
-<meta property="og:description" content="导论 开始前，你需要了解QIIME 2的以下信息
+<meta property="og:description" content="导论
+开始前，你需要了解QIIME 2的以下信息
 必看：
+
+
 QIIME 2 官方论坛（非常有用哦）
+
+
 使用该页面查看 QIIME 2 的 qzv 后缀可视化文件
-QIIME 2 官方文档： 【中文参考】| 【中文参考2】 【英文原版】 https://docs.qiime2.org 官方文档会隔几个月更新一次，每个版本的更新内容在官方论坛里可以找到。
-推荐一看的参考教程（中文版）： 单端数据：https://github.com/YongxinLiu/QIIME2ChineseManual
+
+
+QIIME 2 官方文档：
+【中文参考】| 【中文参考2】
+【英文原版】 https://docs.qiime2.org
+官方文档会隔几个月更新一次，每个版本的更新内容在官方论坛里可以找到。
+
+
+推荐一看的参考教程（中文版）：
+单端数据：https://github.com/YongxinLiu/QIIME2ChineseManual
 双端数据：https://mp.weixin.qq.com/s/p2Snx0v8Fh_BOY-z2vVUCg
+
+
 QIIME 2 安装教程：https://docs.qiime2.org/2022.2/install/
+
+
 qiime2安装
-# 更新conda减少问题 conda update conda # 下载wget conda install wget # 下载安装qiime2需要的安装包的目录（.yml格式） wget https://data.qiime2.org/distro/core/qiime2-2022.2-py38-linux-conda.yml #根据官网下载最新 # 创建conda环境并安装 conda env create -n qiime2-2022.2 --file qiime2-2022.2-py38-linux-conda.yml # 激活环境 conda activate qiime2-2022.2 # 查看是否安装成功 qiime --help 1 前处理 1.拆分样品：为了降低成本，往往将多个样本混合后再一起测序，其中为了区别不同样本会在 DNA 分子中用实验方法嵌入一段人工合成的编码序列（barcode）。在拿到数据后首先需要将不同组的样品区分开。具体操作见其它中的[拆分样品](# 拆分样品)
+# 更新conda减少问题
+conda update conda 
+# 下载wget
+conda install wget
+# 下载安装qiime2需要的安装包的目录（.yml格式）
+wget https://data.qiime2.org/distro/core/qiime2-2022.2-py38-linux-conda.yml #根据官网下载最新
+# 创建conda环境并安装
+conda env create -n qiime2-2022.2 --file qiime2-2022.2-py38-linux-conda.yml
+# 激活环境
+conda activate qiime2-2022.2
+# 查看是否安装成功
+qiime --help
+
+1 前处理
+1.拆分样品：为了降低成本，往往将多个样本混合后再一起测序，其中为了区别不同样本会在 DNA 分子中用实验方法嵌入一段人工合成的编码序列（barcode）。在拿到数据后首先需要将不同组的样品区分开。具体操作见其它中的[拆分样品](# 拆分样品)
 2.质检与引物切除：送公司测序返还的数据一般都是拆分过并去除了引物的，可以自己再做一下质检，后续使用dada2分析时也会有碱基质量分布图，所以这步可以不做，自己质检（fastqc）的信息会比较全面。
 3.数据导入：在QIIME2中进行分析，需要将数据转化为QIIME2对象（artifacts）。更多可参考：QIIME 2 参数
-1）质检 # 公司的给的测序数据一般都是拆分过的，可将单端数据全部合并做质检，也可单独质检 # cat命令合并压缩过的文件会出错，合并之前需要先解压。 gunzip *." />
+1）质检
+# 公司的给的测序数据一般都是拆分过的，可将单端数据全部合并做质检，也可单独质检
+# cat命令合并压缩过的文件会出错，合并之前需要先解压。
+gunzip *.gz # 解压
+# 第一种方法：合并后质检。
+cat *R1* &gt; R1.fastq #合并上游序列,并指定输出文件名为R1.fastq
+cat *R2* &gt; R2.fastq #合并下游序列,并指定输出文件名为R2.fastq
+# 质检
+mkdir qc #创建一个文件夹用于存放质检文件
+fastqc -t 2 R1.fastq R2.fastq -o qc # -t --threads，一般有多少个样本用多少线程。-o 指定输出文件存放目录。
+
+# 第二种方法：单独质检后将质检报告合并
+mkdir qct #创建一个文件夹用于存放质检文件
+fastqc *fastq -t 10 -o qct
+pip install multiqc #安装multiqc
+multiqc qct/*  # 合并报告
+
+
+2）切除引物
+质检结果中，最后一项Adapter Content正常情况是趋于0的直线，也就是说序列两端Adapter已经去除干净；如果有Adapter，需要先用cutadapt去接头" />
 
 
 
@@ -166,6 +268,10 @@ qiime2安装
 
 
 
+<meta property="article:published_time" content="2022-05-03T00:00:00&#43;00:00" />
+
+
+<meta property="article:modified_time" content="2022-05-03T00:00:00&#43;00:00" />
 
 
 
@@ -177,8 +283,6 @@ qiime2安装
 
 
 
-
-<meta property="og:see_also" content="https://ruqinga.github.io/posts/3-linux%E8%BF%9B%E9%98%B6-vim%E7%BC%96%E8%BE%91%E5%99%A8%E5%92%8Cconda%E7%8E%AF%E5%A2%83/" />
 
 <meta property="og:see_also" content="https://ruqinga.github.io/posts/2-linux%E5%9F%BA%E7%A1%80-%E9%85%8D%E8%89%B2%E5%92%8C%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4/" />
 
@@ -272,7 +376,7 @@ qiime2安装
   <div class="me-6 my-2">
     <i class="fas fa-calendar me-1"></i>
     <span
-      >0001-01-01</span
+      >2022-05-03</span
     >
   </div>
   <div class="me-6 my-2">
@@ -310,7 +414,7 @@ qiime2安装
 </li>
 <li>
 <p>QIIME 2 官方文档：
-【<a href="https://mp.weixin.qq.com/s?__biz=MzUzMjA4Njc1MA==&amp;mid=2247487350&amp;idx=1&amp;sn=aa945aca002ce1ebf3bfcdc50aadf63b&amp;scene=21#wechat_redirect">中文参考</a>】| <a href="https://microbiomecat.gitee.io/20201005/QIIME2-based-amplicon-analysis-tutorial(Basic)/">【中文参考2】</a>
+【<a href="https://mp.weixin.qq.com/s?__biz=MzUzMjA4Njc1MA==&mid=2247487350&idx=1&sn=aa945aca002ce1ebf3bfcdc50aadf63b&scene=21#wechat_redirect">中文参考</a>】| <a href="https://microbiomecat.gitee.io/20201005/QIIME2-based-amplicon-analysis-tutorial(Basic)/">【中文参考2】</a>
 【英文原版】 <a href="https://docs.qiime2.org">https://docs.qiime2.org</a>
 官方文档会隔几个月更新一次，每个版本的更新内容在官方论坛里可以找到。</p>
 </li>
@@ -567,31 +671,31 @@ mv table-dada2.qza table.qza
 <blockquote>
 <p>id、输入、过滤、去噪和非嵌合</p>
 <table>
-<thead>
-<tr>
-<th>sample-id</th>
-<th>input</th>
-<th>filtered</th>
-<th>denoised</th>
-<th>non-chimeric</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>L6S93</td>
-<td>11270</td>
-<td>7483</td>
-<td>7483</td>
-<td>7025</td>
-</tr>
-<tr>
-<td>L6S68</td>
-<td>9554</td>
-<td>6169</td>
-<td>6169</td>
-<td>6022</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>sample-id</th>
+          <th>input</th>
+          <th>filtered</th>
+          <th>denoised</th>
+          <th>non-chimeric</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>L6S93</td>
+          <td>11270</td>
+          <td>7483</td>
+          <td>7483</td>
+          <td>7025</td>
+      </tr>
+      <tr>
+          <td>L6S68</td>
+          <td>9554</td>
+          <td>6169</td>
+          <td>6169</td>
+          <td>6022</td>
+      </tr>
+  </tbody>
 </table>
 </blockquote>
 <h2 id="方法2-deblur">方法2. Deblur</h2>
@@ -642,53 +746,53 @@ qiime deblur visualize-stats \
 <p>1.<code>demux-filter-stats.qzv</code>: 质量过程统计表，同上面统计表类似</p>
 <p>包括6列，第一列为样本名称，2-6列分别为总输入读长、总保留高读长、截断的读长、截断后太短的读长和超过最大模糊碱基的读长的数量统计。我们通常只关注2，3列数量即可，其它列常用于异常的输助判断。</p>
 <table>
-<thead>
-<tr>
-<th>sample-id</th>
-<th>total-input-reads</th>
-<th>total-retained-reads</th>
-<th>reads-truncated</th>
-<th>reads-too-short-after-truncation</th>
-<th>reads-exceeding-maximum-ambiguous-bases</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td># q2:types</td>
-<td>numeric</td>
-<td>numeric</td>
-<td>numeric</td>
-<td>numeric</td>
-<td>numeric</td>
-</tr>
-<tr>
-<td>L1S105</td>
-<td>11340</td>
-<td>9232</td>
-<td>10782</td>
-<td>2066</td>
-<td>42</td>
-</tr>
-<tr>
-<td>L1S140</td>
-<td>9738</td>
-<td>8585</td>
-<td>9459</td>
-<td>1113</td>
-<td>40</td>
-</tr>
-<tr>
-<td>L1S208</td>
-<td>11337</td>
-<td>10149</td>
-<td>10668</td>
-<td>1161</td>
-<td>27</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>sample-id</th>
+          <th>total-input-reads</th>
+          <th>total-retained-reads</th>
+          <th>reads-truncated</th>
+          <th>reads-too-short-after-truncation</th>
+          <th>reads-exceeding-maximum-ambiguous-bases</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td># q2:types</td>
+          <td>numeric</td>
+          <td>numeric</td>
+          <td>numeric</td>
+          <td>numeric</td>
+          <td>numeric</td>
+      </tr>
+      <tr>
+          <td>L1S105</td>
+          <td>11340</td>
+          <td>9232</td>
+          <td>10782</td>
+          <td>2066</td>
+          <td>42</td>
+      </tr>
+      <tr>
+          <td>L1S140</td>
+          <td>9738</td>
+          <td>8585</td>
+          <td>9459</td>
+          <td>1113</td>
+          <td>40</td>
+      </tr>
+      <tr>
+          <td>L1S208</td>
+          <td>11337</td>
+          <td>10149</td>
+          <td>10668</td>
+          <td>1161</td>
+          <td>27</td>
+      </tr>
+  </tbody>
 </table>
 <p>2.<code>deblur-stats.qzv: deblur</code>分析统计表，有分析中每个步骤的统计表</p>
-<p><img src="C:%5CUsers%5C22079%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20220415190444858.png" alt="image-20220415190444858"></p>
+<p><img alt="image-20220415190444858" src="c:\\Users\\22079\\AppData\\Roaming\\Typora\\typora-user-images\\image-20220415190444858.png"></p>
 </blockquote>
 <p>如果你想用此处结果下游分析，可以改名为下游分析的起始名称：</p>
 <pre><code class="language-sh">mv rep-seqs-deblur.qza rep-seqs.qza
@@ -1228,10 +1332,13 @@ time qiime demux summarize \
         <span class="text-primary-text block font-bold"
           >Previous</span
         >
-        <a href="https://ruqinga.github.io/posts/2-linux%E5%9F%BA%E7%A1%80-%E9%85%8D%E8%89%B2%E5%92%8C%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4/" class="block">Linux基础</a>
+        <a href="https://ruqinga.github.io/posts/%E5%BE%AE%E7%94%9F%E7%89%A9%E7%BB%84/" class="block">微生物组学分析全流程（理论）</a>
       
     </div>
     <div class="mt-4 md:mt-0 md:text-right">
+      
+        <span class="text-primary-text block font-bold">Next</span>
+        <a href="https://ruqinga.github.io/posts/rna-seq-%E5%AE%9E%E6%88%98/" class="block">rna-seq上下游分析实战</a>
       
     </div>
   </div>
@@ -1317,9 +1424,6 @@ time qiime demux summarize \
         class=" bg-secondary-bg prose col-span-2 rounded p-6 lg:col-span-6"
       >
         <h3>See Also</h3>
-        
-          <a href="https://ruqinga.github.io/posts/3-linux%E8%BF%9B%E9%98%B6-vim%E7%BC%96%E8%BE%91%E5%99%A8%E5%92%8Cconda%E7%8E%AF%E5%A2%83/" class="no-underline">Linux进阶-Vim编辑器和Conda环境</a>
-          <br />
         
           <a href="https://ruqinga.github.io/posts/2-linux%E5%9F%BA%E7%A1%80-%E9%85%8D%E8%89%B2%E5%92%8C%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4/" class="no-underline">Linux基础</a>
           <br />

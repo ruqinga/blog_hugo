@@ -4,132 +4,88 @@
     <title>Ruqing a</title>
     <link>https://ruqinga.github.io/</link>
     <description>Recent content on Ruqing a</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
     <copyright>&amp;copy; 2021 &lt;a href=&#34;https://www.wangchucheng.com/&#34;&gt;WANG Chucheng&lt;/a&gt; and &lt;a href=&#34;https://www.ruiqima.com/&#34;&gt;MA Ruiqi&lt;/a&gt;
 </copyright>
-    <lastBuildDate>Wed, 27 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ruqinga.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 27 Sep 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://ruqinga.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>实验笔记：质粒的构建与表达鉴定</title>
       <link>https://ruqinga.github.io/posts/%E5%AE%9E%E9%AA%8C%E7%AC%94%E8%AE%B0%E8%B4%A8%E7%B2%92%E7%9A%84%E6%9E%84%E5%BB%BA%E4%B8%8E%E8%A1%A8%E8%BE%BE%E9%89%B4%E5%AE%9A/</link>
       <pubDate>Wed, 27 Sep 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://ruqinga.github.io/posts/%E5%AE%9E%E9%AA%8C%E7%AC%94%E8%AE%B0%E8%B4%A8%E7%B2%92%E7%9A%84%E6%9E%84%E5%BB%BA%E4%B8%8E%E8%A1%A8%E8%BE%BE%E9%89%B4%E5%AE%9A/</guid>
-      <description>&lt;p&gt;最近开始接触一些质粒构建和表达的分子实验，于是把本科时候做的相关实验再整理一下。&lt;/p&gt;
-&lt;p&gt;题目是：绿色荧光蛋白GFP的构建与鉴定&lt;/p&gt;
-&lt;figure&gt;
-    &lt;img src=&#34;https://raw.githubusercontent.com/ruqinga/picture/main/2023/02/202309270941089.png&#34; alt=&#34;绿色荧光蛋白的构建与鉴定&#34;&gt;
-    &lt;figcaption style=&#34;text-align: center; color: grey;&#34;&gt;图1 绿色荧光蛋白的构建与鉴定实验流程。&lt;/figcaption&gt;
-&lt;/figure&gt;</description>
+      <description>&lt;p&gt;最近开始接触一些质粒构建和表达的分子实验，于是把本科时候做的相关实验再整理一下。&lt;/p&gt;&#xA;&lt;p&gt;题目是：绿色荧光蛋白GFP的构建与鉴定&lt;/p&gt;&#xA;&lt;figure&gt;&#xA;    &lt;img src=&#34;https://raw.githubusercontent.com/ruqinga/picture/main/2023/02/202309270941089.png&#34; alt=&#34;绿色荧光蛋白的构建与鉴定&#34;&gt;&#xA;    &lt;figcaption style=&#34;text-align: center; color: grey;&#34;&gt;图1 绿色荧光蛋白的构建与鉴定实验流程。&lt;/figcaption&gt;&#xA;&lt;/figure&gt;</description>
     </item>
-    
     <item>
       <title>Linux进阶-Vim编辑器和Conda环境</title>
       <link>https://ruqinga.github.io/posts/3-linux%E8%BF%9B%E9%98%B6-vim%E7%BC%96%E8%BE%91%E5%99%A8%E5%92%8Cconda%E7%8E%AF%E5%A2%83/</link>
       <pubDate>Sun, 26 Jun 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://ruqinga.github.io/posts/3-linux%E8%BF%9B%E9%98%B6-vim%E7%BC%96%E8%BE%91%E5%99%A8%E5%92%8Cconda%E7%8E%AF%E5%A2%83/</guid>
       <description>&lt;p&gt;使用Linux必备的编辑器和软件安装工具conda&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>微生物组学分析全流程（理论）</title>
       <link>https://ruqinga.github.io/posts/%E5%BE%AE%E7%94%9F%E7%89%A9%E7%BB%84/</link>
       <pubDate>Tue, 24 May 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://ruqinga.github.io/posts/%E5%BE%AE%E7%94%9F%E7%89%A9%E7%BB%84/</guid>
       <description>&lt;p&gt;微生物组学分析的两个大类：扩增子和宏基因组，涉及概念、流程进行区别和简单介绍。&lt;/p&gt;</description>
     </item>
-    
+    <item>
+      <title>微生物组qimme2分析</title>
+      <link>https://ruqinga.github.io/posts/qiimme2/</link>
+      <pubDate>Tue, 03 May 2022 00:00:00 +0000</pubDate>
+      <guid>https://ruqinga.github.io/posts/qiimme2/</guid>
+      <description>&lt;h1 id=&#34;导论&#34;&gt;导论&lt;/h1&gt;&#xA;&lt;p&gt;开始前，你需要了解QIIME 2的以下信息&lt;/p&gt;&#xA;&lt;p&gt;必看：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://forum.qiime2.org/&#34;&gt;QIIME 2 官方论坛&lt;/a&gt;（非常有用哦）&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;使用&lt;a href=&#34;https://view.qiime2.org/&#34;&gt;该页面&lt;/a&gt;查看 QIIME 2 的 qzv 后缀可视化文件&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;QIIME 2 官方文档：&#xA;【&lt;a href=&#34;https://mp.weixin.qq.com/s?__biz=MzUzMjA4Njc1MA==&amp;mid=2247487350&amp;idx=1&amp;sn=aa945aca002ce1ebf3bfcdc50aadf63b&amp;scene=21#wechat_redirect&#34;&gt;中文参考&lt;/a&gt;】| &lt;a href=&#34;https://microbiomecat.gitee.io/20201005/QIIME2-based-amplicon-analysis-tutorial(Basic)/&#34;&gt;【中文参考2】&lt;/a&gt;&#xA;【英文原版】 &lt;a href=&#34;https://docs.qiime2.org&#34;&gt;https://docs.qiime2.org&lt;/a&gt;&#xA;官方文档会隔几个月更新一次，每个版本的更新内容在官方论坛里可以找到。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;推荐一看的参考教程（中文版）：&#xA;单端数据：https://github.com/YongxinLiu/QIIME2ChineseManual&lt;/p&gt;&#xA;&lt;p&gt;双端数据：https://mp.weixin.qq.com/s/p2Snx0v8Fh_BOY-z2vVUCg&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;QIIME 2 安装教程：https://docs.qiime2.org/2022.2/install/&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;qiime2安装&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;# 更新conda减少问题&#xA;conda update conda &#xA;# 下载wget&#xA;conda install wget&#xA;# 下载安装qiime2需要的安装包的目录（.yml格式）&#xA;wget https://data.qiime2.org/distro/core/qiime2-2022.2-py38-linux-conda.yml #根据官网下载最新&#xA;# 创建conda环境并安装&#xA;conda env create -n qiime2-2022.2 --file qiime2-2022.2-py38-linux-conda.yml&#xA;# 激活环境&#xA;conda activate qiime2-2022.2&#xA;# 查看是否安装成功&#xA;qiime --help&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;h1 id=&#34;1-前处理&#34;&gt;1 前处理&lt;/h1&gt;&#xA;&lt;p&gt;1.拆分样品：为了降低成本，往往将多个样本混合后再一起测序，其中为了区别不同样本会在 DNA 分子中用实验方法嵌入一段人工合成的编码序列（barcode）。在拿到数据后首先需要将不同组的样品区分开。具体操作见其它中的[拆分样品](# 拆分样品)&lt;/p&gt;&#xA;&lt;p&gt;2.质检与引物切除：送公司测序返还的数据一般都是拆分过并去除了引物的，可以自己再做一下质检，后续使用dada2分析时也会有碱基质量分布图，所以这步可以不做，自己质检（fastqc）的信息会比较全面。&lt;/p&gt;&#xA;&lt;p&gt;3.数据导入：在QIIME2中进行分析，需要将数据转化为QIIME2对象（artifacts）。更多可参考：&lt;a href=&#34;https://zhuanlan.zhihu.com/p/406701848&#34;&gt;QIIME 2 参数&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;1质检&#34;&gt;1）质检&lt;/h2&gt;&#xA;&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;# 公司的给的测序数据一般都是拆分过的，可将单端数据全部合并做质检，也可单独质检&#xA;# cat命令合并压缩过的文件会出错，合并之前需要先解压。&#xA;gunzip *.gz # 解压&#xA;# 第一种方法：合并后质检。&#xA;cat *R1* &amp;gt; R1.fastq #合并上游序列,并指定输出文件名为R1.fastq&#xA;cat *R2* &amp;gt; R2.fastq #合并下游序列,并指定输出文件名为R2.fastq&#xA;# 质检&#xA;mkdir qc #创建一个文件夹用于存放质检文件&#xA;fastqc -t 2 R1.fastq R2.fastq -o qc # -t --threads，一般有多少个样本用多少线程。-o 指定输出文件存放目录。&#xA;&#xA;# 第二种方法：单独质检后将质检报告合并&#xA;mkdir qct #创建一个文件夹用于存放质检文件&#xA;fastqc *fastq -t 10 -o qct&#xA;pip install multiqc #安装multiqc&#xA;multiqc qct/*  # 合并报告&#xA;&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;h2 id=&#34;2切除引物&#34;&gt;2）切除引物&lt;/h2&gt;&#xA;&lt;p&gt;质检结果中，最后一项Adapter Content正常情况是趋于0的直线，也就是说序列两端Adapter已经去除干净；如果有Adapter，需要先用cutadapt去接头&lt;/p&gt;</description>
+    </item>
     <item>
       <title>rna-seq上下游分析实战</title>
       <link>https://ruqinga.github.io/posts/rna-seq-%E5%AE%9E%E6%88%98/</link>
       <pubDate>Sun, 01 May 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://ruqinga.github.io/posts/rna-seq-%E5%AE%9E%E6%88%98/</guid>
       <description>&lt;p&gt;从零开始系列。网上的流程都太散乱了，无法连接起来，本文一套数据跑完流程，包括转录组基本介绍、上游数据处理和下游功能分析&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>基因家族分析从零到有（研究对象确定&#43;基因家族鉴定&#43;基本信息网站&#43;结构分析&#43;共线性分析&#43;实验验证简述）</title>
       <link>https://ruqinga.github.io/posts/%E5%9F%BA%E5%9B%A0%E5%AE%B6%E6%97%8F%E5%88%86%E6%9E%90/</link>
       <pubDate>Mon, 18 Apr 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://ruqinga.github.io/posts/%E5%9F%BA%E5%9B%A0%E5%AE%B6%E6%97%8F%E5%88%86%E6%9E%90/</guid>
       <description>&lt;p&gt;基因家族分析从零到有，本文将详细介绍每一步该做的准备。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Chapter 1</title>
       <link>https://ruqinga.github.io/docs/example-doc/chapter-1/</link>
       <pubDate>Fri, 16 Oct 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://ruqinga.github.io/docs/example-doc/chapter-1/</guid>
       <description>&lt;p&gt;This is chapter 1 of example doc.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Chapter 1</title>
       <link>https://ruqinga.github.io/docs/example-doc/nested-chapter/chapter-1/</link>
       <pubDate>Fri, 16 Oct 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://ruqinga.github.io/docs/example-doc/nested-chapter/chapter-1/</guid>
       <description>&lt;p&gt;This is chapter 1 of nested chapter.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Chapter 2</title>
       <link>https://ruqinga.github.io/docs/example-doc/chapter-2/</link>
       <pubDate>Fri, 16 Oct 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://ruqinga.github.io/docs/example-doc/chapter-2/</guid>
       <description>&lt;p&gt;This is chapter 2 of example doc.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Chapter 2</title>
       <link>https://ruqinga.github.io/docs/example-doc/nested-chapter/chapter-2/</link>
       <pubDate>Fri, 16 Oct 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://ruqinga.github.io/docs/example-doc/nested-chapter/chapter-2/</guid>
       <description>&lt;p&gt;This is chapter 2 of nested chapter.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Linux基础</title>
       <link>https://ruqinga.github.io/posts/2-linux%E5%9F%BA%E7%A1%80-%E9%85%8D%E8%89%B2%E5%92%8C%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://ruqinga.github.io/posts/2-linux%E5%9F%BA%E7%A1%80-%E9%85%8D%E8%89%B2%E5%92%8C%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4/</guid>
-      <description>以下内容为基础的linux操作，希望大家熟练掌握
-命令行配色方案 这个看个人审美，你们也可以自己配置
-echo &#39;export PS1=&amp;quot;\[\033]2;\h:\u \w\007\033[33;1m\]\u \033[35;1m\t\033[0m \[\033[36;1m\]\w\[\033[0m\]\n\[\e[32;1m\]$ \[\e[0m\]&amp;quot;&#39; &amp;gt;&amp;gt; ~/.bashrc source ~/.bashrc 常见命令 更多见：Linux命令大全
-查看帮助文档 man 命令，help 命令，或者某个命令的 &amp;ndash;help 参数
-man ls	## 用 man 命令查看 ls 命令的帮助文档 help ls	## 用 help 命令查看 ls 命令的帮助文档	ls --help	## 用 --help 参数查看 ls 命令的帮助文档 常用快捷键 Tab: 补全 Ctrl+U: 剪切光标位置到行首的字符 Ctrl+C: 终止任务 Ctrl+Z: 暂停任务 Ctrl+L: 清屏 Ctrl+E: 回到行尾 Ctrl+A: 回到行首 组合技一：查看目录和文件 cd 进入目录 pwd 显示当前所在位置 ls 查看当前目录下文件 tree -L 1 将当前目录下文件以树形展示 补充：
-常用符号
-. 表示此层目录 .</description>
+      <description>&lt;p&gt;以下内容为基础的linux操作，希望大家熟练掌握&lt;/p&gt;&#xA;&lt;h3 id=&#34;命令行配色方案&#34;&gt;命令行配色方案&lt;/h3&gt;&#xA;&lt;p&gt;这个看个人审美，你们也可以自己配置&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;echo  &#39;export PS1=&amp;quot;\[\033]2;\h:\u \w\007\033[33;1m\]\u \033[35;1m\t\033[0m \[\033[36;1m\]\w\[\033[0m\]\n\[\e[32;1m\]$ \[\e[0m\]&amp;quot;&#39; &amp;gt;&amp;gt; ~/.bashrc&#xA;source  ~/.bashrc&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;h2 id=&#34;常见命令&#34;&gt;常见命令&lt;/h2&gt;&#xA;&lt;p&gt;更多见：&lt;a href=&#34;http://man.linuxde.net/&#34;&gt;Linux命令大全&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;查看帮助文档&#34;&gt;查看帮助文档&lt;/h3&gt;&#xA;&lt;p&gt;man 命令，help 命令，或者某个命令的  &amp;ndash;help  参数&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;man  ls&#x9;&#x9;## 用 man 命令查看 ls 命令的帮助文档&#xA;help  ls&#x9;## 用 help 命令查看 ls 命令的帮助文档&#x9;&#xA;ls  --help&#x9;## 用 --help 参数查看 ls 命令的帮助文档&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;h3 id=&#34;常用快捷键&#34;&gt;常用快捷键&lt;/h3&gt;&#xA;&lt;pre&gt;&lt;code&gt;Tab:    补全&#xA;Ctrl+U: 剪切光标位置到行首的字符&#xA;Ctrl+C: 终止任务&#xA;Ctrl+Z: 暂停任务&#xA;Ctrl+L: 清屏&#xA;Ctrl+E: 回到行尾&#xA;Ctrl+A: 回到行首&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;h3 id=&#34;组合技一查看目录和文件&#34;&gt;组合技一：查看目录和文件&lt;/h3&gt;&#xA;&lt;pre&gt;&lt;code&gt;cd     进入目录&#xA;pwd    显示当前所在位置&#xA;ls     查看当前目录下文件&#xA;tree -L 1  将当前目录下文件以树形展示&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;&lt;strong&gt;补充：&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
-    
-    <item>
-      <title>微生物组qimme2分析</title>
-      <link>https://ruqinga.github.io/posts/qiimme2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ruqinga.github.io/posts/qiimme2/</guid>
-      <description>导论 开始前，你需要了解QIIME 2的以下信息
-必看：
-QIIME 2 官方论坛（非常有用哦）
-使用该页面查看 QIIME 2 的 qzv 后缀可视化文件
-QIIME 2 官方文档： 【中文参考】| 【中文参考2】 【英文原版】 https://docs.qiime2.org 官方文档会隔几个月更新一次，每个版本的更新内容在官方论坛里可以找到。
-推荐一看的参考教程（中文版）： 单端数据：https://github.com/YongxinLiu/QIIME2ChineseManual
-双端数据：https://mp.weixin.qq.com/s/p2Snx0v8Fh_BOY-z2vVUCg
-QIIME 2 安装教程：https://docs.qiime2.org/2022.2/install/
-qiime2安装
-# 更新conda减少问题 conda update conda # 下载wget conda install wget # 下载安装qiime2需要的安装包的目录（.yml格式） wget https://data.qiime2.org/distro/core/qiime2-2022.2-py38-linux-conda.yml #根据官网下载最新 # 创建conda环境并安装 conda env create -n qiime2-2022.2 --file qiime2-2022.2-py38-linux-conda.yml # 激活环境 conda activate qiime2-2022.2 # 查看是否安装成功 qiime --help 1 前处理 1.拆分样品：为了降低成本，往往将多个样本混合后再一起测序，其中为了区别不同样本会在 DNA 分子中用实验方法嵌入一段人工合成的编码序列（barcode）。在拿到数据后首先需要将不同组的样品区分开。具体操作见其它中的[拆分样品](# 拆分样品)
-2.质检与引物切除：送公司测序返还的数据一般都是拆分过并去除了引物的，可以自己再做一下质检，后续使用dada2分析时也会有碱基质量分布图，所以这步可以不做，自己质检（fastqc）的信息会比较全面。
-3.数据导入：在QIIME2中进行分析，需要将数据转化为QIIME2对象（artifacts）。更多可参考：QIIME 2 参数
-1）质检 # 公司的给的测序数据一般都是拆分过的，可将单端数据全部合并做质检，也可单独质检 # cat命令合并压缩过的文件会出错，合并之前需要先解压。 gunzip *.</description>
-    </item>
-    
   </channel>
 </rss>

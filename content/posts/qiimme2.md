@@ -1,6 +1,6 @@
 ---
 title: 微生物组qimme2分析
-date: 2022-5-3
+date: 2022-05-03
 categories:
   - 微生物组
 comments: true

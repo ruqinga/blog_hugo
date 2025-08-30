@@ -10,7 +10,7 @@
 <title>基因家族分析从零到有（研究对象确定&#43;基因家族鉴定&#43;基本信息网站&#43;结构分析&#43;共线性分析&#43;实验验证简述） | Ruqing a</title>
 
 <meta name="generator" content="Hugo Eureka 0.9.3" />
-<link rel="stylesheet" href="https://ruqinga.github.io/css/eureka.min.9cec6350e37e534b0338fa9a085bf06855de3b0f2dcf857e792e5e97b07ea905d4d5513db554cbc26a9c3da622bae92d.css">
+<link rel="stylesheet" href="https://ruqinga.github.io/css/eureka.min.c000e20ee83e983a6da50f36cc965ffaab7a5112d85459aae8096796b03fa59f32bc75c8322942369757c3c770561bfb.css">
 <script defer src="https://ruqinga.github.io/js/eureka.min.fa9a6bf6d7a50bb635b4cca7d2ba5cf3dfb095ae3798773f1328f7950028b48c17d06276594e1b5f244a25a6c969a705.js"></script>
 
 
@@ -43,7 +43,7 @@
 <link rel="stylesheet" href="https://ruqinga.github.io/css/highlightjs.min.2958991528e43eb6fc9b8c4f2b8e052f79c4010718e1d1e888a777620e9ee63021c2c57ec7417a3108019bb8c41943e6.css" media="print" onload="this.media='all';this.onload=null">
 
 
-<script defer type="text/javascript" src="https://ruqinga.github.io/js/fontawesome.min.f14def4f6943de5b19b19c02e239b98c8cc6a8fe66b6828a21da7c0e9d405df8364cab68aa637c3bbe735eb7c325aa3c.js"></script>
+<script defer type="text/javascript" src="https://ruqinga.github.io/js/fontawesome.min.8f55fc818d6fce0446d0f57d11099812f13adb5a0b8eba42ebb0eb390415a166430395f8b6fa40eb7af6a7ec5a0bd89a.js"></script>
     
 
 
@@ -72,8 +72,8 @@
   integrity="sha384-atOyb0FxAgN9LyAc6PEf9BjgwLISyansgdH8/VXQH8p2o5vfrRgmGIJ2Sg22L0A0"  crossorigin></script>
 
 
-<link rel="icon" type="image/png" sizes="32x32" href="https://ruqinga.github.io/images/icon_huba2c3f04abefa322225c7a4a6a5120c0_16720_32x32_fill_box_center_3.png">
-<link rel="apple-touch-icon" sizes="180x180" href="https://ruqinga.github.io/images/icon_huba2c3f04abefa322225c7a4a6a5120c0_16720_180x180_fill_box_center_3.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ruqinga.github.io/images/icon_hu7508083143451182185.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ruqinga.github.io/images/icon_hu1727792108807623462.png">
 
 <meta name="description"
   content="基因家族分析从零到有，本文将详细介绍每一步该做的准备。">
@@ -258,7 +258,7 @@
       <i class="fas fa-folder me-1"></i>
       
         <a href="https://ruqinga.github.io/categories/rna-seq/" class="hover:text-eureka"
-          >rna-seq</a
+          >Rna-Seq</a
         >
       
     </div>
@@ -418,7 +418,7 @@ diamond blastp --query WRKY_eggplant.fa -d p_diamond -o m2e_diamond.blastp -e0.0
 <p>参数介绍：</p>
 <p><strong># 建库</strong>
 <code>diamond makedb --in --db </code></p>
-<p>``&ndash;in<code>：输入文件 </code>&ndash;db<code>：输出的数据库前缀，或</code>&ndash;nr`</p>
+<p>``&ndash;in<code>：输入文件 </code>&ndash;db<code>：输出的数据库前缀，或</code>&ndash;nr`</p>
 <p><strong># 比对</strong>
 <code>diamond blastx --db  -q reads.fna -o dna_matches_fmt6.txt</code></p>
 <p>比对蛋白：<code>diamond blastx</code></p>
@@ -431,7 +431,7 @@ diamond blastp --query WRKY_eggplant.fa -d p_diamond -o m2e_diamond.blastp -e0.0
 <blockquote>
 <p><strong>blast结果说明？？？</strong></p>
 <p><a href="https://www.plob.org/article/641.html">https://www.plob.org/article/641.html</a></p>
-<p><img src="https://raw.githubusercontent.com/ruqinga/picture/main/2023/02/202309020852481.png" alt="image-20220402193730047"></p>
+<p><img alt="image-20220402193730047" src="https://raw.githubusercontent.com/ruqinga/picture/main/2023/02/202309020852481.png"></p>
 <p>主要是第三列pident(percentage of identical matches)和第四列length(alignment length)，去冗余</p>
 </blockquote>
 <h4 id="2-hmmer">2. hmmer</h4>
@@ -545,14 +545,14 @@ hmmsearch WRKY.hmm protein.faa &gt;WRKY_hmm.out
 <ol>
 <li>
 <p>以<code>TBtools</code>为例，首先根据基因家族id提取对应gff文件</p>
-<p><img src="https://raw.githubusercontent.com/ruqinga/picture/main/2023/02/202309020852483.png" alt="image-20220604201650294"></p>
+<p><img alt="image-20220604201650294" src="https://raw.githubusercontent.com/ruqinga/picture/main/2023/02/202309020852483.png"></p>
 </li>
 <li>
 <p>使用<code>Gene Structure Shower</code>模块，将基因家族成员的id以及基因组注释gtf/gff3文件导入<code>TBtools</code>，就可以得到基因结构图</p>
 <blockquote>
 <p>注意检查id与注释文件中是否对应</p>
-<p><img src="https://raw.githubusercontent.com/ruqinga/picture/main/2023/02/202309020852484.png" alt="image-20220603104817781"></p>
-<p><img src="https://raw.githubusercontent.com/ruqinga/picture/main/2023/02/202309020852485.png" alt="image-20220603104857853"></p>
+<p><img alt="image-20220603104817781" src="https://raw.githubusercontent.com/ruqinga/picture/main/2023/02/202309020852484.png"></p>
+<p><img alt="image-20220603104857853" src="https://raw.githubusercontent.com/ruqinga/picture/main/2023/02/202309020852485.png"></p>
 </blockquote>
 </li>
 </ol>
@@ -770,7 +770,7 @@ e, 0, 2, ara.osa.anchors.simple
 <p><strong>提问</strong>：sort -n 和 -u并用时为什么会只出一个结果</p>
 </blockquote>
 <p>突出显示</p>
-<p><img src="https://raw.githubusercontent.com/ruqinga/picture/main/2023/02/202309020852486.png" alt="image-20220315185029747"></p>
+<p><img alt="image-20220315185029747" src="https://raw.githubusercontent.com/ruqinga/picture/main/2023/02/202309020852486.png"></p>
 <p>#Note: 注释文件的gff 与 gtf格式互相转换&ndash;使用gffread</p>
 <p>gff to gtf</p>
 <pre><code>gffread anno.gff -T -o anno.gtf
@@ -826,9 +826,9 @@ e, 0, 2, ara.osa.anchors.simple
 <p><a href="https://www.jianshu.com/p/b8db5ac4c221">基因家族专题(1)：基础知识与研究思路介绍</a></p>
 <p><a href="https://www.jianshu.com/p/a758a33ca3d1">基因家族专题(2)：数据下载与基因家族成员的鉴定</a></p>
 <p><a href="https://www.jianshu.com/p/486dd4aba5eb">基因家族专题(3)：基因家族成员的鉴定</a></p>
-<p><a href="https://baijiahao.baidu.com/s?id=1714240662220527241&amp;wfr=spider&amp;for=pc">基因家族分析流程及保姆级实操流程</a></p>
+<p><a href="https://baijiahao.baidu.com/s?id=1714240662220527241&wfr=spider&for=pc">基因家族分析流程及保姆级实操流程</a></p>
 <p><a href="https://www.jianshu.com/p/8a4818d2e1a2?tdsourcetag=s_pcqq_aiomsg">TBtools基因家族分析详细教程</a></p>
-<p><a href="">基因家族分析操作手册-学习必备</a></p>
+<p><a href="/">基因家族分析操作手册-学习必备</a></p>
 <p><a href="https://www.jianshu.com/p/34333a6d7c4e">https://www.jianshu.com/p/34333a6d7c4e</a></p>
 <p><a href="https://blog.csdn.net/u012110870/article/details/102804593">JCVI教程」如何绘制CNS级别的共线性图（中）</a></p>
 <p><a href="https://www.jianshu.com/p/8a4818d2e1a2">TBtools基因家族分析详细教程（1）</a>会讲到修正注释文件</p>
