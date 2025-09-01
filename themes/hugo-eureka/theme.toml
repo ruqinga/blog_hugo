@@ -8,7 +8,7 @@ description = "Eureka is a feature-rich and highly customizable Hugo theme."
 homepage = "https://www.wangchucheng.com/en/docs/hugo-eureka/"
 tags = ["blog", "Responsive", "Simple", "Personal", "Light", "Dark", "Mobile", "Fast", "Disqus", "Google analytics", "Syntax highlighting", "Highlighting", "Multilingual", "Modern", "Font awesome", "Fontawesome", "Documentation", "Docs", "Seo", "accessible"]
 features = ["Blog", "Responsive", "Documentation", "Light", "Dark"]
-min_version = "0.74.0"
+min_version = "0.114.0"
 
 authors = [
   {name = "C. Wang", homepage = "https://www.wangchucheng.com/"},
