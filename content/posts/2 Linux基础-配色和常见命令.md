@@ -1,6 +1,6 @@
 ---
 title: Linux基础
-data: 2022-08-28
+date: 2022-08-28
 categories:
   - Linux
 enableMath: true
