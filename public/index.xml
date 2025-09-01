@@ -1,122 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Ruqing a</title>
-    <link>https://ruqinga.github.io/</link>
-    <description>Recent content on Ruqing a</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <copyright>&amp;copy; 2021 &lt;a href=&#34;https://www.wangchucheng.com/&#34;&gt;WANG Chucheng&lt;/a&gt; and &lt;a href=&#34;https://www.ruiqima.com/&#34;&gt;MA Ruiqi&lt;/a&gt;
-</copyright>
-    <lastBuildDate>Wed, 27 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ruqinga.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>实验笔记：质粒的构建与表达鉴定</title>
-      <link>https://ruqinga.github.io/posts/%E5%AE%9E%E9%AA%8C%E7%AC%94%E8%AE%B0%E8%B4%A8%E7%B2%92%E7%9A%84%E6%9E%84%E5%BB%BA%E4%B8%8E%E8%A1%A8%E8%BE%BE%E9%89%B4%E5%AE%9A/</link>
-      <pubDate>Wed, 27 Sep 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://ruqinga.github.io/posts/%E5%AE%9E%E9%AA%8C%E7%AC%94%E8%AE%B0%E8%B4%A8%E7%B2%92%E7%9A%84%E6%9E%84%E5%BB%BA%E4%B8%8E%E8%A1%A8%E8%BE%BE%E9%89%B4%E5%AE%9A/</guid>
-      <description>&lt;p&gt;最近开始接触一些质粒构建和表达的分子实验，于是把本科时候做的相关实验再整理一下。&lt;/p&gt;
-&lt;p&gt;题目是：绿色荧光蛋白GFP的构建与鉴定&lt;/p&gt;
-&lt;figure&gt;
-    &lt;img src=&#34;https://raw.githubusercontent.com/ruqinga/picture/main/2023/02/202309270941089.png&#34; alt=&#34;绿色荧光蛋白的构建与鉴定&#34;&gt;
-    &lt;figcaption style=&#34;text-align: center; color: grey;&#34;&gt;图1 绿色荧光蛋白的构建与鉴定实验流程。&lt;/figcaption&gt;
-&lt;/figure&gt;</description>
-    </item>
-    
-    <item>
-      <title>Linux进阶-Vim编辑器和Conda环境</title>
-      <link>https://ruqinga.github.io/posts/3-linux%E8%BF%9B%E9%98%B6-vim%E7%BC%96%E8%BE%91%E5%99%A8%E5%92%8Cconda%E7%8E%AF%E5%A2%83/</link>
-      <pubDate>Sun, 26 Jun 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://ruqinga.github.io/posts/3-linux%E8%BF%9B%E9%98%B6-vim%E7%BC%96%E8%BE%91%E5%99%A8%E5%92%8Cconda%E7%8E%AF%E5%A2%83/</guid>
-      <description>&lt;p&gt;使用Linux必备的编辑器和软件安装工具conda&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>微生物组学分析全流程（理论）</title>
-      <link>https://ruqinga.github.io/posts/%E5%BE%AE%E7%94%9F%E7%89%A9%E7%BB%84/</link>
-      <pubDate>Tue, 24 May 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://ruqinga.github.io/posts/%E5%BE%AE%E7%94%9F%E7%89%A9%E7%BB%84/</guid>
-      <description>&lt;p&gt;微生物组学分析的两个大类：扩增子和宏基因组，涉及概念、流程进行区别和简单介绍。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>rna-seq上下游分析实战</title>
-      <link>https://ruqinga.github.io/posts/rna-seq-%E5%AE%9E%E6%88%98/</link>
-      <pubDate>Sun, 01 May 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://ruqinga.github.io/posts/rna-seq-%E5%AE%9E%E6%88%98/</guid>
-      <description>&lt;p&gt;从零开始系列。网上的流程都太散乱了，无法连接起来，本文一套数据跑完流程，包括转录组基本介绍、上游数据处理和下游功能分析&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>基因家族分析从零到有（研究对象确定&#43;基因家族鉴定&#43;基本信息网站&#43;结构分析&#43;共线性分析&#43;实验验证简述）</title>
-      <link>https://ruqinga.github.io/posts/%E5%9F%BA%E5%9B%A0%E5%AE%B6%E6%97%8F%E5%88%86%E6%9E%90/</link>
-      <pubDate>Mon, 18 Apr 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://ruqinga.github.io/posts/%E5%9F%BA%E5%9B%A0%E5%AE%B6%E6%97%8F%E5%88%86%E6%9E%90/</guid>
-      <description>&lt;p&gt;基因家族分析从零到有，本文将详细介绍每一步该做的准备。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Chapter 1</title>
-      <link>https://ruqinga.github.io/docs/example-doc/chapter-1/</link>
-      <pubDate>Fri, 16 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://ruqinga.github.io/docs/example-doc/chapter-1/</guid>
-      <description>&lt;p&gt;This is chapter 1 of example doc.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Chapter 1</title>
-      <link>https://ruqinga.github.io/docs/example-doc/nested-chapter/chapter-1/</link>
-      <pubDate>Fri, 16 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://ruqinga.github.io/docs/example-doc/nested-chapter/chapter-1/</guid>
-      <description>&lt;p&gt;This is chapter 1 of nested chapter.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Chapter 2</title>
-      <link>https://ruqinga.github.io/docs/example-doc/chapter-2/</link>
-      <pubDate>Fri, 16 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://ruqinga.github.io/docs/example-doc/chapter-2/</guid>
-      <description>&lt;p&gt;This is chapter 2 of example doc.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Chapter 2</title>
-      <link>https://ruqinga.github.io/docs/example-doc/nested-chapter/chapter-2/</link>
-      <pubDate>Fri, 16 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://ruqinga.github.io/docs/example-doc/nested-chapter/chapter-2/</guid>
-      <description>&lt;p&gt;This is chapter 2 of nested chapter.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Linux基础</title>
-      <link>https://ruqinga.github.io/posts/2-linux%E5%9F%BA%E7%A1%80-%E9%85%8D%E8%89%B2%E5%92%8C%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ruqinga.github.io/posts/2-linux%E5%9F%BA%E7%A1%80-%E9%85%8D%E8%89%B2%E5%92%8C%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4/</guid>
-      <description>以下内容为基础的linux操作，希望大家熟练掌握
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ruqing a</title><link>https://ruqinga.github.io/</link><description>Recent content on Ruqing a</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>&amp;copy; 2021 &lt;a href="https://www.wangchucheng.com/">WANG Chucheng&lt;/a> and &lt;a href="https://www.ruiqima.com/">MA Ruiqi&lt;/a></copyright><lastBuildDate>Wed, 27 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ruqinga.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>实验笔记：质粒的构建与表达鉴定</title><link>https://ruqinga.github.io/posts/%E5%AE%9E%E9%AA%8C%E7%AC%94%E8%AE%B0%E8%B4%A8%E7%B2%92%E7%9A%84%E6%9E%84%E5%BB%BA%E4%B8%8E%E8%A1%A8%E8%BE%BE%E9%89%B4%E5%AE%9A/</link><pubDate>Wed, 27 Sep 2023 00:00:00 +0000</pubDate><guid>https://ruqinga.github.io/posts/%E5%AE%9E%E9%AA%8C%E7%AC%94%E8%AE%B0%E8%B4%A8%E7%B2%92%E7%9A%84%E6%9E%84%E5%BB%BA%E4%B8%8E%E8%A1%A8%E8%BE%BE%E9%89%B4%E5%AE%9A/</guid><description>&lt;p>最近开始接触一些质粒构建和表达的分子实验，于是把本科时候做的相关实验再整理一下。&lt;/p>
+&lt;p>题目是：绿色荧光蛋白GFP的构建与鉴定&lt;/p>
+&lt;figure>
+ &lt;img src="https://raw.githubusercontent.com/ruqinga/picture/main/2023/02/202309270941089.png" alt="绿色荧光蛋白的构建与鉴定">
+ &lt;figcaption style="text-align: center; color: grey;">图1 绿色荧光蛋白的构建与鉴定实验流程。&lt;/figcaption>
+&lt;/figure></description></item><item><title>Linux进阶-Vim编辑器和Conda环境</title><link>https://ruqinga.github.io/posts/3-linux%E8%BF%9B%E9%98%B6-vim%E7%BC%96%E8%BE%91%E5%99%A8%E5%92%8Cconda%E7%8E%AF%E5%A2%83/</link><pubDate>Sun, 26 Jun 2022 00:00:00 +0000</pubDate><guid>https://ruqinga.github.io/posts/3-linux%E8%BF%9B%E9%98%B6-vim%E7%BC%96%E8%BE%91%E5%99%A8%E5%92%8Cconda%E7%8E%AF%E5%A2%83/</guid><description>&lt;p>使用Linux必备的编辑器和软件安装工具conda&lt;/p></description></item><item><title>微生物组学分析全流程（理论）</title><link>https://ruqinga.github.io/posts/%E5%BE%AE%E7%94%9F%E7%89%A9%E7%BB%84/</link><pubDate>Tue, 24 May 2022 00:00:00 +0000</pubDate><guid>https://ruqinga.github.io/posts/%E5%BE%AE%E7%94%9F%E7%89%A9%E7%BB%84/</guid><description>&lt;p>微生物组学分析的两个大类：扩增子和宏基因组，涉及概念、流程进行区别和简单介绍。&lt;/p></description></item><item><title>rna-seq上下游分析实战</title><link>https://ruqinga.github.io/posts/rna-seq-%E5%AE%9E%E6%88%98/</link><pubDate>Sun, 01 May 2022 00:00:00 +0000</pubDate><guid>https://ruqinga.github.io/posts/rna-seq-%E5%AE%9E%E6%88%98/</guid><description>&lt;p>从零开始系列。网上的流程都太散乱了，无法连接起来，本文一套数据跑完流程，包括转录组基本介绍、上游数据处理和下游功能分析&lt;/p></description></item><item><title>基因家族分析从零到有（研究对象确定+基因家族鉴定+基本信息网站+结构分析+共线性分析+实验验证简述）</title><link>https://ruqinga.github.io/posts/%E5%9F%BA%E5%9B%A0%E5%AE%B6%E6%97%8F%E5%88%86%E6%9E%90/</link><pubDate>Mon, 18 Apr 2022 00:00:00 +0000</pubDate><guid>https://ruqinga.github.io/posts/%E5%9F%BA%E5%9B%A0%E5%AE%B6%E6%97%8F%E5%88%86%E6%9E%90/</guid><description>&lt;p>基因家族分析从零到有，本文将详细介绍每一步该做的准备。&lt;/p></description></item><item><title>Chapter 1</title><link>https://ruqinga.github.io/docs/example-doc/chapter-1/</link><pubDate>Fri, 16 Oct 2020 00:00:00 +0000</pubDate><guid>https://ruqinga.github.io/docs/example-doc/chapter-1/</guid><description>&lt;p>This is chapter 1 of example doc.&lt;/p></description></item><item><title>Chapter 1</title><link>https://ruqinga.github.io/docs/example-doc/nested-chapter/chapter-1/</link><pubDate>Fri, 16 Oct 2020 00:00:00 +0000</pubDate><guid>https://ruqinga.github.io/docs/example-doc/nested-chapter/chapter-1/</guid><description>&lt;p>This is chapter 1 of nested chapter.&lt;/p></description></item><item><title>Chapter 2</title><link>https://ruqinga.github.io/docs/example-doc/chapter-2/</link><pubDate>Fri, 16 Oct 2020 00:00:00 +0000</pubDate><guid>https://ruqinga.github.io/docs/example-doc/chapter-2/</guid><description>&lt;p>This is chapter 2 of example doc.&lt;/p></description></item><item><title>Chapter 2</title><link>https://ruqinga.github.io/docs/example-doc/nested-chapter/chapter-2/</link><pubDate>Fri, 16 Oct 2020 00:00:00 +0000</pubDate><guid>https://ruqinga.github.io/docs/example-doc/nested-chapter/chapter-2/</guid><description>&lt;p>This is chapter 2 of nested chapter.&lt;/p></description></item><item><title>Linux基础</title><link>https://ruqinga.github.io/posts/2-linux%E5%9F%BA%E7%A1%80-%E9%85%8D%E8%89%B2%E5%92%8C%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ruqinga.github.io/posts/2-linux%E5%9F%BA%E7%A1%80-%E9%85%8D%E8%89%B2%E5%92%8C%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4/</guid><description>以下内容为基础的linux操作，希望大家熟练掌握
 命令行配色方案 这个看个人审美，你们也可以自己配置
-echo &#39;export PS1=&amp;quot;\[\033]2;\h:\u \w\007\033[33;1m\]\u \033[35;1m\t\033[0m \[\033[36;1m\]\w\[\033[0m\]\n\[\e[32;1m\]$ \[\e[0m\]&amp;quot;&#39; &amp;gt;&amp;gt; ~/.bashrc source ~/.bashrc 常见命令 更多见：Linux命令大全
+echo 'export PS1=&amp;quot;\[\033]2;\h:\u \w\007\033[33;1m\]\u \033[35;1m\t\033[0m \[\033[36;1m\]\w\[\033[0m\]\n\[\e[32;1m\]$ \[\e[0m\]&amp;quot;' &amp;gt;&amp;gt; ~/.bashrc source ~/.bashrc 常见命令 更多见：Linux命令大全
 查看帮助文档 man 命令，help 命令，或者某个命令的 &amp;ndash;help 参数
 man ls	## 用 man 命令查看 ls 命令的帮助文档 help ls	## 用 help 命令查看 ls 命令的帮助文档	ls --help	## 用 --help 参数查看 ls 命令的帮助文档 常用快捷键 Tab: 补全 Ctrl+U: 剪切光标位置到行首的字符 Ctrl+C: 终止任务 Ctrl+Z: 暂停任务 Ctrl+L: 清屏 Ctrl+E: 回到行尾 Ctrl+A: 回到行首 组合技一：查看目录和文件 cd 进入目录 pwd 显示当前所在位置 ls 查看当前目录下文件 tree -L 1 将当前目录下文件以树形展示 补充：
 常用符号
-. 表示此层目录 .</description>
-    </item>
-    
-    <item>
-      <title>微生物组qimme2分析</title>
-      <link>https://ruqinga.github.io/posts/qiimme2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ruqinga.github.io/posts/qiimme2/</guid>
-      <description>导论 开始前，你需要了解QIIME 2的以下信息
+. 表示此层目录 .</description></item><item><title>微生物组qimme2分析</title><link>https://ruqinga.github.io/posts/qiimme2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ruqinga.github.io/posts/qiimme2/</guid><description>导论 开始前，你需要了解QIIME 2的以下信息
 必看：
 QIIME 2 官方论坛（非常有用哦）
 使用该页面查看 QIIME 2 的 qzv 后缀可视化文件
@@ -128,8 +21,4 @@ qiime2安装
 # 更新conda减少问题 conda update conda # 下载wget conda install wget # 下载安装qiime2需要的安装包的目录（.yml格式） wget https://data.qiime2.org/distro/core/qiime2-2022.2-py38-linux-conda.yml #根据官网下载最新 # 创建conda环境并安装 conda env create -n qiime2-2022.2 --file qiime2-2022.2-py38-linux-conda.yml # 激活环境 conda activate qiime2-2022.2 # 查看是否安装成功 qiime --help 1 前处理 1.拆分样品：为了降低成本，往往将多个样本混合后再一起测序，其中为了区别不同样本会在 DNA 分子中用实验方法嵌入一段人工合成的编码序列（barcode）。在拿到数据后首先需要将不同组的样品区分开。具体操作见其它中的[拆分样品](# 拆分样品)
 2.质检与引物切除：送公司测序返还的数据一般都是拆分过并去除了引物的，可以自己再做一下质检，后续使用dada2分析时也会有碱基质量分布图，所以这步可以不做，自己质检（fastqc）的信息会比较全面。
 3.数据导入：在QIIME2中进行分析，需要将数据转化为QIIME2对象（artifacts）。更多可参考：QIIME 2 参数
-1）质检 # 公司的给的测序数据一般都是拆分过的，可将单端数据全部合并做质检，也可单独质检 # cat命令合并压缩过的文件会出错，合并之前需要先解压。 gunzip *.</description>
-    </item>
-    
-  </channel>
-</rss>
+1）质检 # 公司的给的测序数据一般都是拆分过的，可将单端数据全部合并做质检，也可单独质检 # cat命令合并压缩过的文件会出错，合并之前需要先解压。 gunzip *.</description></item></channel></rss>

@@ -1,283 +1,14 @@
-<!DOCTYPE html>
-<html
-  lang="en"
-  dir="ltr"
-  
-><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-<title>基因家族分析从零到有（研究对象确定&#43;基因家族鉴定&#43;基本信息网站&#43;结构分析&#43;共线性分析&#43;实验验证简述） | Ruqing a</title>
-
-<meta name="generator" content="Hugo Eureka 0.9.3" />
-<link rel="stylesheet" href="https://ruqinga.github.io/css/eureka.min.9cec6350e37e534b0338fa9a085bf06855de3b0f2dcf857e792e5e97b07ea905d4d5513db554cbc26a9c3da622bae92d.css">
-<script defer src="https://ruqinga.github.io/js/eureka.min.fa9a6bf6d7a50bb635b4cca7d2ba5cf3dfb095ae3798773f1328f7950028b48c17d06276594e1b5f244a25a6c969a705.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload"
-  href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&amp;family=Noto&#43;Serif&#43;SC:wght@400;600;700&amp;display=swap"
-  as="style" onload="this.onload=null;this.rel='stylesheet'">
-
-
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/styles/base16/solarized-light.min.css"
-   media="print"
-  onload="this.media='all';this.onload=null" crossorigin>
-<script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/highlight.min.js"
-   crossorigin></script>
-  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/languages/dart.min.js"
-     crossorigin></script>
-<link rel="stylesheet" href="https://ruqinga.github.io/css/highlightjs.min.2958991528e43eb6fc9b8c4f2b8e052f79c4010718e1d1e888a777620e9ee63021c2c57ec7417a3108019bb8c41943e6.css" media="print" onload="this.media='all';this.onload=null">
-
-
-<script defer type="text/javascript" src="https://ruqinga.github.io/js/fontawesome.min.f14def4f6943de5b19b19c02e239b98c8cc6a8fe66b6828a21da7c0e9d405df8364cab68aa637c3bbe735eb7c325aa3c.js"></script>
-    
-
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css"
-   integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ"  media="print"
-  onload="this.media='all';this.onload=null" crossorigin>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js" 
-  integrity="sha384-VQ8d8WVFw0yHhCk5E8I86oOhv48xLpnDZx5T9GogA/Y84DcCKWXDmSDfn13bzFZY"  crossorigin></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js"
-   integrity="sha384-&#43;XBljXPPiv&#43;OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR"  crossorigin></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    renderMathInElement(document.body, {
-      delimiters: [
-        { left: "$$", right: "$$", display: true },
-        { left: "$", right: "$", display: false },
-        { left: "\\(", right: "\\)", display: false },
-        { left: "\\[", right: "\\]", display: true }
-      ],
-    });
-  });
-</script>
-
-
-<script defer src="https://cdn.jsdelivr.net/npm/mermaid@8.14.0/dist/mermaid.min.js" 
-  integrity="sha384-atOyb0FxAgN9LyAc6PEf9BjgwLISyansgdH8/VXQH8p2o5vfrRgmGIJ2Sg22L0A0"  crossorigin></script>
-
-
-<link rel="icon" type="image/png" sizes="32x32" href="https://ruqinga.github.io/images/icon_huba2c3f04abefa322225c7a4a6a5120c0_16720_32x32_fill_box_center_3.png">
-<link rel="apple-touch-icon" sizes="180x180" href="https://ruqinga.github.io/images/icon_huba2c3f04abefa322225c7a4a6a5120c0_16720_180x180_fill_box_center_3.png">
-
-<meta name="description"
-  content="基因家族分析从零到有，本文将详细介绍每一步该做的准备。">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [{
-      "@type": "ListItem",
-      "position": 1 ,
-      "name":"Posts",
-      "item":"https://ruqinga.github.io/posts/"},{
-      "@type": "ListItem",
-      "position": 2 ,
-      "name":"基因家族分析从零到有（研究对象确定+基因家族鉴定+基本信息网站+结构分析+共线性分析+实验验证简述）",
-      "item":"https://ruqinga.github.io/posts/%E5%9F%BA%E5%9B%A0%E5%AE%B6%E6%97%8F%E5%88%86%E6%9E%90/"}]
-}
-</script>
-
-
-
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://ruqinga.github.io/posts/%E5%9F%BA%E5%9B%A0%E5%AE%B6%E6%97%8F%E5%88%86%E6%9E%90/"
-    },
-    "headline": "基因家族分析从零到有（研究对象确定\u002b基因家族鉴定\u002b基本信息网站\u002b结构分析\u002b共线性分析\u002b实验验证简述） | Ruqing a","datePublished": "2022-04-18T00:00:00+00:00",
-    "dateModified": "2022-04-18T00:00:00+00:00",
-    "wordCount":  1116 ,
-    "publisher": {
-        "@type": "Person",
-        "name": "Ruqing",
-        "logo": {
-            "@type": "ImageObject",
-            "url": "https://ruqinga.github.io/images/icon.png"
-        }
-        },
-    "description": "\u003cp\u003e基因家族分析从零到有，本文将详细介绍每一步该做的准备。\u003c\/p\u003e"
-}
-</script><meta property="og:title" content="基因家族分析从零到有（研究对象确定&#43;基因家族鉴定&#43;基本信息网站&#43;结构分析&#43;共线性分析&#43;实验验证简述） | Ruqing a" />
-<meta property="og:type" content="article" />
-
-
-<meta property="og:image" content="https://ruqinga.github.io/images/icon.png">
-
-
-<meta property="og:url" content="https://ruqinga.github.io/posts/%E5%9F%BA%E5%9B%A0%E5%AE%B6%E6%97%8F%E5%88%86%E6%9E%90/" />
-
-
-
-
-<meta property="og:description" content="基因家族分析从零到有，本文将详细介绍每一步该做的准备。" />
-
-
-
-
-<meta property="og:locale" content="en" />
-
-
-
-
-<meta property="og:site_name" content="Ruqing a" />
-
-
-
-
-
-
-<meta property="article:published_time" content="2022-04-18T00:00:00&#43;00:00" />
-
-
-<meta property="article:modified_time" content="2022-04-18T00:00:00&#43;00:00" />
-
-
-
-<meta property="article:section" content="posts" />
-
-
-
-
-
-  <body class="flex min-h-screen flex-col">
-    <header
-      class="min-h-16 pl-scrollbar bg-secondary-bg fixed z-50 flex w-full items-center shadow-sm"
-    >
-      <div class="mx-auto w-full max-w-screen-xl"><script>
-    let storageColorScheme = localStorage.getItem("lightDarkMode")
-    if (((storageColorScheme == 'Auto' || storageColorScheme == null) && window.matchMedia("(prefers-color-scheme: dark)").matches) || storageColorScheme == "Dark") {
-        document.getElementsByTagName('html')[0].classList.add('dark')
-    }
-</script>
-<nav class="flex items-center justify-between flex-wrap px-4 py-4 md:py-0">
-    <a href="/" class="me-6 text-primary-text text-xl font-bold">Ruqing a</a>
-    <button id="navbar-btn" class="md:hidden flex items-center px-3 py-2" aria-label="Open Navbar">
-        <i class="fas fa-bars"></i>
-    </button>
-
-    <div id="target"
-        class="hidden block md:flex md:grow md:justify-between md:items-center w-full md:w-auto text-primary-text z-20">
-        <div class="md:flex md:h-16 text-sm md:grow pb-4 md:pb-0 border-b md:border-b-0">
-            <a href="/#about" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">About</a>
-            <a href="/posts/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  selected-menu-item  me-4">Posts</a>
-            <a href="/docs/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">Docs</a>
-        </div>
-
-        <div class="flex">
-            <div class="relative pt-4 md:pt-0">
-                <div class="cursor-pointer hover:text-eureka" id="lightDarkMode">
-                    <i class="fas fa-adjust"></i>
-                </div>
-                <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-30" id="is-open">
-                </div>
-                <div class="absolute flex flex-col start-0 md:start-auto end-auto md:end-0 hidden bg-secondary-bg w-48 rounded py-2 border border-tertiary-bg cursor-pointer z-40"
-                    id='lightDarkOptions'>
-                    <span class="px-4 py-1 hover:text-eureka" name="Light">Light</span>
-                    <span class="px-4 py-1 hover:text-eureka" name="Dark">Dark</span>
-                    <span class="px-4 py-1 hover:text-eureka" name="Auto">Auto</span>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-0" id="is-open-mobile">
-    </div>
-
-</nav>
-<script>
-    
-    let element = document.getElementById('lightDarkMode')
-    if (storageColorScheme == null || storageColorScheme == 'Auto') {
-        document.addEventListener('DOMContentLoaded', () => {
-            window.matchMedia("(prefers-color-scheme: dark)").addEventListener('change', switchDarkMode)
-        })
-    } else if (storageColorScheme == "Light") {
-        element.firstElementChild.classList.remove('fa-adjust')
-        element.firstElementChild.setAttribute("data-icon", 'sun')
-        element.firstElementChild.classList.add('fa-sun')
-    } else if (storageColorScheme == "Dark") {
-        element.firstElementChild.classList.remove('fa-adjust')
-        element.firstElementChild.setAttribute("data-icon", 'moon')
-        element.firstElementChild.classList.add('fa-moon')
-    }
-
-    document.addEventListener('DOMContentLoaded', () => {
-        getcolorscheme();
-        switchBurger();
-    });
-</script>
-</div>
-    </header>
-    <main class="grow pt-16">
-        <div class="pl-scrollbar">
-          <div class="mx-auto w-full max-w-screen-xl lg:px-4 xl:px-8">
-  
-  
-  <div class="grid grid-cols-2 gap-4 lg:grid-cols-8 lg:pt-12">
-    <div
-      class=" bg-secondary-bg col-span-2 rounded px-6 py-8 lg:col-span-6"
-    >
-      <article class="prose">
-  <h1 class="mb-4">基因家族分析从零到有（研究对象确定&#43;基因家族鉴定&#43;基本信息网站&#43;结构分析&#43;共线性分析&#43;实验验证简述）</h1>
-
-  <div
-  class="text-tertiary-text not-prose mt-2 flex flex-row flex-wrap items-center"
->
-  <div class="me-6 my-2">
-    <i class="fas fa-calendar me-1"></i>
-    <span
-      >2022-04-18</span
-    >
-  </div>
-  <div class="me-6 my-2">
-    <i class="fas fa-clock me-1"></i>
-    <span>6 min read</span>
-  </div>
-
-  
-    <div class="me-6 my-2">
-      <i class="fas fa-folder me-1"></i>
-      
-        <a href="https://ruqinga.github.io/categories/rna-seq/" class="hover:text-eureka"
-          >rna-seq</a
-        >
-      
-    </div>
-  
-
-  
-</div>
-
-
-  
-  
-
-  <p>基因家族分析从零到有，本文将详细介绍每一步该做的准备。</p>
-<h2 id="一介绍">一、介绍</h2>
-<p>在开始之前，我们需要知道，基因家族是什么？以及为什么要做基因家族分析？</p>
-<p><strong>基因家族</strong>（gene family）：来源于同一个祖先，由一个基因通过基因复制或者加倍而产生两个或更多的拷贝而构成的一组基因，它们在<strong>结构和功能上具有明显的相似性</strong>，编码相似的蛋白质产物。</p>
-<img src="https://raw.githubusercontent.com/ruqinga/picture/main/2023/02/202309020852479.png" alt="image-20220603160108764" style="zoom: 80%;" />
-<p>202303图更正：同源信息如下图：A1A2为直系同源，A1B1为旁系同源。祖先基因拷贝变异形成A、B，进一步拷贝变异生成A1|A2|B1|B2|B3。A1A2为直系同源，结构相似功能却不一定；A1B1为旁系同源，功能相似结构不相似。</p>
-<pre><code class="language-mermaid">graph
+<!doctype html><html lang=en dir=ltr><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>基因家族分析从零到有（研究对象确定+基因家族鉴定+基本信息网站+结构分析+共线性分析+实验验证简述） | Ruqing a</title>
+<meta name=generator content="Hugo Eureka 0.9.3"><link rel=stylesheet href=https://ruqinga.github.io/css/eureka.min.c000e20ee83e983a6da50f36cc965ffaab7a5112d85459aae8096796b03fa59f32bc75c8322942369757c3c770561bfb.css><script defer src=https://ruqinga.github.io/js/eureka.min.fa9a6bf6d7a50bb635b4cca7d2ba5cf3dfb095ae3798773f1328f7950028b48c17d06276594e1b5f244a25a6c969a705.js></script><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link rel=preload href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&amp;family=Noto+Serif+SC:wght@400;600;700&amp;display=swap" as=style onload='this.onload=null,this.rel="stylesheet"'><link rel=stylesheet href=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/styles/base16/solarized-light.min.css media=print onload='this.media="all",this.onload=null' crossorigin><script defer src=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/highlight.min.js crossorigin></script><script defer src=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/languages/dart.min.js crossorigin></script><link rel=stylesheet href=https://ruqinga.github.io/css/highlightjs.min.2958991528e43eb6fc9b8c4f2b8e052f79c4010718e1d1e888a777620e9ee63021c2c57ec7417a3108019bb8c41943e6.css media=print onload='this.media="all",this.onload=null'><script defer type=text/javascript src=https://ruqinga.github.io/js/fontawesome.min.1853a524ca39729ab933ec9ed36c061ff97ab42d22bfb99eebbff3b8df0476a351eea2822c6447a461ca0fbc56183b11.js></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css integrity=sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ media=print onload='this.media="all",this.onload=null' crossorigin><script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js integrity=sha384-VQ8d8WVFw0yHhCk5E8I86oOhv48xLpnDZx5T9GogA/Y84DcCKWXDmSDfn13bzFZY crossorigin></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin></script><script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1},{left:"\\(",right:"\\)",display:!1},{left:"\\[",right:"\\]",display:!0}]})})</script><script defer src=https://cdn.jsdelivr.net/npm/mermaid@8.14.0/dist/mermaid.min.js integrity=sha384-atOyb0FxAgN9LyAc6PEf9BjgwLISyansgdH8/VXQH8p2o5vfrRgmGIJ2Sg22L0A0 crossorigin></script><link rel=icon type=image/png sizes=32x32 href=https://ruqinga.github.io/images/icon_huba2c3f04abefa322225c7a4a6a5120c0_16720_32x32_fill_box_center_3.png><link rel=apple-touch-icon sizes=180x180 href=https://ruqinga.github.io/images/icon_huba2c3f04abefa322225c7a4a6a5120c0_16720_180x180_fill_box_center_3.png><meta name=description content="基因家族分析从零到有，本文将详细介绍每一步该做的准备。"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://ruqinga.github.io/posts/"},{"@type":"ListItem","position":2,"name":"基因家族分析从零到有（研究对象确定+基因家族鉴定+基本信息网站+结构分析+共线性分析+实验验证简述）","item":"https://ruqinga.github.io/posts/%E5%9F%BA%E5%9B%A0%E5%AE%B6%E6%97%8F%E5%88%86%E6%9E%90/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://ruqinga.github.io/posts/%E5%9F%BA%E5%9B%A0%E5%AE%B6%E6%97%8F%E5%88%86%E6%9E%90/"},"headline":"基因家族分析从零到有（研究对象确定\u002b基因家族鉴定\u002b基本信息网站\u002b结构分析\u002b共线性分析\u002b实验验证简述） | Ruqing a","datePublished":"2022-04-18T00:00:00+00:00","dateModified":"2022-04-18T00:00:00+00:00","wordCount":1116,"publisher":{"@type":"Person","name":"Ruqing","logo":{"@type":"ImageObject","url":"https://ruqinga.github.io/images/icon.png"}},"description":"\u003cp\u003e基因家族分析从零到有，本文将详细介绍每一步该做的准备。\u003c\/p\u003e"}</script><meta property="og:title" content="基因家族分析从零到有（研究对象确定+基因家族鉴定+基本信息网站+结构分析+共线性分析+实验验证简述） | Ruqing a"><meta property="og:type" content="article"><meta property="og:image" content="https://ruqinga.github.io/images/icon.png"><meta property="og:url" content="https://ruqinga.github.io/posts/%E5%9F%BA%E5%9B%A0%E5%AE%B6%E6%97%8F%E5%88%86%E6%9E%90/"><meta property="og:description" content="基因家族分析从零到有，本文将详细介绍每一步该做的准备。"><meta property="og:locale" content="en"><meta property="og:site_name" content="Ruqing a"><meta property="article:published_time" content="2022-04-18T00:00:00+00:00"><meta property="article:modified_time" content="2022-04-18T00:00:00+00:00"><meta property="article:section" content="posts"><body class="flex min-h-screen flex-col"><header class="min-h-16 pl-scrollbar bg-secondary-bg fixed z-50 flex w-full items-center shadow-sm"><div class="mx-auto w-full max-w-screen-xl"><script>let storageColorScheme=localStorage.getItem("lightDarkMode");((storageColorScheme=="Auto"||storageColorScheme==null)&&window.matchMedia("(prefers-color-scheme: dark)").matches||storageColorScheme=="Dark")&&document.getElementsByTagName("html")[0].classList.add("dark")</script><nav class="flex items-center justify-between flex-wrap px-4 py-4 md:py-0"><a href=/ class="me-6 text-primary-text text-xl font-bold">Ruqing a</a>
+<button id=navbar-btn class="md:hidden flex items-center px-3 py-2" aria-label="Open Navbar">
+<i class="fas fa-bars"></i></button><div id=target class="hidden block md:flex md:grow md:justify-between md:items-center w-full md:w-auto text-primary-text z-20"><div class="md:flex md:h-16 text-sm md:grow pb-4 md:pb-0 border-b md:border-b-0"><a href=/#about class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2 border-transparent me-4">About</a>
+<a href=/posts/ class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2 selected-menu-item me-4">Posts</a>
+<a href=/docs/ class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2 border-transparent me-4">Docs</a></div><div class=flex><div class="relative pt-4 md:pt-0"><div class="cursor-pointer hover:text-eureka" id=lightDarkMode><i class="fas fa-adjust"></i></div><div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-30" id=is-open></div><div class="absolute flex flex-col start-0 md:start-auto end-auto md:end-0 hidden bg-secondary-bg w-48 rounded py-2 border border-tertiary-bg cursor-pointer z-40" id=lightDarkOptions><span class="px-4 py-1 hover:text-eureka" name=Light>Light</span>
+<span class="px-4 py-1 hover:text-eureka" name=Dark>Dark</span>
+<span class="px-4 py-1 hover:text-eureka" name=Auto>Auto</span></div></div></div></div><div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-0" id=is-open-mobile></div></nav><script>let element=document.getElementById("lightDarkMode");storageColorScheme==null||storageColorScheme=="Auto"?document.addEventListener("DOMContentLoaded",()=>{window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",switchDarkMode)}):storageColorScheme=="Light"?(element.firstElementChild.classList.remove("fa-adjust"),element.firstElementChild.setAttribute("data-icon","sun"),element.firstElementChild.classList.add("fa-sun")):storageColorScheme=="Dark"&&(element.firstElementChild.classList.remove("fa-adjust"),element.firstElementChild.setAttribute("data-icon","moon"),element.firstElementChild.classList.add("fa-moon")),document.addEventListener("DOMContentLoaded",()=>{getcolorscheme(),switchBurger()})</script></div></header><main class="grow pt-16"><div class=pl-scrollbar><div class="mx-auto w-full max-w-screen-xl lg:px-4 xl:px-8"><div class="grid grid-cols-2 gap-4 lg:grid-cols-8 lg:pt-12"><div class="bg-secondary-bg col-span-2 rounded px-6 py-8 lg:col-span-6"><article class=prose><h1 class=mb-4>基因家族分析从零到有（研究对象确定+基因家族鉴定+基本信息网站+结构分析+共线性分析+实验验证简述）</h1><div class="text-tertiary-text not-prose mt-2 flex flex-row flex-wrap items-center"><div class="me-6 my-2"><i class="fas fa-calendar me-1"></i>
+<span>2022-04-18</span></div><div class="me-6 my-2"><i class="fas fa-clock me-1"></i>
+<span>6 min read</span></div><div class="me-6 my-2"><i class="fas fa-folder me-1"></i>
+<a href=https://ruqinga.github.io/categories/rna-seq/ class=hover:text-eureka>rna-seq</a></div></div><p>基因家族分析从零到有，本文将详细介绍每一步该做的准备。</p><h2 id=一介绍>一、介绍</h2><p>在开始之前，我们需要知道，基因家族是什么？以及为什么要做基因家族分析？</p><p><strong>基因家族</strong>（gene family）：来源于同一个祖先，由一个基因通过基因复制或者加倍而产生两个或更多的拷贝而构成的一组基因，它们在<strong>结构和功能上具有明显的相似性</strong>，编码相似的蛋白质产物。</p><img src=https://raw.githubusercontent.com/ruqinga/picture/main/2023/02/202309020852479.png alt=image-20220603160108764 style=zoom:80%><p>202303图更正：同源信息如下图：A1A2为直系同源，A1B1为旁系同源。祖先基因拷贝变异形成A、B，进一步拷贝变异生成A1|A2|B1|B2|B3。A1A2为直系同源，结构相似功能却不一定；A1B1为旁系同源，功能相似结构不相似。</p><pre><code class=language-mermaid>graph
 a(祖先基因)--&gt;A
 a--&gt;B
 A--&gt;A1
@@ -285,291 +16,29 @@ A--&gt;A2
 B--&gt;B1
 B--&gt;B2
 B--&gt;B3
-</code></pre>
-<center style="font-size:14px;color:#C0C0C0"> 图1 基因家族、基因超家族与超基因家族关系 </center>
-<blockquote>
-<p>基因家族的遗传进化：</p>
-<ul>
-<li>协同进化( Concerted Evolution ) ：两个相互作用的物种在进化过程中发展的相互适应的共同进化。一个物种由于另一物种影响而发生遗传进化的进化类型。例如植物由于病原菌所施加的压力而与抗性基因表现出协同进化关系。</li>
-<li>无功能化（ Degeneration ）： 由于有害突变的（非同义突变，可变剪切突变等等）不断积累，导致基因功能丧失，例如一些假基因。</li>
-<li>新功能化（ Subfunctionalization ）： 基因在复制的过程中通过突变，遗传漂变等等使得一些基因有了新的功能</li>
-</ul>
-</blockquote>
-<p><strong>基因家族分析意义</strong>：</p>
-<ol>
-<li>快速在目标物种中确定与目标性状有关的基因家族成员将有助于<strong>缩小研究范围</strong></li>
-<li>确定当前物种是否有特有的基因家族分支，这个可能对应了该物种特有的<strong>分子生物学过程</strong></li>
-<li>确定当前物种是否在某个特定的基因家族分支得到扩展，这个也可能对应了该物种强化的分子生物学功能，如桉树的MYB</li>
-<li>了解基因的进化历史，高档次的基因家族分析，会涉及到进化尺度上的基因家族分析，厘清其进化历史，可以为<strong>遗传操作</strong>提供参考</li>
-<li>补充注释信息</li>
-</ol>
-<h2 id="二分析前准备">二、分析前准备</h2>
-<h3 id="1确定要研究的基因家族">1）确定要研究的基因家族</h3>
-<ol>
-<li>
-<p>与课题相关的基因家族</p>
-<p>例如假如你们实验室是专门做某些基因的研究，对该基因家族有一定的了解，例如抗性基因，你就可以专门深挖该基因家族的研究</p>
-</li>
-<li>
-<p>研究的热点</p>
-<p>研究热点基因家族在别人没有研究的植物中的作用。如：</p>
-<ul>
-<li>WRKY参与植物生长发育、形态建成与抗病</li>
-<li>NBS-LRR植物中最大抗病基因家族</li>
-<li>MADS-box: 植物中最大的转录因子家族之一，广泛存在于真核生物中，参与花器官发育，开花时间调节</li>
-<li>HSP70高度保守的分子伴侣蛋白，热激活蛋白</li>
-</ul>
-</li>
-<li>
-<p>新基因家族</p>
-<p>找到没人没有研究过的基因家族进行研究，难度较大</p>
-</li>
-</ol>
-<blockquote>
-<p>在确定好研究对象后，可以通过Google或者baidu对该基因家族进行搜索，确认在你需要研究的作物中，该基因家族还没有被研究过。</p>
-</blockquote>
-<h3 id="2了解你研究的基因家族的特征">2）了解你研究的基因家族的特征</h3>
-<ol>
-<li>
-<p>参考收录了基因家族特征的网站</p>
-<p>如 <a href="https://www.arabidopsis.org/">TAIR</a>（拟南芥作为一个模式植物所被研究的基因家族），TIGR（玉米）或 <a href="http://planttfdb.cbi.pku.edu.cn/">PlantTFdb</a>（主要针对转录因子），并进行预测和总结。</p>
-</li>
-<li>
-<p>查找相关文献</p>
-<p>并不是所有的基因家族都被收录到网站中，在这种情况下，我们可以通过查找与该基因家族的文献进行阅读，一般在这些文章中，都会对该基因家族进行总结规律。阅读相关文章也是很重要的，特别是同一基因家族在不同作物上的研究，你不但可以了解到其基础特征，还能通过文章了解他们所做的分析（包括<strong>方法还有参数</strong>等），对你后续的分析还有文章的写作都会有很大帮助。</p>
-<blockquote>
-<p>方法：<strong>流程，pfamd编号</strong></p>
-<p>参数：<strong>保守的结构域（在哪段），几个分支，保守的aa位点，长度波动，蛋白序列</strong></p>
-<p>基因家族的蛋白序列可以在如下网站中搜索：<a href="https://www.arabidopsis.org/browse/genefamily/index.jsp">tair</a>， <a href="https://www.uniprot.org/">UniProt</a></p>
-</blockquote>
-</li>
-</ol>
-<h3 id="3数据下载">3）数据下载</h3>
-<blockquote>
-<p>在了解相关信息之后，我们将所需的数据下载下来</p>
-</blockquote>
-<ol>
-<li>
-<p>下载研究物种的基因组序列文件<code>.fa</code>和注释文件<code>.gtf/.gff3</code>。</p>
-<blockquote>
-<p>常用的植物数据库，例如<a href="https://plants.ensembl.org/index.html">ensembl plant</a> 和 <a href="https://phytozome.jgi.doe.gov/pz/portal.html">Phytozome</a> 里面囊括了大部分的植物的基因组文件。也可以从文献中看前人使用的是哪里的数据，下载不了可以试着联系原作者</p>
-</blockquote>
-</li>
-<li>
-<p>下载所感兴趣的基因家族隐马可夫模型<code>.hmm</code>文件</p>
-</li>
-<li>
-<p>下载参考基因组的基因序列<code>.fa</code></p>
-<blockquote>
-<p>文章的附件或tair、UniProtKB/Swiss-Prot等网站中搜索得到，复制然后保存为fasta格式</p>
-<p>知道access可以通过这个网址批量下载https://www.ncbi.nlm.nih.gov/sites/batchentrez</p>
-<p>关于UniProtKB/Swiss-Prot和UniProtKB/TrEMBL</p>
-<ul>
-<li>Swiss-Prot：高质量的、手工注释的、非冗余的数据集</li>
-<li>TrEMBL：电脑自动注释的</li>
-</ul>
-</blockquote>
-</li>
-</ol>
-<h2 id="三基因家族成员的鉴定">三、基因家族成员的鉴定</h2>
-<blockquote>
-<p>获取候选基因家族成员有两个策略。
+</code></pre><center style=font-size:14px;color:silver>图1 基因家族、基因超家族与超基因家族关系</center><blockquote><p>基因家族的遗传进化：</p><ul><li>协同进化( Concerted Evolution ) ：两个相互作用的物种在进化过程中发展的相互适应的共同进化。一个物种由于另一物种影响而发生遗传进化的进化类型。例如植物由于病原菌所施加的压力而与抗性基因表现出协同进化关系。</li><li>无功能化（ Degeneration ）： 由于有害突变的（非同义突变，可变剪切突变等等）不断积累，导致基因功能丧失，例如一些假基因。</li><li>新功能化（ Subfunctionalization ）： 基因在复制的过程中通过突变，遗传漂变等等使得一些基因有了新的功能</li></ul></blockquote><p><strong>基因家族分析意义</strong>：</p><ol><li>快速在目标物种中确定与目标性状有关的基因家族成员将有助于<strong>缩小研究范围</strong></li><li>确定当前物种是否有特有的基因家族分支，这个可能对应了该物种特有的<strong>分子生物学过程</strong></li><li>确定当前物种是否在某个特定的基因家族分支得到扩展，这个也可能对应了该物种强化的分子生物学功能，如桉树的MYB</li><li>了解基因的进化历史，高档次的基因家族分析，会涉及到进化尺度上的基因家族分析，厘清其进化历史，可以为<strong>遗传操作</strong>提供参考</li><li>补充注释信息</li></ol><h2 id=二分析前准备>二、分析前准备</h2><h3 id=1确定要研究的基因家族>1）确定要研究的基因家族</h3><ol><li><p>与课题相关的基因家族</p><p>例如假如你们实验室是专门做某些基因的研究，对该基因家族有一定的了解，例如抗性基因，你就可以专门深挖该基因家族的研究</p></li><li><p>研究的热点</p><p>研究热点基因家族在别人没有研究的植物中的作用。如：</p><ul><li>WRKY参与植物生长发育、形态建成与抗病</li><li>NBS-LRR植物中最大抗病基因家族</li><li>MADS-box: 植物中最大的转录因子家族之一，广泛存在于真核生物中，参与花器官发育，开花时间调节</li><li>HSP70高度保守的分子伴侣蛋白，热激活蛋白</li></ul></li><li><p>新基因家族</p><p>找到没人没有研究过的基因家族进行研究，难度较大</p></li></ol><blockquote><p>在确定好研究对象后，可以通过Google或者baidu对该基因家族进行搜索，确认在你需要研究的作物中，该基因家族还没有被研究过。</p></blockquote><h3 id=2了解你研究的基因家族的特征>2）了解你研究的基因家族的特征</h3><ol><li><p>参考收录了基因家族特征的网站</p><p>如 <a href=https://www.arabidopsis.org/>TAIR</a>（拟南芥作为一个模式植物所被研究的基因家族），TIGR（玉米）或 <a href=http://planttfdb.cbi.pku.edu.cn/>PlantTFdb</a>（主要针对转录因子），并进行预测和总结。</p></li><li><p>查找相关文献</p><p>并不是所有的基因家族都被收录到网站中，在这种情况下，我们可以通过查找与该基因家族的文献进行阅读，一般在这些文章中，都会对该基因家族进行总结规律。阅读相关文章也是很重要的，特别是同一基因家族在不同作物上的研究，你不但可以了解到其基础特征，还能通过文章了解他们所做的分析（包括<strong>方法还有参数</strong>等），对你后续的分析还有文章的写作都会有很大帮助。</p><blockquote><p>方法：<strong>流程，pfamd编号</strong></p><p>参数：<strong>保守的结构域（在哪段），几个分支，保守的aa位点，长度波动，蛋白序列</strong></p><p>基因家族的蛋白序列可以在如下网站中搜索：<a href=https://www.arabidopsis.org/browse/genefamily/index.jsp>tair</a>， <a href=https://www.uniprot.org/>UniProt</a></p></blockquote></li></ol><h3 id=3数据下载>3）数据下载</h3><blockquote><p>在了解相关信息之后，我们将所需的数据下载下来</p></blockquote><ol><li><p>下载研究物种的基因组序列文件<code>.fa</code>和注释文件<code>.gtf/.gff3</code>。</p><blockquote><p>常用的植物数据库，例如<a href=https://plants.ensembl.org/index.html>ensembl plant</a> 和 <a href=https://phytozome.jgi.doe.gov/pz/portal.html>Phytozome</a> 里面囊括了大部分的植物的基因组文件。也可以从文献中看前人使用的是哪里的数据，下载不了可以试着联系原作者</p></blockquote></li><li><p>下载所感兴趣的基因家族隐马可夫模型<code>.hmm</code>文件</p></li><li><p>下载参考基因组的基因序列<code>.fa</code></p><blockquote><p>文章的附件或tair、UniProtKB/Swiss-Prot等网站中搜索得到，复制然后保存为fasta格式</p><p>知道access可以通过这个网址批量下载https://www.ncbi.nlm.nih.gov/sites/batchentrez</p><p>关于UniProtKB/Swiss-Prot和UniProtKB/TrEMBL</p><ul><li>Swiss-Prot：高质量的、手工注释的、非冗余的数据集</li><li>TrEMBL：电脑自动注释的</li></ul></blockquote></li></ol><h2 id=三基因家族成员的鉴定>三、基因家族成员的鉴定</h2><blockquote><p>获取候选基因家族成员有两个策略。
 一是用下载好的hmm模型或自己构建的HMM moedl模型作为query，来搜索马铃薯蛋白序列数据。在这里就需要用到hmmer子程序<code>hmmsearch</code>。
-二是用已发表的确定的MADS-box序列为种子序列（query），直接本地<code>blast</code>获取同源基因。</p>
-</blockquote>
-<h3 id="1确定基因家族">1）确定基因家族</h3>
-<h4 id="1-比对">1. 比对</h4>
-<blockquote>
-<p>用下载得到的已经确认的基因家族基因作为参考，进行序列比对检索</p>
-</blockquote>
-<p>blast</p>
-<pre><code class="language-sh"># 建库
+二是用已发表的确定的MADS-box序列为种子序列（query），直接本地<code>blast</code>获取同源基因。</p></blockquote><h3 id=1确定基因家族>1）确定基因家族</h3><h4 id=1-比对>1. 比对</h4><blockquote><p>用下载得到的已经确认的基因家族基因作为参考，进行序列比对检索</p></blockquote><p>blast</p><pre><code class=language-sh># 建库
 makeblastdb -in protein.faa -dbtype prot -out p_Blast -hash_index -parse_seqids
 # 比对
 blastp -query WRKY_eggplant.fa -db p_Blast -evalue 1e-5 -outfmt 6 -out m2e_WRKY.blast -parse_seqids
-</code></pre>
-<blockquote>
-<p>参数介绍：</p>
-<p><strong># 建库</strong></p>
-<p><code>makeblastdb -in input_file -dbtype prot -parse_seqids -out database_name -logfile File_Name</code></p>
-<p><code>-in</code>：输入数据</p>
-<p><code>-dbtype </code>：序列类型，nucl为核酸，prot为蛋白</p>
-<p><code>-parse_seqids </code>：推荐加上</p>
-<p><code>-out </code>：输出建立的数据库</p>
-<p><code>-logfile</code> ：日志文件，如果没有默认输出到屏幕</p>
-<p><strong># 比对</strong></p>
-<p><code>blastp -query seq.fasta -out seq.blast -db dbname -outfmt 6 -evalue 1e-5</code></p>
-<p><code>blastn</code>,<code>blastp</code>：序列类型</p>
-<p><code>-query</code>： 输入文件路径及文件名</p>
-<p><code>-out</code>：输出文件路径及文件名</p>
-<p><code>-db</code>：格式化了的数据库路径及数据库名，上一步建成的</p>
-<p><code>-outfmt</code>：输出文件格式，总共有12种格式，6是tabular格式对应之前BLAST的m8格式</p>
-<p><code>-evalue</code>：设置输出结果的e-value值</p>
-<p><code>-num_threads</code>：线程</p>
-</blockquote>
-<p>或者使用diamond，会更快</p>
-<pre><code class="language-sh"># 建库
+</code></pre><blockquote><p>参数介绍：</p><p><strong># 建库</strong></p><p><code>makeblastdb -in input_file -dbtype prot -parse_seqids -out database_name -logfile File_Name</code></p><p><code>-in</code>：输入数据</p><p><code>-dbtype </code>：序列类型，nucl为核酸，prot为蛋白</p><p><code>-parse_seqids </code>：推荐加上</p><p><code>-out </code>：输出建立的数据库</p><p><code>-logfile</code> ：日志文件，如果没有默认输出到屏幕</p><p><strong># 比对</strong></p><p><code>blastp -query seq.fasta -out seq.blast -db dbname -outfmt 6 -evalue 1e-5</code></p><p><code>blastn</code>,<code>blastp</code>：序列类型</p><p><code>-query</code>： 输入文件路径及文件名</p><p><code>-out</code>：输出文件路径及文件名</p><p><code>-db</code>：格式化了的数据库路径及数据库名，上一步建成的</p><p><code>-outfmt</code>：输出文件格式，总共有12种格式，6是tabular格式对应之前BLAST的m8格式</p><p><code>-evalue</code>：设置输出结果的e-value值</p><p><code>-num_threads</code>：线程</p></blockquote><p>或者使用diamond，会更快</p><pre><code class=language-sh># 建库
 # 会将fasta格式的蛋白序列创建成为后缀为.dmcd的数据库文件
 diamond makedb --in protein.faa -d p_diamond
 # 比对
 diamond blastp --query WRKY_eggplant.fa -d p_diamond -o m2e_diamond.blastp -e0.00005
-</code></pre>
-<blockquote>
-<p>参数介绍：</p>
-<p><strong># 建库</strong>
-<code>diamond makedb --in --db </code></p>
-<p>``&ndash;in<code>：输入文件 </code>&ndash;db<code>：输出的数据库前缀，或</code>&ndash;nr`</p>
-<p><strong># 比对</strong>
-<code>diamond blastx --db  -q reads.fna -o dna_matches_fmt6.txt</code></p>
-<p>比对蛋白：<code>diamond blastx</code></p>
-<p>比对dna序列：<code>diamond blastp</code></p>
-<p><code>--query/-q</code>：输入检索序列，下载的已经确定的基因序列</p>
-<p><code>--out/-o</code>：输出文件，</p>
-<p>默认以&ndash;outfmt 6输出结果和BLAST+的&ndash;outfmt 6结果一致。</p>
-<p><code>-p</code>线程</p>
-</blockquote>
-<blockquote>
-<p><strong>blast结果说明？？？</strong></p>
-<p><a href="https://www.plob.org/article/641.html">https://www.plob.org/article/641.html</a></p>
-<p><img src="https://raw.githubusercontent.com/ruqinga/picture/main/2023/02/202309020852481.png" alt="image-20220402193730047"></p>
-<p>主要是第三列pident(percentage of identical matches)和第四列length(alignment length)，去冗余</p>
-</blockquote>
-<h4 id="2-hmmer">2. hmmer</h4>
-<blockquote>
-<p>先在全基因组的范围内使用<code>hmmersearch</code>和基因家族的隐马可夫模型<code>.hmm</code>进行基因家族的进行初步搜索，接着把质量比较高的基因家族候选基因筛选出来<code>E-value &lt; 1 × 10−20</code>。没有模型的使用<code>clustalw2</code>对高质量的序列进行多序列比对，多序列比对后，对这些置信的序列进行隐马可夫模型的构建（使用<code>hmmbuild</code>），最后使用该新建的隐马可夫模型，进一步筛选完整的NSB基因家族序列（需再次过滤，找到基因家族的成员数量一般比第一步初步筛选的多）</p>
-</blockquote>
-<p>在mega里对参考基因组进行clustalw比对，保存为<code>.fas</code>，然后利用<code>hmmbuild</code>建库，<code>hmmsearch</code>搜索基因家族</p>
-<blockquote>
-<p>这是没有隐马可夫的情况下。如果有，可以直接<code>hmmsearch</code>，不用建库</p>
-</blockquote>
-<pre><code class="language-sh"># 以下是步骤
+</code></pre><blockquote><p>参数介绍：</p><p><strong># 建库</strong>
+<code>diamond makedb --in --db</code></p><p>``&ndash;in<code>：输入文件 </code>&ndash;db<code>：输出的数据库前缀，或</code>&ndash;nr`</p><p><strong># 比对</strong>
+<code>diamond blastx --db -q reads.fna -o dna_matches_fmt6.txt</code></p><p>比对蛋白：<code>diamond blastx</code></p><p>比对dna序列：<code>diamond blastp</code></p><p><code>--query/-q</code>：输入检索序列，下载的已经确定的基因序列</p><p><code>--out/-o</code>：输出文件，</p><p>默认以&ndash;outfmt 6输出结果和BLAST+的&ndash;outfmt 6结果一致。</p><p><code>-p</code>线程</p></blockquote><blockquote><p><strong>blast结果说明？？？</strong></p><p><a href=https://www.plob.org/article/641.html>https://www.plob.org/article/641.html</a></p><p><img src=https://raw.githubusercontent.com/ruqinga/picture/main/2023/02/202309020852481.png alt=image-20220402193730047></p><p>主要是第三列pident(percentage of identical matches)和第四列length(alignment length)，去冗余</p></blockquote><h4 id=2-hmmer>2. hmmer</h4><blockquote><p>先在全基因组的范围内使用<code>hmmersearch</code>和基因家族的隐马可夫模型<code>.hmm</code>进行基因家族的进行初步搜索，接着把质量比较高的基因家族候选基因筛选出来<code>E-value &lt; 1 × 10−20</code>。没有模型的使用<code>clustalw2</code>对高质量的序列进行多序列比对，多序列比对后，对这些置信的序列进行隐马可夫模型的构建（使用<code>hmmbuild</code>），最后使用该新建的隐马可夫模型，进一步筛选完整的NSB基因家族序列（需再次过滤，找到基因家族的成员数量一般比第一步初步筛选的多）</p></blockquote><p>在mega里对参考基因组进行clustalw比对，保存为<code>.fas</code>，然后利用<code>hmmbuild</code>建库，<code>hmmsearch</code>搜索基因家族</p><blockquote><p>这是没有隐马可夫的情况下。如果有，可以直接<code>hmmsearch</code>，不用建库</p></blockquote><pre><code class=language-sh># 以下是步骤
 # 解压
 gzip -d .gz
 # 建库
 hmmbuild WRKY.hmm WRKY_eggplant.fas
 # 搜索基因家族
 hmmsearch WRKY.hmm protein.faa &gt;WRKY_hmm.out
-</code></pre>
-<h4 id="3验证">3.验证</h4>
-<ol>
-<li>
-<p>excel里合并上述两种方法的gene id，并删除重复值</p>
-<blockquote>
-<p>找出两种方法共有的基因家族，这样结果就比较置信了。</p>
-</blockquote>
-</li>
-<li>
-<p>通过<code>tbtools</code>的<code>gene simplify</code>和<code>fasta extract</code>,导出为.fa，获得初步筛选的蛋白序列fasta信息</p>
-<blockquote>
-<p>基因组文件里面的gene id都很多描述，简化之后方便比对；<code>fasta extract</code>是通过gene id得到蛋白序列</p>
-</blockquote>
-</li>
-<li>
-<p><strong>如果只用了blast，需要借助<code>NCBI-CDD</code>或者<code>pfam</code>或者<code>smart</code>按照关联结构域对家族蛋白进行进一步筛选。</strong></p>
-<blockquote>
-<p>网址：<a href="https://www.ncbi.nlm.nih.gov/Structure/bwrpsb/bwrpsb.cgi">NCBI CD-Search tool</a>， <a href="https://pfam.xfam.org/search#tabview=tab1">Pfam</a> ，<a href="https://www.ebi.ac.uk/interpro/search/sequence-search">InterProScan sequence search</a>。</p>
-<p>在查看保守结构域后，如果该区域含有基因家族所对应的保守结构域，例如LRR区域等，该蛋白质序列可以保留进行后续的分析。如果在该区域没有找到对应的保守区域，为了分析的严谨性，需进行进一步的排查来确定是否要去掉该序列。这种情况一般分为两种情况，第一种就是注释无误，该序列确实丢失了对应的保守结构域，需要去掉。第二种情况就是<strong>注释有误</strong>，该序列的结构域可能没有被完整的保留下来，这种情况应该截取该序列的上下游重新注释分析。</p>
-</blockquote>
-</li>
-</ol>
-<h2 id="四基因家族成员基本信息分析">四、基因家族成员基本信息分析</h2>
-<p>在得到基因家族成员信息后，通常会根据其蛋白序列预测其基本信息，并汇总成一个表，包含gene ID|subfamily|CDS length|protein length|Molecular weight|等电点|CDS sequence|protein sequence|</p>
-<blockquote>
-<ul>
-<li>
-<p>蛋白物理化学性质分析</p>
-<ul>
-<li>等电点和分子量，可以批量分析：https://web.expasy.org/compute_pi/</li>
-<li>各种理化性质，需要一个个输入序列：https://web.expasy.org/protparam/</li>
-<li>难看出来，哪个数字大就定位到哪：http://linux1.softberry.com/berry.phtml?topic=protcomppl&amp;group=programs&amp;subgroup=proloc</li>
-</ul>
-</li>
-<li>
-<p>亚细胞定位</p>
-<ul>
-<li>
-<p>植物：http://www.csbio.sjtu.edu.cn/bioinf/plant-multi/#</p>
-</li>
-<li>
-<p>各物种：http://cello.life.nctu.edu.tw/</p>
-</li>
-</ul>
-</li>
-<li>
-<p>跨膜结构域预测
-<a href="https://services.healthtech.dtu.dk/service.php?SignalP">https://services.healthtech.dtu.dk/service.php?SignalP</a></p>
-</li>
-<li>
-<p>信号肽预测
-<a href="https://services.healthtech.dtu.dk/service.php?SignalP">https://services.healthtech.dtu.dk/service.php?SignalP</a></p>
-<p>使用<strong>SignalP</strong> 注释蛋白序列是否含有信号肽结构，使用<strong>TMHMM</strong>注释蛋白序列是否含有跨膜结构，最终筛选出含有信号肽结构并且不含跨膜结构的蛋白为分泌蛋白。</p>
-</li>
-<li>
-<p>靶向信号</p>
-<p><a href="http://www.cbs.dtu.dk/services/TargetP">http://www.cbs.dtu.dk/services/TargetP</a></p>
-</li>
-</ul>
-</blockquote>
-<p>TBtools通过调用脚本，批量计算理化性质</p>
-<h2 id="五构建进化树">五、构建进化树</h2>
-<ol>
-<li>使用<code>mega</code>对这一组蛋白序列进行<code>clustalw</code>多序列比对</li>
-<li>构建系统发育树，构树方法有邻接法（Neighbor-Joining, NJ），最大似然法（Maximum likelihood，ML），最大简约法（Maximum parsimony，MP）和贝叶斯法（Bayesian inference, BI）不同方法各有优劣。</li>
-<li>美化。在获得进化树之后可以使用在线工具<code>EvolView</code>对进化树进行美化，添加一些参数使其展示的内容更加丰富。也可以导入<code>R</code>中利用<code>ggtree</code>进行美化</li>
-</ol>
-<h2 id="六保守domainmotif基因结构分析">六、保守domain、motif、基因结构分析</h2>
-<blockquote>
-<p><strong>Motif</strong>是位于二级和三级结构之间的层次,Motif的层次接近二级结构。 <strong>Domain</strong>是位于二级和三级结构之间的层次,Domain的层次接近三级结构</p>
-<p>区分家族成员时，motif分析可以看出区别，但要知道区别是否有独立功能需要看domain</p>
-</blockquote>
-<h4 id="domain">domain</h4>
-<p>上传蛋白序列到：<a href="https://smart.embl.de/">SMART</a>，<a href="https://www.ncbi.nlm.nih.gov/Structure/bwrpsb/bwrpsb.cgi">NCBI CD-Search tool</a>， <a href="https://pfam.xfam.org/search#tabview=tab1">Pfam</a> ，<a href="https://www.ebi.ac.uk/interpro/search/sequence-search">InterProScan sequence search</a>，其中一个就可以</p>
-<blockquote>
-<p>tbtools上安装插件:batch smart，可以批量下载smart比对信息</p>
-</blockquote>
-<h4 id="motif">motif</h4>
-<p>上传蛋白序列到：<a href="https://meme-suite.org/meme/tools/meme">MEME</a></p>
-<p>参数设置如下图，运行后保存.xml文件，可导入tbtools分析</p>
-<img src="https://raw.githubusercontent.com/ruqinga/picture/main/2023/02/202309020852482.png" alt="image-20220316090902401" style="zoom:50%;" />
-<blockquote>
-<p><strong>mod zoops motif的分布类型</strong></p>
-<ul>
-<li>oops 每个功能域在每一段序列中都会出现一次，而且只出现一次。这种模式是运算速度最快，而且最为敏感的。但是如果并不是每个序列都包含功能域，那就可能会有不正确的结果。</li>
-<li>zoops 每个功能域在每一段序列中至多只出现一次，可能不出现。这种模式运算速度较快，敏感性稍弱。</li>
-<li>anr 每个功能域在每一段序列中出现的次数不定。这种模式运算速度最慢，可能会多花十倍以上的时间。但是对于功能分布的情况完全未知的情况下，这一参数可能会有帮助</li>
-</ul>
-<p><strong>Select the number of motifs</strong></p>
-<p>决定在这一组多条序列中，将被挖掘出的结构域（motif）的种类数量。默认值是3，这意味着在这一组序列中，发现的motif的数量最多3个。但有时候，我们无法预先了解这组序列实际上的结构域的数量，那么可以先填写一份较大的数值。例如10。在完成分析后，再查看分析结果中结构域的显著性。例如，如果结果中保守性达到显著水平（P＜0.05）的结构域数量是6。那么，则可以将最初的参数从“10”修改为“6”，然后重新提交数据分析一次。</p>
-</blockquote>
-<h4 id="基因结构外显子内含子">基因结构（外显子/内含子）</h4>
-<ol>
-<li>
-<p>以<code>TBtools</code>为例，首先根据基因家族id提取对应gff文件</p>
-<p><img src="https://raw.githubusercontent.com/ruqinga/picture/main/2023/02/202309020852483.png" alt="image-20220604201650294"></p>
-</li>
-<li>
-<p>使用<code>Gene Structure Shower</code>模块，将基因家族成员的id以及基因组注释gtf/gff3文件导入<code>TBtools</code>，就可以得到基因结构图</p>
-<blockquote>
-<p>注意检查id与注释文件中是否对应</p>
-<p><img src="https://raw.githubusercontent.com/ruqinga/picture/main/2023/02/202309020852484.png" alt="image-20220603104817781"></p>
-<p><img src="https://raw.githubusercontent.com/ruqinga/picture/main/2023/02/202309020852485.png" alt="image-20220603104857853"></p>
-</blockquote>
-</li>
-</ol>
-<h3 id="七染色体定位染色体共线性分析">七、染色体定位/染色体共线性分析</h3>
-<h4 id="染色体定位">染色体定位</h4>
-<p>根据id和注释信息即可得到，可利用tbtools</p>
-<blockquote>
-<p>确定好要表现的染色体，一般只选择Chr，拼接的如果没有基因注释上去就不用了</p>
-</blockquote>
-<h4 id="染色体共线性分析">染色体共线性分析</h4>
-<p><strong>下载数据</strong></p>
-<ul>
-<li>所需基因组的gff文件</li>
-<li>所需基因组的pep或者cds序列</li>
-</ul>
-<p><strong>MCScanX</strong></p>
-<pre><code class="language-sh"># 解压缩
+</code></pre><h4 id=3验证>3.验证</h4><ol><li><p>excel里合并上述两种方法的gene id，并删除重复值</p><blockquote><p>找出两种方法共有的基因家族，这样结果就比较置信了。</p></blockquote></li><li><p>通过<code>tbtools</code>的<code>gene simplify</code>和<code>fasta extract</code>,导出为.fa，获得初步筛选的蛋白序列fasta信息</p><blockquote><p>基因组文件里面的gene id都很多描述，简化之后方便比对；<code>fasta extract</code>是通过gene id得到蛋白序列</p></blockquote></li><li><p><strong>如果只用了blast，需要借助<code>NCBI-CDD</code>或者<code>pfam</code>或者<code>smart</code>按照关联结构域对家族蛋白进行进一步筛选。</strong></p><blockquote><p>网址：<a href=https://www.ncbi.nlm.nih.gov/Structure/bwrpsb/bwrpsb.cgi>NCBI CD-Search tool</a>， <a href="https://pfam.xfam.org/search#tabview=tab1">Pfam</a> ，<a href=https://www.ebi.ac.uk/interpro/search/sequence-search>InterProScan sequence search</a>。</p><p>在查看保守结构域后，如果该区域含有基因家族所对应的保守结构域，例如LRR区域等，该蛋白质序列可以保留进行后续的分析。如果在该区域没有找到对应的保守区域，为了分析的严谨性，需进行进一步的排查来确定是否要去掉该序列。这种情况一般分为两种情况，第一种就是注释无误，该序列确实丢失了对应的保守结构域，需要去掉。第二种情况就是<strong>注释有误</strong>，该序列的结构域可能没有被完整的保留下来，这种情况应该截取该序列的上下游重新注释分析。</p></blockquote></li></ol><h2 id=四基因家族成员基本信息分析>四、基因家族成员基本信息分析</h2><p>在得到基因家族成员信息后，通常会根据其蛋白序列预测其基本信息，并汇总成一个表，包含gene ID|subfamily|CDS length|protein length|Molecular weight|等电点|CDS sequence|protein sequence|</p><blockquote><ul><li><p>蛋白物理化学性质分析</p><ul><li>等电点和分子量，可以批量分析：https://web.expasy.org/compute_pi/</li><li>各种理化性质，需要一个个输入序列：https://web.expasy.org/protparam/</li><li>难看出来，哪个数字大就定位到哪：http://linux1.softberry.com/berry.phtml?topic=protcomppl&amp;group=programs&amp;subgroup=proloc</li></ul></li><li><p>亚细胞定位</p><ul><li><p>植物：http://www.csbio.sjtu.edu.cn/bioinf/plant-multi/#</p></li><li><p>各物种：http://cello.life.nctu.edu.tw/</p></li></ul></li><li><p>跨膜结构域预测
+<a href=https://services.healthtech.dtu.dk/service.php?SignalP>https://services.healthtech.dtu.dk/service.php?SignalP</a></p></li><li><p>信号肽预测
+<a href=https://services.healthtech.dtu.dk/service.php?SignalP>https://services.healthtech.dtu.dk/service.php?SignalP</a></p><p>使用<strong>SignalP</strong> 注释蛋白序列是否含有信号肽结构，使用<strong>TMHMM</strong>注释蛋白序列是否含有跨膜结构，最终筛选出含有信号肽结构并且不含跨膜结构的蛋白为分泌蛋白。</p></li><li><p>靶向信号</p><p><a href=http://www.cbs.dtu.dk/services/TargetP>http://www.cbs.dtu.dk/services/TargetP</a></p></li></ul></blockquote><p>TBtools通过调用脚本，批量计算理化性质</p><h2 id=五构建进化树>五、构建进化树</h2><ol><li>使用<code>mega</code>对这一组蛋白序列进行<code>clustalw</code>多序列比对</li><li>构建系统发育树，构树方法有邻接法（Neighbor-Joining, NJ），最大似然法（Maximum likelihood，ML），最大简约法（Maximum parsimony，MP）和贝叶斯法（Bayesian inference, BI）不同方法各有优劣。</li><li>美化。在获得进化树之后可以使用在线工具<code>EvolView</code>对进化树进行美化，添加一些参数使其展示的内容更加丰富。也可以导入<code>R</code>中利用<code>ggtree</code>进行美化</li></ol><h2 id=六保守domainmotif基因结构分析>六、保守domain、motif、基因结构分析</h2><blockquote><p><strong>Motif</strong>是位于二级和三级结构之间的层次,Motif的层次接近二级结构。 <strong>Domain</strong>是位于二级和三级结构之间的层次,Domain的层次接近三级结构</p><p>区分家族成员时，motif分析可以看出区别，但要知道区别是否有独立功能需要看domain</p></blockquote><h4 id=domain>domain</h4><p>上传蛋白序列到：<a href=https://smart.embl.de/>SMART</a>，<a href=https://www.ncbi.nlm.nih.gov/Structure/bwrpsb/bwrpsb.cgi>NCBI CD-Search tool</a>， <a href="https://pfam.xfam.org/search#tabview=tab1">Pfam</a> ，<a href=https://www.ebi.ac.uk/interpro/search/sequence-search>InterProScan sequence search</a>，其中一个就可以</p><blockquote><p>tbtools上安装插件:batch smart，可以批量下载smart比对信息</p></blockquote><h4 id=motif>motif</h4><p>上传蛋白序列到：<a href=https://meme-suite.org/meme/tools/meme>MEME</a></p><p>参数设置如下图，运行后保存.xml文件，可导入tbtools分析</p><img src=https://raw.githubusercontent.com/ruqinga/picture/main/2023/02/202309020852482.png alt=image-20220316090902401 style=zoom:50%><blockquote><p><strong>mod zoops motif的分布类型</strong></p><ul><li>oops 每个功能域在每一段序列中都会出现一次，而且只出现一次。这种模式是运算速度最快，而且最为敏感的。但是如果并不是每个序列都包含功能域，那就可能会有不正确的结果。</li><li>zoops 每个功能域在每一段序列中至多只出现一次，可能不出现。这种模式运算速度较快，敏感性稍弱。</li><li>anr 每个功能域在每一段序列中出现的次数不定。这种模式运算速度最慢，可能会多花十倍以上的时间。但是对于功能分布的情况完全未知的情况下，这一参数可能会有帮助</li></ul><p><strong>Select the number of motifs</strong></p><p>决定在这一组多条序列中，将被挖掘出的结构域（motif）的种类数量。默认值是3，这意味着在这一组序列中，发现的motif的数量最多3个。但有时候，我们无法预先了解这组序列实际上的结构域的数量，那么可以先填写一份较大的数值。例如10。在完成分析后，再查看分析结果中结构域的显著性。例如，如果结果中保守性达到显著水平（P＜0.05）的结构域数量是6。那么，则可以将最初的参数从“10”修改为“6”，然后重新提交数据分析一次。</p></blockquote><h4 id=基因结构外显子内含子>基因结构（外显子/内含子）</h4><ol><li><p>以<code>TBtools</code>为例，首先根据基因家族id提取对应gff文件</p><p><img src=https://raw.githubusercontent.com/ruqinga/picture/main/2023/02/202309020852483.png alt=image-20220604201650294></p></li><li><p>使用<code>Gene Structure Shower</code>模块，将基因家族成员的id以及基因组注释gtf/gff3文件导入<code>TBtools</code>，就可以得到基因结构图</p><blockquote><p>注意检查id与注释文件中是否对应</p><p><img src=https://raw.githubusercontent.com/ruqinga/picture/main/2023/02/202309020852484.png alt=image-20220603104817781></p><p><img src=https://raw.githubusercontent.com/ruqinga/picture/main/2023/02/202309020852485.png alt=image-20220603104857853></p></blockquote></li></ol><h3 id=七染色体定位染色体共线性分析>七、染色体定位/染色体共线性分析</h3><h4 id=染色体定位>染色体定位</h4><p>根据id和注释信息即可得到，可利用tbtools</p><blockquote><p>确定好要表现的染色体，一般只选择Chr，拼接的如果没有基因注释上去就不用了</p></blockquote><h4 id=染色体共线性分析>染色体共线性分析</h4><p><strong>下载数据</strong></p><ul><li>所需基因组的gff文件</li><li>所需基因组的pep或者cds序列</li></ul><p><strong>MCScanX</strong></p><pre><code class=language-sh># 解压缩
 gunzip *.gz
 # 1.比对
 ## 合并
@@ -613,15 +82,7 @@ java dot_plotter -g at_vv.gff -s at_vv.collinearity -c dot.ctl -o dot.PNG #dot
 java dual_synteny_plotter -g at_vv.gff -s at_vv.collinearity -c dual_synteny.ctl -o dual_synteny.PNG #直线
 java circle_plotter -g at_vv.gff -s at_vv.collinearity -c circle.ctl -o circle.PNG #圈圈
 java bar_plotter -g at_vv.gff -s at_vv.collinearity -c bar.ctl -o bar.PNG #直方
-</code></pre>
-<blockquote>
-<p><code>sed</code>不能全局删除吗，好像只能删第一个匹配项</p>
-<p>这里提取类型为gene的时候，如果是第一列可以直接<code>grep '^gene'</code></p>
-<p><code>&gt;&gt;</code>追加，<code>&gt;</code>新建</p>
-</blockquote>
-<p><strong>MCScanX（python）</strong></p>
-<p>运行</p>
-<pre><code class="language-sh">## 修改格式 --type：gff文件中第三列 --key：type对应的第九列信息前缀，.gz可以直接输入
+</code></pre><blockquote><p><code>sed</code>不能全局删除吗，好像只能删第一个匹配项</p><p>这里提取类型为gene的时候，如果是第一列可以直接<code>grep '^gene'</code></p><p><code>>></code>追加，<code>></code>新建</p></blockquote><p><strong>MCScanX（python）</strong></p><p>运行</p><pre><code class=language-sh>## 修改格式 --type：gff文件中第三列 --key：type对应的第九列信息前缀，.gz可以直接输入
 python -m jcvi.formats.gff bed --type=mRNA --key= Name Arabidopsis_thaliana.TAIR10.52.gff3 -o ara.bed
 python -m jcvi.formats.gff bed --type=gene --key=ID Oryza_sativa.IRGSP-1.0.52.gff3 -o ory.bed
 python -m jcvi.formats.gff bed --type=gene --key=ID add.exon.Kyuss_1697_KYUS.gff -o rye.bed
@@ -651,47 +112,16 @@ python -m jcvi.formats.fasta format Athaliana_167_TAIR10.cds.fa.gz ara.cds
 python -m jcvi.formats.bed uniq osa.bed 
 ## 共线性分析
 python -m jcvi.compara.catalog ortholog ara osa  --cscore=.99 --no_strip_names
-</code></pre>
-<blockquote>
-<p>共线性分析结果：</p>
-<ul>
-<li><code>ara.osa.anchors</code>：共线性block区块（高质量）</li>
-<li><code>ara.osa.last</code>：原始的last输出</li>
-<li><code>ara.osa.last.filtered</code>：过滤后的last输出</li>
-<li><code>ara.osa.pdf</code>：两物种间的共线性点图</li>
-</ul>
-<p>在这里找到确定名字</p>
-<p><a href="https://genome.jgi.doe.gov/portal/pages/dynamicOrganismDownload.jsf?organism=PhytozomeV12">https://genome.jgi.doe.gov/portal/pages/dynamicOrganismDownload.jsf?organism=PhytozomeV12</a></p>
-<p>s</p>
-<p>热知识：安装cufflinks，可以直接根据gff文件，从基因组.fa文件中直接调取cds，和pep序列</p>
-<pre><code class="language-sh"># 提取cds
+</code></pre><blockquote><p>共线性分析结果：</p><ul><li><code>ara.osa.anchors</code>：共线性block区块（高质量）</li><li><code>ara.osa.last</code>：原始的last输出</li><li><code>ara.osa.last.filtered</code>：过滤后的last输出</li><li><code>ara.osa.pdf</code>：两物种间的共线性点图</li></ul><p>在这里找到确定名字</p><p><a href="https://genome.jgi.doe.gov/portal/pages/dynamicOrganismDownload.jsf?organism=PhytozomeV12">https://genome.jgi.doe.gov/portal/pages/dynamicOrganismDownload.jsf?organism=PhytozomeV12</a></p><p>s</p><p>热知识：安装cufflinks，可以直接根据gff文件，从基因组.fa文件中直接调取cds，和pep序列</p><pre><code class=language-sh># 提取cds
 gffread in.gff3 -g ref.fa -x cds.fa
 # 提取pep
 gffread in.gff3 -g ref.fa -y pep.fa
-</code></pre>
-<p>如果遇到了报错，请你</p>
-<pre><code>conda install -c conda-forge jupyter_latex_envs
-</code></pre>
-<p>，再不行就是cds和bed的名字对不上，再不行就是各种软件没装上，可以在报错信息里找</p>
-<p>然后就是dvipng</p>
-<pre><code class="language-sh">sudo apt-get update -y
+</code></pre><p>如果遇到了报错，请你</p><pre><code>conda install -c conda-forge jupyter_latex_envs
+</code></pre><p>，再不行就是cds和bed的名字对不上，再不行就是各种软件没装上，可以在报错信息里找</p><p>然后就是dvipng</p><pre><code class=language-sh>sudo apt-get update -y
 sudo apt-get install -y dvipng
-</code></pre>
-</blockquote>
-<p><code>IndexError: list index out of range</code>:bed里按染色体顺序排序；检查是否有空行</p>
-<pre><code class="language-sh">ValueError: could not convert string to float # 输入数据格式是否正确
-</code></pre>
-<pre><code class="language-sh">ZeroDivisionError: float division by zero # 检查bed与seqid是否一致，区分大小写，染色体编号要带数字,seqid与layout的顺序要一直
-</code></pre>
-<p>参考：https://blog.csdn.net/u012110870/article/details/102804593</p>
-<blockquote>
-<p><strong>生成.simple文件</strong></p>
-<p><code>python -m jcvi.compara.synteny screen --minsize=3 --minspan=10 --simple grape.peach.anchors grape.peach.anchors.new</code></p>
-<p>&ndash;minspan是规定syntenic region的总长度(i.e. 基因个数)最低阈值，默认是0，</p>
-<p>&ndash;minsize是规定syntenic  region的anchors总个数(i.e.有共线性关系的基因对数目)最低阈值，默认是0，这里注意概念不要混淆，span长度为10个基因并不代表10个基因全都是检测出的高质量anchor（只是人为规定的syntenic region的一个筛选标准而已，具有主观性和物种特异型，自己视情况给定），size才是syntenic  region中高质量anchor的（最小）数目，也是自己视情况给定</p>
-</blockquote>
-<p>可视化</p>
-<pre><code class="language-sh"># 首先生成.simple文件
+</code></pre></blockquote><p><code>IndexError: list index out of range</code>:bed里按染色体顺序排序；检查是否有空行</p><pre><code class=language-sh>ValueError: could not convert string to float # 输入数据格式是否正确
+</code></pre><pre><code class=language-sh>ZeroDivisionError: float division by zero # 检查bed与seqid是否一致，区分大小写，染色体编号要带数字,seqid与layout的顺序要一直
+</code></pre><p>参考：https://blog.csdn.net/u012110870/article/details/102804593</p><blockquote><p><strong>生成.simple文件</strong></p><p><code>python -m jcvi.compara.synteny screen --minsize=3 --minspan=10 --simple grape.peach.anchors grape.peach.anchors.new</code></p><p>&ndash;minspan是规定syntenic region的总长度(i.e. 基因个数)最低阈值，默认是0，</p><p>&ndash;minsize是规定syntenic region的anchors总个数(i.e.有共线性关系的基因对数目)最低阈值，默认是0，这里注意概念不要混淆，span长度为10个基因并不代表10个基因全都是检测出的高质量anchor（只是人为规定的syntenic region的一个筛选标准而已，具有主观性和物种特异型，自己视情况给定），size才是syntenic region中高质量anchor的（最小）数目，也是自己视情况给定</p></blockquote><p>可视化</p><pre><code class=language-sh># 首先生成.simple文件
 python -m jcvi.compara.synteny screen --minspan=30 --simple ara.osa.anchors ara.osa.anchors.new
 
 # 编辑配置文件seqids 和layout
@@ -717,32 +147,19 @@ e, 0, 1, ara.osa.anchors.simple
 
 # 运行代码,共线性分析
 python -m jcvi.graphics.karyotype seqids layout
-</code></pre>
-<p>关于layout设置，不同形状</p>
-<ul>
-<li>
-<p>两物种平行</p>
-<pre><code class="language-sh">#start, xend, rotation, color, label, va,  bed
+</code></pre><p>关于layout设置，不同形状</p><ul><li><p>两物种平行</p><pre><code class=language-sh>#start, xend, rotation, color, label, va,  bed
  .6,     .1,    .8,       0,      , Rye, top, rye.bed
  .4,     .1,    .8,       0,      , Rye, top, rye.bed
 # edges
 e, 0, 1, rye.rye.anchors.simple
-</code></pre>
-</li>
-<li>
-<p>三物种平行</p>
-<pre><code class="language-sh">## y, xstart, xend, rotation, color, label, va,  bed
+</code></pre></li><li><p>三物种平行</p><pre><code class=language-sh>## y, xstart, xend, rotation, color, label, va,  bed
  .7,     .2,    .4,      45,      ,Ara, top, ara.bed
  .5,     .2,    .8,       0,      ,  Rye, top, rye.bed
  .7,     .4,    .8,     -45,      , Osa, bottom, osa.bed
 ## edges
 e, 0, 1,rye.ara.anchors.simple
 e, 1, 2, rye.osa.anchors.simple
-</code></pre>
-</li>
-<li>
-<p>三物种三角形</p>
-<pre><code class="language-sh">## y, xstart, xend, rotation, color, label, va, bed
+</code></pre></li><li><p>三物种三角形</p><pre><code class=language-sh>## y, xstart, xend, rotation, color, label, va, bed
 .5,      0.025,    0.625,      60,      , Ara, top, ara.bed
  .2,      0.2,    .8,       0,      , Rye, top, rye.bed
  .5,     0.375,    0.975,     -60,      , Osa, bottom, osa.bed
@@ -750,218 +167,10 @@ e, 1, 2, rye.osa.anchors.simple
 e, 0, 1,rye.ara.anchors.simple
 e, 1, 2, rye.osa.anchors.simple
 e, 0, 2, ara.osa.anchors.simple
-</code></pre>
-</li>
-</ul>
-<blockquote>
-<p>#simple</p>
-<p><code>--minspan</code>:规定syntenic region的总长度(基因个数)最低阈值，默认是0</p>
-<p><code>--minsize</code>是规定syntenic  region的anchors总个数(有共线性关系的基因对数目)最低阈值，默认是0</p>
-<p>这里注意概念不要混淆，span长度为10个基因并不代表10个基因全都是检测出的高质量anchor（只是人为规定的syntenic region的一个筛选标准而已，具有主观性和物种特异型，自己视情况给定）size才是syntenic  region中高质量anchor的（最小）数目，也是自己视情况给定</p>
-<p>#layout</p>
-<p>两个物种染色体的位置在x轴y轴什么位置(如y轴的0.6 0.4，如果是0.5 0.5就重叠了</p>
-<p>注意, ##edges下的每一行开头都不能有空格,rotation就是旋转角度，0就代表水平</p>
-<p><code>-k</code>命令标准输入需要指定开始和末尾</p>
-<pre><code>sort -t ' ' -k1,1 -k2n,2 data
-</code></pre>
-<p>其中 -t &rsquo; &rsquo; 指定使用空格分列</p>
-<p>-k1,1  指定以第一列为关键字排序</p>
-<p>-k2n,2 指定以第二列为关键字做数据排序</p>
-<p><strong>提问</strong>：sort -n 和 -u并用时为什么会只出一个结果</p>
-</blockquote>
-<p>突出显示</p>
-<p><img src="https://raw.githubusercontent.com/ruqinga/picture/main/2023/02/202309020852486.png" alt="image-20220315185029747"></p>
-<p>#Note: 注释文件的gff 与 gtf格式互相转换&ndash;使用gffread</p>
-<p>gff to gtf</p>
-<pre><code>gffread anno.gff -T -o anno.gtf
-</code></pre>
-<h3 id="6计算kaks值">6）计算ka/ks值</h3>
-<p>KaKs_Calculator 2.0 计算基因家族中每个重复基因的非同义替换（ka）和同义替换（ks）</p>
-<ul>
-<li>Ka=发生非同义替换的SNP数/非同义替换位点数</li>
-<li>Ks=发生同义替换的SNP数/同义替换位点数</li>
-</ul>
-<p>ka/ks</p>
-<ul>
-<li>Ka/Ks=1：假设这个基因没有受到自然选择压力，那么根据中性选择理论，非同义替换率和同义替换率应该是相同的。</li>
-<li>Ks/Ks&laquo;1：但实际情况下，这个比值都是远小于1的，因为一般非同义替换带来的都是有害的性状，只有极少数情况下会造成进化上的优势。</li>
-<li>Ka&raquo;Ks或者Ka/Ks &raquo; 1，基因受正选择(positive selection)</li>
-</ul>
-<p>tbtools计算，可参考<a href="https://www.jianshu.com/p/9d4a72d28c38">这篇</a></p>
-<h2 id="六实验验证">六、实验验证</h2>
-<p><strong>cDNA提取</strong></p>
-<p>RNA 提取试剂盒提取RNA，反转录试剂盒进行 cDNA 第一链的合成，PCR扩增</p>
-<p><strong>qRT-PCR 分析</strong></p>
-<p>primer5.0 设计引物， PCR 进行特异性验证，验证特异性符合实验要求后进行实时定量 PCR反应</p>
-<p><strong>特定基因克隆</strong></p>
-<ol>
-<li>提取DNA并反转录为cDNA，PCR扩增</li>
-<li>使用试剂盒对PCR 产物切胶回收</li>
-<li>基因T载体连接转化</li>
-</ol>
-<p><strong>基因过表达载体的构建</strong></p>
-<ol>
-<li>试剂盒提取质粒</li>
-<li>质粒酶切（琼脂糖凝胶电泳鉴定）及连接</li>
-<li>将重组质粒转化大肠杆菌，利用含有 Kan 抗生素的 LB 固体培养基进行筛选并测序</li>
-</ol>
-<p><strong>基因过表达植株</strong></p>
-<ol>
-<li>种子消毒培养</li>
-<li>侵染植株：将含有重组质粒的农杆菌活化，取 OD600 值在 1.8 左右的菌液，离心去上清后用蔗糖溶液重悬。将未完全开放的拟南芥花序（不同植物可能不一样）淹没于侵染液中 30-40 s。侵染后的植株继续培养并收获 T0 代种子。</li>
-<li>转基因植株的筛选：T0 代种子消毒后，在含有卡那霉素的 1/2 MS 培养基上筛选获得 T1 植株，将筛选得到的阳性 T1 植株转到土壤中，待苗生长成熟收取 T1 代种子</li>
-</ol>
-<p>转录组或荧光定量表达分析</p>
-<blockquote>
-<p>EST(espressed sequence tag)</p>
-<ul>
-<li>定义：表达基因所在区域的分子标签因编码DNA 序列高度保守而具有自身的特殊性质，亲缘关系较远的物种间比较基因组连锁图和比较质量性状信息是特别有</li>
-<li>技术路线：首先从样品组织中提取mRNA ,在逆转录酶的作用下用oligo ( dT) 作为引物进行RT -PCR 合成cDNA ,再选择合适的载体构建cDNA 文库,对各菌株加以整理,将每一个菌株的插入片段根据载体多克隆位点设计引物进行两端一次性自动化测序,这就是EST 序列的产生过程。</li>
-</ul>
-</blockquote>
-<p>all right reserved @xinyi.lei</p>
-<h2 id="参考">参考</h2>
-<p><a href="https://www.jianshu.com/p/48094c4d6a3f">基因家族分析——nnlrl</a></p>
-<p><a href="https://zhuanlan.zhihu.com/p/63155394">基因家族分析（一）——螭吻</a></p>
-<p><a href="https://www.jianshu.com/p/b8db5ac4c221">基因家族专题(1)：基础知识与研究思路介绍</a></p>
-<p><a href="https://www.jianshu.com/p/a758a33ca3d1">基因家族专题(2)：数据下载与基因家族成员的鉴定</a></p>
-<p><a href="https://www.jianshu.com/p/486dd4aba5eb">基因家族专题(3)：基因家族成员的鉴定</a></p>
-<p><a href="https://baijiahao.baidu.com/s?id=1714240662220527241&amp;wfr=spider&amp;for=pc">基因家族分析流程及保姆级实操流程</a></p>
-<p><a href="https://www.jianshu.com/p/8a4818d2e1a2?tdsourcetag=s_pcqq_aiomsg">TBtools基因家族分析详细教程</a></p>
-<p><a href="">基因家族分析操作手册-学习必备</a></p>
-<p><a href="https://www.jianshu.com/p/34333a6d7c4e">https://www.jianshu.com/p/34333a6d7c4e</a></p>
-<p><a href="https://blog.csdn.net/u012110870/article/details/102804593">JCVI教程」如何绘制CNS级别的共线性图（中）</a></p>
-<p><a href="https://www.jianshu.com/p/8a4818d2e1a2">TBtools基因家族分析详细教程（1）</a>会讲到修正注释文件</p>
-<p>视频：</p>
-<p><a href="https://www.bilibili.com/video/BV1r44y1H7bx/?spm_id_from=333.788">【保姆级教程】研究生师兄手把手教你做基因家族分析</a></p>
-<p><a href="https://mp.weixin.qq.com/s/-dYnBiA7wwNsXuqvyVHjiQ">基因家族分析</a></p>
-</article>
-
-
-      
-
-      
-
-
-
-      
-
-      
-  <div
-    class="-mx-2 mt-4 flex flex-col border-t px-2 pt-4 md:flex-row md:justify-between"
-  >
-    <div>
-      
-        <span class="text-primary-text block font-bold"
-          >Previous</span
-        >
-        <a href="https://ruqinga.github.io/posts/rna-seq-%E5%AE%9E%E6%88%98/" class="block">rna-seq上下游分析实战</a>
-      
-    </div>
-    <div class="mt-4 md:mt-0 md:text-right">
-      
-        <span class="text-primary-text block font-bold">Next</span>
-        <a href="https://ruqinga.github.io/posts/2-linux%E5%9F%BA%E7%A1%80-%E9%85%8D%E8%89%B2%E5%92%8C%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4/" class="block">Linux基础</a>
-      
-    </div>
-  </div>
-
-
-      
-
-
-
-    </div>
-    
-      <div class="col-span-2">
-        
-        
-          <div
-  class="
-    bg-primary-bg
-   prose sticky top-16 z-10 hidden px-6 py-4 lg:block"
->
-  <h3>On This Page</h3>
-</div>
-<div
-  class="sticky-toc  hidden px-6 pb-6 lg:block"
->
-  <nav id="TableOfContents">
-  <ul>
-    <li><a href="#一介绍">一、介绍</a></li>
-    <li><a href="#二分析前准备">二、分析前准备</a>
-      <ul>
-        <li><a href="#1确定要研究的基因家族">1）确定要研究的基因家族</a></li>
-        <li><a href="#2了解你研究的基因家族的特征">2）了解你研究的基因家族的特征</a></li>
-        <li><a href="#3数据下载">3）数据下载</a></li>
-      </ul>
-    </li>
-    <li><a href="#三基因家族成员的鉴定">三、基因家族成员的鉴定</a>
-      <ul>
-        <li><a href="#1确定基因家族">1）确定基因家族</a>
-          <ul>
-            <li><a href="#1-比对">1. 比对</a></li>
-            <li><a href="#2-hmmer">2. hmmer</a></li>
-            <li><a href="#3验证">3.验证</a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    <li><a href="#四基因家族成员基本信息分析">四、基因家族成员基本信息分析</a></li>
-    <li><a href="#五构建进化树">五、构建进化树</a></li>
-    <li><a href="#六保守domainmotif基因结构分析">六、保守domain、motif、基因结构分析</a>
-      <ul>
-        <li>
-          <ul>
-            <li><a href="#domain">domain</a></li>
-            <li><a href="#motif">motif</a></li>
-            <li><a href="#基因结构外显子内含子">基因结构（外显子/内含子）</a></li>
-          </ul>
-        </li>
-        <li><a href="#七染色体定位染色体共线性分析">七、染色体定位/染色体共线性分析</a>
-          <ul>
-            <li><a href="#染色体定位">染色体定位</a></li>
-            <li><a href="#染色体共线性分析">染色体共线性分析</a></li>
-          </ul>
-        </li>
-        <li><a href="#6计算kaks值">6）计算ka/ks值</a></li>
-      </ul>
-    </li>
-    <li><a href="#六实验验证">六、实验验证</a></li>
-    <li><a href="#参考">参考</a></li>
-  </ul>
-</nav>
-</div>
-<script>
-  window.addEventListener("DOMContentLoaded", () => {
-    enableStickyToc();
-  });
-</script>
-
-        
-      </div>
-    
-
-    
-    
-  </div>
-
-  
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        hljs.highlightAll();
-      });
-    </script>
-
-          </div>
-        </div>
-      
-    </main>
-    <footer class="pl-scrollbar">
-      <div class="mx-auto w-full max-w-screen-xl"><div class="text-center p-6 pin-b">
-    <p class="text-sm text-tertiary-text">&copy; 2021 <a href="https://www.wangchucheng.com/">WANG Chucheng</a> and <a href="https://www.ruiqima.com/">MA Ruiqi</a>
- &middot;  Powered by the <a href="https://github.com/wangchucheng/hugo-eureka" class="hover:text-eureka">Eureka</a> theme for <a href="https://gohugo.io" class="hover:text-eureka">Hugo</a></p>
-</div></div>
-    </footer>
-  </body>
-</html>
+</code></pre></li></ul><blockquote><p>#simple</p><p><code>--minspan</code>:规定syntenic region的总长度(基因个数)最低阈值，默认是0</p><p><code>--minsize</code>是规定syntenic region的anchors总个数(有共线性关系的基因对数目)最低阈值，默认是0</p><p>这里注意概念不要混淆，span长度为10个基因并不代表10个基因全都是检测出的高质量anchor（只是人为规定的syntenic region的一个筛选标准而已，具有主观性和物种特异型，自己视情况给定）size才是syntenic region中高质量anchor的（最小）数目，也是自己视情况给定</p><p>#layout</p><p>两个物种染色体的位置在x轴y轴什么位置(如y轴的0.6 0.4，如果是0.5 0.5就重叠了</p><p>注意, ##edges下的每一行开头都不能有空格,rotation就是旋转角度，0就代表水平</p><p><code>-k</code>命令标准输入需要指定开始和末尾</p><pre><code>sort -t ' ' -k1,1 -k2n,2 data
+</code></pre><p>其中 -t &rsquo; &rsquo; 指定使用空格分列</p><p>-k1,1 指定以第一列为关键字排序</p><p>-k2n,2 指定以第二列为关键字做数据排序</p><p><strong>提问</strong>：sort -n 和 -u并用时为什么会只出一个结果</p></blockquote><p>突出显示</p><p><img src=https://raw.githubusercontent.com/ruqinga/picture/main/2023/02/202309020852486.png alt=image-20220315185029747></p><p>#Note: 注释文件的gff 与 gtf格式互相转换&ndash;使用gffread</p><p>gff to gtf</p><pre><code>gffread anno.gff -T -o anno.gtf
+</code></pre><h3 id=6计算kaks值>6）计算ka/ks值</h3><p>KaKs_Calculator 2.0 计算基因家族中每个重复基因的非同义替换（ka）和同义替换（ks）</p><ul><li>Ka=发生非同义替换的SNP数/非同义替换位点数</li><li>Ks=发生同义替换的SNP数/同义替换位点数</li></ul><p>ka/ks</p><ul><li>Ka/Ks=1：假设这个基因没有受到自然选择压力，那么根据中性选择理论，非同义替换率和同义替换率应该是相同的。</li><li>Ks/Ks&#171;1：但实际情况下，这个比值都是远小于1的，因为一般非同义替换带来的都是有害的性状，只有极少数情况下会造成进化上的优势。</li><li>Ka&#187;Ks或者Ka/Ks &#187; 1，基因受正选择(positive selection)</li></ul><p>tbtools计算，可参考<a href=https://www.jianshu.com/p/9d4a72d28c38>这篇</a></p><h2 id=六实验验证>六、实验验证</h2><p><strong>cDNA提取</strong></p><p>RNA 提取试剂盒提取RNA，反转录试剂盒进行 cDNA 第一链的合成，PCR扩增</p><p><strong>qRT-PCR 分析</strong></p><p>primer5.0 设计引物， PCR 进行特异性验证，验证特异性符合实验要求后进行实时定量 PCR反应</p><p><strong>特定基因克隆</strong></p><ol><li>提取DNA并反转录为cDNA，PCR扩增</li><li>使用试剂盒对PCR 产物切胶回收</li><li>基因T载体连接转化</li></ol><p><strong>基因过表达载体的构建</strong></p><ol><li>试剂盒提取质粒</li><li>质粒酶切（琼脂糖凝胶电泳鉴定）及连接</li><li>将重组质粒转化大肠杆菌，利用含有 Kan 抗生素的 LB 固体培养基进行筛选并测序</li></ol><p><strong>基因过表达植株</strong></p><ol><li>种子消毒培养</li><li>侵染植株：将含有重组质粒的农杆菌活化，取 OD600 值在 1.8 左右的菌液，离心去上清后用蔗糖溶液重悬。将未完全开放的拟南芥花序（不同植物可能不一样）淹没于侵染液中 30-40 s。侵染后的植株继续培养并收获 T0 代种子。</li><li>转基因植株的筛选：T0 代种子消毒后，在含有卡那霉素的 1/2 MS 培养基上筛选获得 T1 植株，将筛选得到的阳性 T1 植株转到土壤中，待苗生长成熟收取 T1 代种子</li></ol><p>转录组或荧光定量表达分析</p><blockquote><p>EST(espressed sequence tag)</p><ul><li>定义：表达基因所在区域的分子标签因编码DNA 序列高度保守而具有自身的特殊性质，亲缘关系较远的物种间比较基因组连锁图和比较质量性状信息是特别有</li><li>技术路线：首先从样品组织中提取mRNA ,在逆转录酶的作用下用oligo ( dT) 作为引物进行RT -PCR 合成cDNA ,再选择合适的载体构建cDNA 文库,对各菌株加以整理,将每一个菌株的插入片段根据载体多克隆位点设计引物进行两端一次性自动化测序,这就是EST 序列的产生过程。</li></ul></blockquote><p>all right reserved @xinyi.lei</p><h2 id=参考>参考</h2><p><a href=https://www.jianshu.com/p/48094c4d6a3f>基因家族分析——nnlrl</a></p><p><a href=https://zhuanlan.zhihu.com/p/63155394>基因家族分析（一）——螭吻</a></p><p><a href=https://www.jianshu.com/p/b8db5ac4c221>基因家族专题(1)：基础知识与研究思路介绍</a></p><p><a href=https://www.jianshu.com/p/a758a33ca3d1>基因家族专题(2)：数据下载与基因家族成员的鉴定</a></p><p><a href=https://www.jianshu.com/p/486dd4aba5eb>基因家族专题(3)：基因家族成员的鉴定</a></p><p><a href="https://baijiahao.baidu.com/s?id=1714240662220527241&amp;wfr=spider&amp;for=pc">基因家族分析流程及保姆级实操流程</a></p><p><a href="https://www.jianshu.com/p/8a4818d2e1a2?tdsourcetag=s_pcqq_aiomsg">TBtools基因家族分析详细教程</a></p><p><a href>基因家族分析操作手册-学习必备</a></p><p><a href=https://www.jianshu.com/p/34333a6d7c4e>https://www.jianshu.com/p/34333a6d7c4e</a></p><p><a href=https://blog.csdn.net/u012110870/article/details/102804593>JCVI教程」如何绘制CNS级别的共线性图（中）</a></p><p><a href=https://www.jianshu.com/p/8a4818d2e1a2>TBtools基因家族分析详细教程（1）</a>会讲到修正注释文件</p><p>视频：</p><p><a href="https://www.bilibili.com/video/BV1r44y1H7bx/?spm_id_from=333.788">【保姆级教程】研究生师兄手把手教你做基因家族分析</a></p><p><a href=https://mp.weixin.qq.com/s/-dYnBiA7wwNsXuqvyVHjiQ>基因家族分析</a></p></article><div class="-mx-2 mt-4 flex flex-col border-t px-2 pt-4 md:flex-row md:justify-between"><div><span class="text-primary-text block font-bold">Previous</span>
+<a href=https://ruqinga.github.io/posts/rna-seq-%E5%AE%9E%E6%88%98/ class=block>rna-seq上下游分析实战</a></div><div class="mt-4 md:mt-0 md:text-right"><span class="text-primary-text block font-bold">Next</span>
+<a href=https://ruqinga.github.io/posts/2-linux%E5%9F%BA%E7%A1%80-%E9%85%8D%E8%89%B2%E5%92%8C%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4/ class=block>Linux基础</a></div></div></div><div class=col-span-2><div class="bg-primary-bg
+prose sticky top-16 z-10 hidden px-6 py-4 lg:block"><h3>On This Page</h3></div><div class="sticky-toc hidden px-6 pb-6 lg:block"><nav id=TableOfContents><ul><li><a href=#一介绍>一、介绍</a></li><li><a href=#二分析前准备>二、分析前准备</a><ul><li><a href=#1确定要研究的基因家族>1）确定要研究的基因家族</a></li><li><a href=#2了解你研究的基因家族的特征>2）了解你研究的基因家族的特征</a></li><li><a href=#3数据下载>3）数据下载</a></li></ul></li><li><a href=#三基因家族成员的鉴定>三、基因家族成员的鉴定</a><ul><li><a href=#1确定基因家族>1）确定基因家族</a><ul><li><a href=#1-比对>1. 比对</a></li><li><a href=#2-hmmer>2. hmmer</a></li><li><a href=#3验证>3.验证</a></li></ul></li></ul></li><li><a href=#四基因家族成员基本信息分析>四、基因家族成员基本信息分析</a></li><li><a href=#五构建进化树>五、构建进化树</a></li><li><a href=#六保守domainmotif基因结构分析>六、保守domain、motif、基因结构分析</a><ul><li><ul><li><a href=#domain>domain</a></li><li><a href=#motif>motif</a></li><li><a href=#基因结构外显子内含子>基因结构（外显子/内含子）</a></li></ul></li><li><a href=#七染色体定位染色体共线性分析>七、染色体定位/染色体共线性分析</a><ul><li><a href=#染色体定位>染色体定位</a></li><li><a href=#染色体共线性分析>染色体共线性分析</a></li></ul></li><li><a href=#6计算kaks值>6）计算ka/ks值</a></li></ul></li><li><a href=#六实验验证>六、实验验证</a></li><li><a href=#参考>参考</a></li></ul></nav></div><script>window.addEventListener("DOMContentLoaded",()=>{enableStickyToc()})</script></div></div><script>document.addEventListener("DOMContentLoaded",()=>{hljs.highlightAll()})</script></div></div></main><footer class=pl-scrollbar><div class="mx-auto w-full max-w-screen-xl"><div class="text-center p-6 pin-b"><p class="text-sm text-tertiary-text">&copy; 2021 <a href=https://www.wangchucheng.com/>WANG Chucheng</a> and <a href=https://www.ruiqima.com/>MA Ruiqi</a>
+&#183; Powered by the <a href=https://github.com/wangchucheng/hugo-eureka class=hover:text-eureka>Eureka</a> theme for <a href=https://gohugo.io class=hover:text-eureka>Hugo</a></p></div></div></footer></body></html>
