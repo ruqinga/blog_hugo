@@ -1,5 +1,5 @@
 ---
-title: Linux基础
+title: Linux基础-配色和常见命令
 date: 2022-08-28
 categories:
   - Linux
@@ -10,7 +10,9 @@ tags:
   - 进度/4-已完成
 ---
 
-以下内容为基础的linux操作，希望大家熟练掌握
+以下内容为基础的linux操作，需要熟练掌握
+
+<!--more-->
 
 ### 命令行配色方案
 

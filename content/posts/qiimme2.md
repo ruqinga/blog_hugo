@@ -9,6 +9,10 @@ tags:
   - 进度/4-已完成
 ---
 
+利用 QIIMME2 对微生物测序（16S/ITS/meta）进行上下游分析
+
+<!--more-->
+
 # 导论
 
 开始前，你需要了解QIIME 2的以下信息
@@ -30,6 +34,7 @@ tags:
   双端数据：https://mp.weixin.qq.com/s/p2Snx0v8Fh_BOY-z2vVUCg
   
 - QIIME 2 安装教程：https://docs.qiime2.org/2022.2/install/
+
 
 qiime2安装
 
