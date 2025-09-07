@@ -7,6 +7,11 @@ tags:
   - L3
 ---
 
+This article provides a comprehensive guide on motif analysis using the MEME suite and visualization in R, using both the MEME web tool and its local version, and concluding with motif visualization using R packages like universalmotif, motifStack, and ggseqlogo. 
+
+<!--more-->
+
+
 ## 1. prepare data
 
 ```r
